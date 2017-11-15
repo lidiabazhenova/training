@@ -14,7 +14,6 @@ public class CalculatorNG {
         Assert.fail("Test failed!");
     }
 
-
     @Test
     public void tstAllAsserts() {
         Assert.assertEquals(2*2, 4, "Ok");
@@ -34,33 +33,33 @@ public class CalculatorNG {
         info = new Info(calculator.getResult());
     }
 
-    @Test(priority = 1)
+    @Test(groups = {"operations.positive"})
 
     public void add() throws Exception {
         assertEquals(calculator.add(1, 1), 2, DELTA);
         System.out.println("Test add() passed");
     }
 
-    @Test(priority = 2)
+    @Test(groups = {"operations.positive"})
 
     public void sub() throws Exception {
         assertEquals(calculator.sub(1, 1), 0, DELTA);
         System.out.println("Test sub() passed");
     }
 
-    @Test(priority = 3)
+    @Test(groups = {"operations.positive"})
     public void mul() throws Exception {
         assertEquals(calculator.mul(1, 2), 2, DELTA);
         System.out.println("Test mul() passed");
     }
 
-    @Test(priority = 4)
+    @Test(groups = "operations.positive")
     public void div() throws Exception {
         assertEquals(calculator.div(8, 2), 4, DELTA);
         System.out.println("Test div() passed");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 2)
     public void cleanResult() throws Exception {
         calculator.cleanResult();
         assertEquals(calculator.getResult(), 0, DELTA);
@@ -82,7 +81,7 @@ public class CalculatorNG {
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void calculatorSetGet() throws Exception {
         calculator.setResult("+", 7, 0);
         assertEquals(calculator.getResult(), 7, DELTA);
@@ -95,7 +94,7 @@ public class CalculatorNG {
         System.out.println("Test constructorCalculator() passed");
     }
 
-    @Test(expectedExceptions = UserException.class)
+    @Test(expectedExceptions = UserException.class, groups = {"operations.negative"})
     public void divByNull() throws UserException {
         calculator.div(1, 0);
         System.out.println("Test divByNull() passed");
@@ -116,6 +115,16 @@ public class CalculatorNG {
     @AfterClass
     public static void allTestsFinished() {
         System.out.println("All tests from CalculatorTest finished");
+    }
+
+    @BeforeGroups
+    public static void groupsBeginner() {
+        System.out.println("Groups begin");
+    }
+
+    @AfterGroups
+    public static void groupsEnd() {
+        System.out.println("Groups end");
     }
 
 }

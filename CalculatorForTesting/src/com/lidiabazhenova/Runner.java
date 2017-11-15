@@ -46,7 +46,6 @@ public class Runner {
                 System.out.println("Please, try again with correct args");
             }
         }
-        calculator.cleanResult();
         System.exit(0);
     }
 }

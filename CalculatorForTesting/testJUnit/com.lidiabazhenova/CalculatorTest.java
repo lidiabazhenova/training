@@ -63,13 +63,13 @@ public class CalculatorTest {
 
 
     @Test
-    public void doOperation(){
+    public void doOperation() {
         assertEquals(6, calculator.doOperation("+", 4, 2), 0.0001);
     }
 
     @Test
     public void classCalculator() throws Exception {
-       // calculator = new Calculator(3);
+        // calculator = new Calculator(3);
         //assertEquals(3, calculator.getResult(), 0.000001);
 
         assertNotNull("calculator failed", calculator);
@@ -103,7 +103,7 @@ public class CalculatorTest {
     @Test
     public void constructorCalculator() throws Exception {
         assertEquals(0, calculator.getResult(), 0.000001);
-        assertTrue("Test constructorCalculator() ignored", calculator.getResult()==0);
+        assertTrue("Test constructorCalculator() ignored", calculator.getResult() == 0);
         System.out.println("Test constructorCalculator() passed");
     }
 
@@ -120,8 +120,8 @@ public class CalculatorTest {
     }
 
     @After
-      public void resertResult() {
-        this.calculator=null;
+    public void resertResult() {
+        this.calculator = null;
     }
 
     @AfterClass
