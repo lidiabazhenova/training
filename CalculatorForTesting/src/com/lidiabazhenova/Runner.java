@@ -27,7 +27,7 @@ public class Runner {
 
                     calculator.setResult(operation, first, second);
 
-                    System.out.println("'e' for exit or 's' for saving info");
+                    System.out.println("'e' for exit or 's' for saving info or 'c' for continue");
                     exit = scanner.next();
                     if (exit.equals("s")) {
                         Info info = new Info(operation, first, second, calculator.getResult());
@@ -46,6 +46,7 @@ public class Runner {
                 System.out.println("Please, try again with correct args");
             }
         }
+        calculator.cleanResult();
         System.exit(0);
     }
 }

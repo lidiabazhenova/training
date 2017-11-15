@@ -1,9 +1,9 @@
 package com.lidiabazhenova;
 
-import example.NeedTest;
 import org.junit.*;
 import org.junit.experimental.categories.Category;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class CalculatorTest {
@@ -17,8 +17,8 @@ public class CalculatorTest {
 
     @Before
     public void setUp() {
-        calculator = new Calculator(3);
-        info = new Info(calculator.getResult());
+        this.calculator = new Calculator();
+        this.info = new Info(calculator.getResult());
     }
 
     @Test
@@ -39,7 +39,7 @@ public class CalculatorTest {
     @Test
     public void mulIgnore() throws Exception {
         assertEquals(1, calculator.mul(1, 1), 0.00001);
-        System.out.println("Test mullIgnore() passed");
+        System.out.println("Test mulIgnore() passed");
     }
 
     @Test
@@ -61,23 +61,33 @@ public class CalculatorTest {
         System.out.println("Test cleanResult() passed");
     }
 
+
+    @Test
+    public void doOperation(){
+        assertEquals(6, calculator.doOperation("+", 4, 2), 0.0001);
+    }
+
     @Test
     public void classCalculator() throws Exception {
-        assertEquals(3, calculator.doOperation("+", 1, 2), 0.0001);
-        assertEquals(3, calculator.getResult(), 0.000001);
+       // calculator = new Calculator(3);
+        //assertEquals(3, calculator.getResult(), 0.000001);
+
+        assertNotNull("calculator failed", calculator);
         System.out.println("Test classCalculator() passed");
     }
 
     @Test
     public void classInfo() throws Exception {
-        assertEquals(3, info.getResult(), 0.000001);
+        assertThat(info.getResult(), is(0.0));
+        //assertEquals(0, info.getResult(), 0.000001);
         System.out.println("Test classInfo() passed");
     }
 
     @Test(timeout = 500)
     public void classCalculatorClassInfo() throws Exception {
-        assertEquals(3, calculator.getResult(), 0.000001);
-        assertEquals(3, info.getResult(), 0.000001);
+
+        assertEquals(0, calculator.getResult(), 0.000001);
+        assertEquals(0, info.getResult(), 0.000001);
         assertTrue(calculator.getResult() == info.getResult());
         System.out.println("Test classCalculatorClassInfo() passed");
 
@@ -92,11 +102,12 @@ public class CalculatorTest {
 
     @Test
     public void constructorCalculator() throws Exception {
-        assertEquals(3, calculator.getResult(), 0.000001);
+        assertEquals(0, calculator.getResult(), 0.000001);
+        assertTrue("Test constructorCalculator() ignored", calculator.getResult()==0);
         System.out.println("Test constructorCalculator() passed");
     }
 
-    @Test(expected = UserException.class)
+    @Test(expected = UserException.class, timeout = 1000)
     public void divByNull() throws UserException {
         calculator.div(1, 0);
         System.out.println("Test divByNull() passed");
@@ -108,10 +119,9 @@ public class CalculatorTest {
         System.out.println("Test mulMaxValue() passed");
     }
 
-    @Test
-    public void tstAllAsserts() {
-        fail();
-        fail("Test failed!");
+    @After
+      public void resertResult() {
+        this.calculator=null;
     }
 
     @AfterClass
