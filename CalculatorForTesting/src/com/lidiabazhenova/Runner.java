@@ -44,6 +44,7 @@ public class Runner {
                 }
             } catch (IllegalArgumentException e) {
                 System.out.println("Please, try again with correct args");
+
             }
         }
         System.exit(0);

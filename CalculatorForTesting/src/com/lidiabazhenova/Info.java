@@ -14,6 +14,7 @@ public class Info {
     private String operation;
     private double second;
     private double result;
+    Scanner sc = new Scanner(System.in);
 
     public Info(String operation, double first, double second, double result) {
         this.first = first;
@@ -22,23 +23,12 @@ public class Info {
         this.result = result;
     }
 
+    public Info() {
+    }
 
-    public static void createHtml(List<String> values) throws IOException {
-        Scanner sc = new Scanner(System.in);
+    public void createHtml(List<String> values) throws IOException {
 
-        System.out.println("Enter pathname to save in such format: 'D://SomeDir' ");
-        String path = sc.nextLine();
-
-        File dir = new File(path);
-        boolean created = dir.mkdir();
-        if (created)
-            System.out.println("Каталог успешно создан");
-
-        System.out.println("Enter name to save in such format: '*.html' ");
-        String name = sc.nextLine();
-        String pathName = path + "//" + name;
-
-        File file = new File(pathName);
+        File file = new File(getPathName());
         if (file.exists()) {
             System.out.println("file exists");
             createHtml(values);
@@ -64,6 +54,21 @@ public class Info {
         }
     }
 
+    public String getPathName() {
+        System.out.println("Enter pathname to save in such format: 'D://SomeDir' ");
+        String path = sc.nextLine();
+
+        File dir = new File(path);
+        boolean created = dir.mkdir();
+        if ((created)&&(dir.exists())){
+            System.out.println("Каталог успешно создан");}
+        //!!!Пишет это сообщение даже если путь неверный
+
+        System.out.println("Enter name to save in such format: '*.html' ");
+        String name = sc.nextLine();
+        String pathName = path + "//" + name;
+        return pathName;
+    }
 
     public Info(double result) {
         this.result = result;

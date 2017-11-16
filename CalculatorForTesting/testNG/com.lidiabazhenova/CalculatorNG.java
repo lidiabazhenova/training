@@ -3,6 +3,8 @@ package com.lidiabazhenova;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
+import java.util.List;
+
 import static org.testng.Assert.*;
 
 
@@ -108,7 +110,7 @@ public class CalculatorNG {
 
     }
 
-    @Test(priority = 1)
+    @Test
     public void calculatorSetGet() throws Exception {
         calculator.setResult("+", 7, 0);
         assertEquals(calculator.getResult(), 7, DELTA);
@@ -134,7 +136,6 @@ public class CalculatorNG {
     @AfterMethod
     public void deleteCalculator() {
         this.calculator = null;
-        assertNull(calculator, "Calculator exists!!");
     }
 
     @AfterClass
@@ -172,4 +173,18 @@ public class CalculatorNG {
         System.out.println("One-After-Groups");
     }
 
+    public static class InfoTest {
+
+        List<String> storedList;
+        Info info = new Info("+", 2.0, 2.0, 4.0);
+
+        @Test
+        @Parameters({"paramInt", "paramStr"})
+        public void testCreateHtml(int in, String st) throws Exception{
+            //storedList=info.write();
+           // Assert.assertNull(storedList);
+            System.out.println(in + " = " + st);
+        }
+
+    }
 }
