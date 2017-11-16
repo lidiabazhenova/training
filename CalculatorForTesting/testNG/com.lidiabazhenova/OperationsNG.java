@@ -12,22 +12,22 @@ public class OperationsNG {
 
     static final double DELTA = 0.001;
 
-        Calculator calculator= new Calculator();
+    Calculator calculator = new Calculator();
 
 
-
-    @Test(groups = { "operations.add" })
+    @Test(groups = {"operations.add"})
     public void add() throws Exception {
-       assertEquals(calculator.add(1, 4), 5, DELTA);
+        assertEquals(calculator.add(1, 4), 5, DELTA);
         System.out.println("Test add() passed");
     }
-    @Test(groups = { "operations.sub" })
+
+    @Test(groups = {"operations.sub"})
     public void sub() throws Exception {
-       assertEquals(calculator.sub(1, 1), 0, DELTA);
+        assertEquals(calculator.sub(1, 1), 0, DELTA);
         System.out.println("Test sub() passed");
     }
 
-    @Test(groups = { "operations.mul" })
+    @Test(groups = {"operations.mul"})
     public void mul() throws Exception {
         assertEquals(calculator.mul(1, 2), 2, DELTA);
         System.out.println("Test mul() passed");

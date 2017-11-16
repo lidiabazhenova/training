@@ -10,8 +10,39 @@ public class CalculatorNG {
 
     static final double DELTA = 0.001;
 
-    private Calculator calculator=new Calculator();
+    private Calculator calculator = new Calculator();
     private Info info;
+
+    @BeforeClass
+    public void allTestsStarted() {
+        System.out.println("All tests started");
+    }
+
+    @BeforeSuite
+    public void beforeSuite() {
+        System.out.println("One-Be-foreSuite");
+    }
+
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("One-Before-Class");
+    }
+
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("One-Before-Test");
+    }
+
+    @BeforeMethod
+    public void setUp() {
+        this.calculator = new Calculator(3);
+        info = new Info(calculator.getResult());
+    }
+
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("One-Before-Method");
+    }
 
     @Test(enabled = false)
     public void tst() {
@@ -24,39 +55,29 @@ public class CalculatorNG {
         Assert.assertEquals(2 * 2, 4, "Ok");
     }
 
-    @BeforeClass
-    public void allTestsStarted() {
-        System.out.println("All tests started");
-    }
 
-    @BeforeMethod
-    public void setUp() {
-        calculator = new Calculator(3);
-        info = new Info(calculator.getResult());
-    }
-
-    @Test(groups = { "operations.add" })
+    @Test(groups = {"operations.add"})
 
     public void add() throws Exception {
         assertEquals(calculator.add(1, 1), 2, DELTA);
         System.out.println("Test add() passed");
     }
 
-    @Test(groups = { "operations.sub" })
+    @Test(groups = {"operations.sub"})
 
     public void sub() throws Exception {
         assertEquals(calculator.sub(1, 1), 0, DELTA);
         System.out.println("Test sub() passed");
     }
 
-    @Test(groups = { "operations.mul" })
+    @Test(groups = {"operations.mul"})
 
     public void mul() throws Exception {
         assertEquals(calculator.mul(1, 2), 2, DELTA);
         System.out.println("Test mul() passed");
     }
 
-    @Test(groups = { "operations.div" })
+    @Test(groups = {"operations.div"})
 
     public void div() throws Exception {
 
@@ -103,19 +124,17 @@ public class CalculatorNG {
     @Test(expectedExceptions = UserException.class, groups = {"operations.negative"})
     public void divByNull() throws UserException {
         calculator.div(1, 0);
-        System.out.println("Test divByNull() passed");
     }
 
     @Test(expectedExceptions = UserException.class)
     public void mulMaxValue() throws UserException {
         calculator.mul(Double.MAX_VALUE, 1.00000001);
-        System.out.println("Test mulMaxValue() passed");
     }
 
     @AfterMethod
-    public void resertResult() {
-        calculator.cleanResult();
-        System.out.println("calculator.getResult()=" + calculator.getResult());
+    public void deleteCalculator() {
+        this.calculator = null;
+        assertNull(calculator, "Calculator exists!!");
     }
 
     @AfterClass
@@ -123,14 +142,34 @@ public class CalculatorNG {
         System.out.println("All tests from CalculatorTest finished");
     }
 
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("One-After-Method");
+    }
+
+    @AfterTest
+    public void afterTest() {
+        System.out.println("One-Af-terTest");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("One-After-Class");
+    }
+
+    @AfterSuite
+    public void afterSuite() {
+        System.out.println("One-After-Suite");
+    }
+
     @BeforeGroups
-    public  void groupsBeginner() {
-        System.out.println("Groups begin");
+    public void beforeGroups() {
+        System.out.println("One-Before-Groups");
     }
 
     @AfterGroups
-    public void groupsEnd() {
-        System.out.println("Groups end");
+    public void afterGroups() {
+        System.out.println("One-After-Groups");
     }
 
 }

@@ -120,7 +120,7 @@ public class CalculatorTest {
     }
 
     @After
-    public void resertResult() {
+    public void deleteCalculator() {
         this.calculator = null;
     }
 
