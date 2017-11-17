@@ -12,8 +12,12 @@ public class OperationsNG {
 
     static final double DELTA = 0.001;
 
-    Calculator calculator = new Calculator();
+    Calculator calculator;
 
+    @BeforeMethod(alwaysRun = true)
+    public void setUp(){
+        calculator= new Calculator();
+    }
 
     @Test(groups = {"operations.add"})
     public void add() throws Exception {
