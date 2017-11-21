@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Runner {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] arg) throws IOException {
         double first;
         double second;
         String operation;
