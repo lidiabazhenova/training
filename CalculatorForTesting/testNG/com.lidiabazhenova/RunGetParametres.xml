@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+    <parameter name="paramInt" value="1"/>
+    <parameter name="paramStr" value="One"/>
+    <test name="SampleTestOne">
+        <classes>
+            <class name="com.lidiabazhenova.GetParametresNG"/>
+        </classes>
+    </test>
+</suite>
+

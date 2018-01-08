@@ -1,0 +1,12 @@
+<data>
+    <addition>
+        <first>15.5</first>
+        <second>4.0</second>
+        <result>19.5</result>>
+    </addition>
+    <subtraction>
+        <first>15.5</first>
+        <second>4.0</second>
+        <result>11.5</result>>
+    </subtraction>
+</data>

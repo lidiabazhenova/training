@@ -49,7 +49,7 @@ public class CalculatorTestWithResourceBundles {
         ResourceBundle rb = ResourceBundle.getBundle("_MyPropertiesFile", ourLocale);
 
         try {
-            message = rb.getString("Message");
+            message =  new String(rb.getString("Message").getBytes("ISO-8859-1"), "UTF-8");
         } catch (MissingResourceException e) {
             System.out.println(e.getMessage());
         }

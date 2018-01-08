@@ -29,8 +29,10 @@ public class CalculatorTestWithXML extends DefaultHandler {
     public void startElement(String namespaceURI, String localName, String qName, Attributes attr
     ) throws SAXException {
         contents.reset();
-        if (localName.equals("first")) { first = Double.parseDouble(contents.toString());
-            System.out.println(first);}
+        if (localName.equals("first")) {
+            first = Double.parseDouble(contents.toString());
+            System.out.println(first);
+        }
     }
 
     @BeforeClass
@@ -66,7 +68,6 @@ public class CalculatorTestWithXML extends DefaultHandler {
     public static void allTestsFinished() {
         System.out.println("All tests from CalculatorTest finished");
     }
-
 
 
 }

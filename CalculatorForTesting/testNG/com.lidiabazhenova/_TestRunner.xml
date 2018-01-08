@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite NG" parallel="false">
+    <test name="Test One">
+        <classes>
+            <class name="com.lidiabazhenova.CalculatorNG"/>
+            <methods>
+                <exclude name="add"/>
+                <exclude name="sub"/>
+                <exclude name="mul"/>
+                <exclude name="div"/>
+                <exclude name="divByNull"/>
+            </methods>
+        </classes>
+    </test>
+    <test name="Test Two">
+        <classes>
+            <class name="com.lidiabazhenova.CalculatorNG"/>
+        </classes>
+    </test>
+    <test name="TestGroupsNG">
+        <groups>
+            <run>
+                <include name="operations.*"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.lidiabazhenova.CalculatorNG"/>
+        </classes>
+    </test>
+</suite>
