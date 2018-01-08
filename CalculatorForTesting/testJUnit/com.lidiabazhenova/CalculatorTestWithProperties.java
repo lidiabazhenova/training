@@ -12,7 +12,6 @@ import static org.junit.Assert.*;
 
 public class CalculatorTestWithProperties {
 
-
     static final double DELTA = 0.0001;
 
     private Calculator calculator;
@@ -36,7 +35,7 @@ public class CalculatorTestWithProperties {
     }
 
     @Before
-    public void setUp() throws IOException{
+    public void setUp() throws IOException {
         this.calculator = new Calculator();
         readPropertiesFile();
     }
@@ -44,18 +43,18 @@ public class CalculatorTestWithProperties {
     @Test
     public void add() throws Exception {
 
-        first= Double.parseDouble(p.getProperty("First.Addition.Number"));
-        second= Double.parseDouble(p.getProperty("Second.Addition.Number"));
-        result= Double.parseDouble(p.getProperty("Result.Addition.Number"));
+        first = Double.parseDouble(p.getProperty("First.Addition.Number"));
+        second = Double.parseDouble(p.getProperty("Second.Addition.Number"));
+        result = Double.parseDouble(p.getProperty("Result.Addition.Number"));
         assertEquals(result, calculator.add(first, second), DELTA);
         System.out.println("Test add() passed");
     }
 
     @Test
     public void sub() throws Exception {
-        first= Double.parseDouble(p.getProperty("First.Subtraction.Number"));
-        second= Double.parseDouble(p.getProperty("Second.Subtraction.Number"));
-        result= Double.parseDouble(p.getProperty("Result.Subtraction.Number"));
+        first = Double.parseDouble(p.getProperty("First.Subtraction.Number"));
+        second = Double.parseDouble(p.getProperty("Second.Subtraction.Number"));
+        result = Double.parseDouble(p.getProperty("Result.Subtraction.Number"));
         assertEquals(result, calculator.sub(first, second), DELTA);
         System.out.println("Test sub() passed");
     }

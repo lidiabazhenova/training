@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="567a011d-4125-47ae-8d3b-731960170a57" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Test Results - CalculatorNG.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/testNG/com.lidiabazhenova/Listeners.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNGProperties.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/testNG/com.lidiabazhenova/calculator.properties" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/test/CalculatorForTesting/com/lidiabazhenova/ParametrizedTestArrayListNG.class" afterPath="$PROJECT_DIR$/out/test/CalculatorForTesting/com/lidiabazhenova/ParametrizedTestArrayListNG.class" />
-      <change beforePath="$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java" afterPath="$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java" />
-      <change beforePath="$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml" afterPath="$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml" />
+      <change beforePath="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java" afterPath="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,108 +32,95 @@
     <option name="OUTPUT_DIRECTORY" value="C:\projects\training\CalculatorForTesting" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="CalculatorTestWithProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Groups.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/Groups.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunGetParametres.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/RunGetParametres.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_TestRunner.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetParametresNG.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/GetParametresNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#238#239#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Listeners.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/Listeners.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalculatorNG.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="189" column="1" lean-forward="true" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParametrizedTestArrayListNG.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/ParametrizedTestArrayListNG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-              <folding>
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParametrizedTestArrayList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/ParametrizedTestArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="CalculatorTestWithProperties.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="675">
+                  <caret line="40" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CalculatorNG.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="65" column="5" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CalculatorNGProperties.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNGProperties.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="577">
+                  <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="calculator.properties" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/calculator.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="63">
+                  <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="calculatorprop.properties" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/calculatorprop.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="147">
+                  <caret line="7" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ParametrizedTestArrayListNG.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/ParametrizedTestArrayListNG.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="525">
+                  <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+                  <folding>
+                    <element signature="e#880#881#0" expanded="true" />
+                    <element signature="e#925#926#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="CalculatorNGProperties.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNGProperties.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="332">
+                  <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -161,9 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/lidiabazhenova/ConsoleWriter.java" />
-        <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/RunnerTest.java" />
-        <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/TestHelper.java" />
         <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/SimpleTest.java" />
         <option value="$PROJECT_DIR$/src/classForCategory/NeedTest.java" />
         <option value="$PROJECT_DIR$/src/com/lidiabazhenova/NeedTest.java" />
@@ -200,7 +182,6 @@
         <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorProperties.java" />
         <option value="$PROJECT_DIR$/src/com/lidiabazhenova/runner_ev.properties" />
         <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTest.java" />
-        <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java" />
         <option value="$PROJECT_DIR$/out/resourses/_MyPropertiesFile_en_GB_WIN.properties" />
         <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/calculatorprop.properties" />
         <option value="$PROJECT_DIR$/out/resourses/_MyPropertiesFile_ru_RUS_WIN.properties" />
@@ -212,6 +193,10 @@
         <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java" />
         <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/Listeners.java" />
         <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml" />
+        <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/calculator.properties.properties" />
+        <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/calculator.properties" />
+        <option value="$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java" />
+        <option value="$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNGProperties.java" />
       </list>
     </option>
   </component>
@@ -281,17 +266,18 @@
             <path>
               <item name="CalculatorForTesting" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorForTesting" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CalculatorForTesting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CalculatorForTesting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CalculatorForTesting" type="b2602c69:ProjectViewProjectNode" />
               <item name="CalculatorForTesting" type="462c0819:PsiDirectoryNode" />
               <item name="testJUnit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CalculatorForTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CalculatorForTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="testJUnit" type="462c0819:PsiDirectoryNode" />
+              <item name="com.lidiabazhenova" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CalculatorForTesting" type="b2602c69:ProjectViewProjectNode" />
@@ -370,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml">
+  <component name="RunManager" selected="TestNG.CalculatorNGProperties">
     <configuration name="CalculatorTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -434,15 +420,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="com.lidiabazhenova in CalculatorForTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration name="CalculatorTestWithProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.lidiabazhenova.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="CalculatorForTesting" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
+      <option name="PACKAGE_NAME" value="com.lidiabazhenova" />
+      <option name="MAIN_CLASS_NAME" value="com.lidiabazhenova.CalculatorTestWithProperties" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="directory" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -452,28 +443,6 @@
         <value defaultName="singleModule" />
       </option>
       <envs />
-      <dir value="$PROJECT_DIR$/testNG/com.lidiabazhenova" />
-      <patterns />
-    </configuration>
-    <configuration name="testNG in CalculatorForTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="CalculatorForTesting" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="directory" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <dir value="$PROJECT_DIR$/testNG" />
       <patterns />
     </configuration>
     <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
@@ -516,6 +485,38 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.lidiabazhenova" />
       <option name="MAIN_CLASS_NAME" value="com.lidiabazhenova.CalculatorNG" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="CalculatorNGProperties" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.lidiabazhenova.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="CalculatorForTesting" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.lidiabazhenova" />
+      <option name="MAIN_CLASS_NAME" value="com.lidiabazhenova.CalculatorNGProperties" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -586,19 +587,19 @@
       <item index="0" class="java.lang.String" itemvalue="Application.CalculatorTest" />
       <item index="1" class="java.lang.String" itemvalue="Application.SystemPropertiesReader" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.CalculatorTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com.lidiabazhenova in CalculatorForTesting" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.testNG in CalculatorForTesting" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.CalculatorNG" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.com.lidiabazhenova" />
-      <item index="7" class="java.lang.String" itemvalue="TestNG.C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CalculatorNG" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.com.lidiabazhenova" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.CalculatorNGProperties" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.CalculatorTestWithProperties" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.CalculatorNG" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.com.lidiabazhenova" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.testNG in CalculatorForTesting" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.com.lidiabazhenova in CalculatorForTesting" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CalculatorNGProperties" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CalculatorTestWithProperties" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.CalculatorNG" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.com.lidiabazhenova" />
       </list>
     </recent_temporary>
   </component>
@@ -621,44 +622,44 @@
       <workItem from="1513541357078" duration="637000" />
       <workItem from="1513936297126" duration="1116000" />
       <workItem from="1515393008095" duration="104000" />
-      <workItem from="1515393355188" duration="12293000" />
+      <workItem from="1515393355188" duration="17085000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 05m 00s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 03m 19s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 06m 52s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 05m 12s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 13m 06s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 07m 31s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 14m 45s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 08m 55s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 23m 01s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 10m 00s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 33m 20s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 12m 37s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 33m 31s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 13m 21s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 52m 17s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 13m 57s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 52m 38s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorNGProperties - 2018.01.08 at 16h 15m 08s.xml">
+      <configuration name="CalculatorNGProperties" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__projects_training_CalculatorForTesting_testNG_com_lidiabazhenova__TestRunner_xml - 2018.01.08 at 14h 54m 54s.xml">
-      <configuration name="C:/projects/training/CalculatorForTesting/testNG/com.lidiabazhenova/_TestRunner.xml" configurationId="TestNG" />
+    <history-entry file="CalculatorTestWithProperties - 2018.01.08 at 16h 13m 12s.xml">
+      <configuration name="CalculatorTestWithProperties" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16409000" />
+    <option name="totallyTimeSpent" value="21201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -666,14 +667,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267544" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32601535" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815966" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.49561402" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32864583" sideWeight="0.50438595" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864583" sideWeight="0.50438595" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -726,7 +727,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java</url>
-          <line>58</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -748,8 +749,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/lidiabazhenova/runner_ev.properties" />
-    <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/_MyPropertiesFile _en _GB _WIN .properties" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/Throwables.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -948,14 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/calculatorprop.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_repository/newdata.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -994,16 +985,6 @@
         <state relative-caret-position="0">
           <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,14 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/RunGetParametres.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_SORT_BY_BLOCK.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1085,6 +1058,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/Listeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/calculatorprop.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/GetParametresNG.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1096,29 +1087,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/Listeners.java">
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="46" lean-forward="false" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="147">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/RunGetParametres.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/calculator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testJUnit/com.lidiabazhenova/CalculatorTestWithProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNG.java">
+    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/CalculatorNGProperties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="189" column="1" lean-forward="true" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testNG/com.lidiabazhenova/_TestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="332">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
