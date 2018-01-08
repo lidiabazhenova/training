@@ -46,7 +46,7 @@ public class CalculatorNG {
         System.out.println("One-Before-Method");
     }
 
-    @Test(enabled = false)
+    @Test
     public void tst() {
         Assert.fail();
         Assert.fail("Test failed!");

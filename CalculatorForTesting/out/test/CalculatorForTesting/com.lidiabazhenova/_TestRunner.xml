@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Suite NG" parallel="false">
-    <test name="Test One">
+<suite name="Suite NG" parallel="tests" thread-count="5">
+    <listeners>
+        <listener class-name="com.lidiabazhenova.Listeners"/>
+
+    </listeners>
+
+    <test name="Test One" parallel="classes" thread-count="4">
         <classes>
             <class name="com.lidiabazhenova.CalculatorNG"/>
             <methods>
