@@ -3,7 +3,7 @@ package com.lidiabazhenova;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Runner {
+public class  Runner {
 
     public static void main(String[] arg) throws IOException {
         double first;

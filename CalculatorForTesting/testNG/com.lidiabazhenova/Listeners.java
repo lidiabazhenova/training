@@ -43,4 +43,9 @@ public class Listeners implements ITestListener {
     public void onFinish(ITestContext iTestContext) {
 
     }
+
+    //add to pom.xml were is located listeners class
+    //<listeners>
+       //<listener class-name="com.lidiabazhenova.Listeners"/>
+    //</listeners>
 }
