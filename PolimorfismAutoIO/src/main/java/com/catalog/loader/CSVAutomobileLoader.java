@@ -9,6 +9,7 @@ import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.io.IOUtils;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,45 +17,42 @@ import java.util.List;
 
 public class CSVAutomobileLoader implements AutomobileLoader {
 
-    private static final String CSV_FILE_PATH_1 = "C:\\projects\\training" +
-            "\\PolimorfismAutoIO\\src\\main\\resources\\cars-with-header.csv";
-    private static final String CSV_FILE_PATH_2 = "C:\\projects\\training" +
-            "\\PolimorfismAutoIO\\src\\main\\resources\\trucks-with-header.csv";
+    private static final String CAR_FILE_PREFIX = "car";
+    private static final String TRUCK_FILE_PREFIX = "truck";
 
+    private String path;
 
-    public List<Automobile> load() {
+    public CSVAutomobileLoader(String path) {
+        this.path = path;
+    }
 
-        List<Automobile> automobilesFromFile = new ArrayList<Automobile>();
+    public List<Automobile> load() throws IOException {
+        File file = new File(path);
+        String fileName = file.getName();
+
         BufferedReader reader = null;
 
         try {
-            reader = new BufferedReader(new FileReader(CSV_FILE_PATH_1));
+            reader = new BufferedReader(new FileReader(path));
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
                     .withFirstRecordAsHeader()
                     .withTrim());
-            addCarsFromFile(csvParser, automobilesFromFile);
-        } catch (IOException e) {
-            System.out.println("IOException: " + e.toString());
-        } finally {
-            IOUtils.closeQuietly(reader);
-        }
 
-        try {
-            reader = new BufferedReader(new FileReader(CSV_FILE_PATH_2));
-            CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
-                    .withFirstRecordAsHeader()
-                    .withTrim());
-            addTrucksFromFile(csvParser, automobilesFromFile);
-        } catch (IOException e) {
-            System.out.println("IOException: " + e.toString());
+            if (fileName.startsWith(CAR_FILE_PREFIX)) {
+                return loadCarsFromFile(csvParser);
+            } else if (fileName.startsWith(TRUCK_FILE_PREFIX)) {
+                return loadTrucksFromFile(csvParser);
+            }
+
+            throw new IllegalArgumentException("File has invalid prefix");
+
         } finally {
             IOUtils.closeQuietly(reader);
         }
-        return automobilesFromFile;
     }
 
-    private void addCarsFromFile(CSVParser csvParser,
-                                 List<Automobile> automobiles) {
+    private List<Automobile> loadCarsFromFile(CSVParser csvParser) {
+        List<Automobile> automobiles = new ArrayList<Automobile>();
 
         for (CSVRecord csvRecord : csvParser) {
             automobiles.add(new Car.CarBuilder()
@@ -68,10 +66,12 @@ public class CSVAutomobileLoader implements AutomobileLoader {
                             csvRecord.get("bodywork")))
                     .build());
         }
+
+        return automobiles;
     }
 
-    private void addTrucksFromFile(CSVParser csvParser,
-                                   List<Automobile> automobiles) {
+    private List<Automobile> loadTrucksFromFile(CSVParser csvParser) {
+        List<Automobile> automobiles = new ArrayList<Automobile>();
 
         for (CSVRecord csvRecord : csvParser) {
             automobiles.add(new Truck.TruckBuilder()
@@ -91,5 +91,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
                             csvRecord.get("loading")))
                     .build());
         }
+
+        return automobiles;
     }
 }

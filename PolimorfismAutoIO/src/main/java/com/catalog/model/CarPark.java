@@ -2,8 +2,11 @@ package com.catalog.model;
 
 import com.catalog.comparator.AutomobilePriceComparator;
 import com.catalog.comparator.AutomobileVelocityComparator;
+import com.catalog.loader.AutomobileLoader;
 import com.catalog.loader.CSVAutomobileLoader;
+import com.catalog.loader.LoaderFactory;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -46,10 +49,17 @@ public class CarPark {
     /**
      * Method for loading automobiles into car park from csv-file
      *
+     * @param fileType file type
+     * @param paths list of paths
+     * @throws IOException
      */
-    public void loadAutomobilesFromFile() {
-        CSVAutomobileLoader automobileLoader = new CSVAutomobileLoader();
-        automobiles = automobileLoader.load();
+    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws IOException {
+        LoaderFactory loaderFactory = new LoaderFactory();
+
+        for (String path: paths) {
+            AutomobileLoader loader = loaderFactory.createLoader(fileType, path);
+            automobiles.addAll(loader.load());
+        }
     }
 
     /**

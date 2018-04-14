@@ -7,11 +7,11 @@ public class LoaderFactory {
         EXCEL
     }
 
-    public AutomobileLoader createLoader(FileType fileType, String directory) {
+    public AutomobileLoader createLoader(FileType fileType, String path) {
         if (FileType.CSV == fileType) {
-            return new CSVAutomobileLoader();
+            return new CSVAutomobileLoader(path);
         } else if (FileType.EXCEL == fileType) {
-            return new ExcelAutomobileLoader();
+            throw new UnsupportedOperationException("Load from Excel file is not implemented yet.");
         } else {
             throw new IllegalArgumentException("File type '" + fileType + "' is not supported");
         }

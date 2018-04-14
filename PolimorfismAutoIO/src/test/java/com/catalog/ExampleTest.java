@@ -1,14 +1,21 @@
 package com.catalog;
 
-import com.catalog.loader.CSVAutomobileLoader;
+import com.catalog.loader.LoaderFactory;
 import com.catalog.model.Car;
 import com.catalog.model.CarPark;
 import com.catalog.model.Truck;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ExampleTest {
+
+    private static final String CSV_FILE_PATH_1 = "C:\\projects\\training" +
+            "\\PolimorfismAutoIO\\src\\main\\resources\\cars-with-header.csv";
+    private static final String CSV_FILE_PATH_2 = "C:\\projects\\training" +
+            "\\PolimorfismAutoIO\\src\\main\\resources\\trucks-with-header.csv";
 
     @Test
     public void carParkList(){
@@ -86,33 +93,17 @@ public class ExampleTest {
         System.out.println(carPark.getTheMostHighSpeedAutomobile().getDescription());
     }
 
-    //TODO Excel
-    @Test
-    public void ExcelDrivenTest() throws IOException {
 
-            String value = ExcelDriven.getCelldata(0, 0);
-            System.out.println(value);
-            String value1 = ExcelDriven.getCelldata(0, 1);
-            System.out.println(value1);
-
-
-    }
-    //TODO CSV
     @Test
     public void CSVDrivenTest() throws IOException {
+        CarPark carPark = new CarPark();
 
-       CarPark carPark = new CarPark();
-       carPark.loadAutomobilesFromFile();
-       carPark.printList();
+        List<String> paths = new ArrayList<String>();
+        paths.add(CSV_FILE_PATH_1);
+        paths.add(CSV_FILE_PATH_2);
+        carPark.loadAutomobilesFromFile(LoaderFactory.FileType.CSV, paths);
 
-
-
-
-
-
+        carPark.printList();
     }
 
 }
-
-
-
