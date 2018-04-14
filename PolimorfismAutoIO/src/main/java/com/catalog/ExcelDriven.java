@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class ExcelDriven {
 
-    public static XSSFWorkbook wb;
+    public static XSSFWorkbook workbook;
     public static XSSFSheet sheet;
     public static XSSFRow row;
     public static XSSFCell cell;
@@ -20,8 +20,8 @@ public class ExcelDriven {
 
     public static String getCelldata(int rownum, int col) throws IOException {
         fis = new FileInputStream("C:\\projects\\training\\PolimorfismAutoIO\\src\\main\\resources\\Automobiles.xlsx");
-        wb = new XSSFWorkbook(fis);
-        sheet = wb.getSheet("Car");
+        workbook = new XSSFWorkbook(fis);
+        sheet = workbook.getSheet("Car");
         row = sheet.getRow(rownum);
         cell = row.getCell(col);
 
@@ -30,12 +30,17 @@ public class ExcelDriven {
 
     public static String setCelldata(String text, int rownum, int col) throws IOException {
         fis = new FileInputStream("C:\\projects\\training\\PolimorfismAutoIO\\src\\main\\resources\\Automobiles.xlsx");
-        wb = new XSSFWorkbook(fis);
-        sheet = wb.getSheet("screen");
+        workbook = new XSSFWorkbook(fis);
+        sheet = workbook.getSheet("screen");
         row = sheet.getRow(rownum);
         cell = row.getCell(col);
         cell.setCellValue(text);
 
         return cell.getStringCellValue();
     }
+
+    //TODO:
+    // } finally {
+    //try{inFile.close();}catch(IOException e){};
+    //}
 }

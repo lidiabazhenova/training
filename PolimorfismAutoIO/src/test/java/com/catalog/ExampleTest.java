@@ -1,6 +1,9 @@
 package com.catalog;
 
-import com.catalog.*;
+import com.catalog.loader.CSVAutomobileLoader;
+import com.catalog.model.Car;
+import com.catalog.model.CarPark;
+import com.catalog.model.Truck;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -91,6 +94,20 @@ public class ExampleTest {
             System.out.println(value);
             String value1 = ExcelDriven.getCelldata(0, 1);
             System.out.println(value1);
+
+
+    }
+    //TODO CSV
+    @Test
+    public void CSVDrivenTest() throws IOException {
+
+       CarPark carPark = new CarPark();
+       carPark.loadAutomobilesFromFile();
+       carPark.printList();
+
+
+
+
 
 
     }
