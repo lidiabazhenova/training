@@ -5,6 +5,7 @@ import com.catalog.comparator.AutomobileVelocityComparator;
 import com.catalog.loader.AutomobileLoader;
 import com.catalog.loader.CSVAutomobileLoader;
 import com.catalog.loader.LoaderFactory;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class CarPark {
      * @param paths list of paths
      * @throws IOException
      */
-    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws IOException {
+    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws IOException, InvalidFormatException {
         LoaderFactory loaderFactory = new LoaderFactory();
 
         for (String path: paths) {

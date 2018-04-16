@@ -11,7 +11,7 @@ public class LoaderFactory {
         if (FileType.CSV == fileType) {
             return new CSVAutomobileLoader(path);
         } else if (FileType.EXCEL == fileType) {
-            throw new UnsupportedOperationException("Load from Excel file is not implemented yet.");
+            return new ExcelAutomobileLoader(path);
         } else {
             throw new IllegalArgumentException("File type '" + fileType + "' is not supported");
         }

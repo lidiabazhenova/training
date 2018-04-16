@@ -3,22 +3,18 @@ package com.catalog.loader;
 import com.catalog.model.Automobile;
 import com.catalog.model.Car;
 import com.catalog.model.Truck;
-import org.apache.commons.csv.CSVFormat;
-import org.apache.commons.csv.CSVParser;
-import org.apache.commons.csv.CSVRecord;
-import org.apache.commons.io.IOUtils;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.*;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExcelAutomobileLoader implements AutomobileLoader {
 
-    private static final String CAR_FILE_PREFIX = "car";
-    private static final String TRUCK_FILE_PREFIX = "truck";
+    private static final String CAR_SHEET_PREFIX = "car";
+    private static final String TRUCK_SHEET_PREFIX = "truck";
 
     private String path;
 
@@ -26,72 +22,104 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
         this.path = path;
     }
 
-    public List<Automobile> load() throws IOException {
+    public List<Automobile> load() throws IOException, InvalidFormatException {
         File file = new File(path);
         String fileName = file.getName();
 
-        BufferedReader reader = null;
+        Workbook workbook = null;
+        Sheet sheet = null;
 
-        try {
-            reader = new BufferedReader(new FileReader(path));
-            CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT
-                    .withFirstRecordAsHeader()
-                    .withTrim());
-
-            if (fileName.startsWith(CAR_FILE_PREFIX)) {
-                return loadCarsFromFile(csvParser);
-            } else if (fileName.startsWith(TRUCK_FILE_PREFIX)) {
-                return loadTrucksFromFile(csvParser);
-            }
-
-            throw new IllegalArgumentException("File has invalid prefix");
-
-        } finally {
-            IOUtils.closeQuietly(reader);
-        }
-    }
-
-    private List<Automobile> loadCarsFromFile(CSVParser csvParser) {
         List<Automobile> automobiles = new ArrayList<Automobile>();
 
-        for (CSVRecord csvRecord : csvParser) {
-            automobiles.add(new Car.CarBuilder()
-                    .setId(Long.valueOf(csvRecord.get("id")))
-                    .setBrand(csvRecord.get("brand"))
-                    .setModel(csvRecord.get("model"))
-                    .setVelocity(Integer.valueOf(csvRecord.get("velocity")))
-                    .setPrice(Double.valueOf(csvRecord.get("price")))
-                    .setBootVolume(Integer.valueOf(csvRecord.get("bootVolume")))
-                    .setBodywork(Enum.valueOf(Car.Bodywork.class,
-                            csvRecord.get("bodywork")))
+        try {
+            workbook = WorkbookFactory.create(file);
+            Iterator<Sheet> sheetIterator = workbook.sheetIterator();
+            while (sheetIterator.hasNext()) {
+                sheet = sheetIterator.next();
+
+                if (sheet.getSheetName().startsWith(CAR_SHEET_PREFIX)) {
+                    automobiles.addAll(loadCarsFromSheet(sheet));
+                } else if (sheet.getSheetName().startsWith(TRUCK_SHEET_PREFIX)) {
+                    automobiles.addAll(loadTrucksFromSheet(sheet));
+                }
+            }
+        }
+        finally {
+            if (workbook != null) {
+                workbook.close();
+            }
+        }
+
+        return automobiles;
+    }
+
+    private List<Automobile> loadCarsFromSheet(Sheet sheet) {
+        List<Automobile> automobiles = new ArrayList<Automobile>();
+        Iterator<Row> rowIterator = sheet.rowIterator();
+        rowIterator.next();
+
+        while (rowIterator.hasNext()) {
+            Row row = rowIterator.next();
+            Iterator<Cell> cellIterator = row.cellIterator();
+            long id = (long) (cellIterator.next().getNumericCellValue());
+
+            if (id == 0) {
+                break;
+            }
+
+            String brand = cellIterator.next().getStringCellValue();
+            String model = cellIterator.next().getStringCellValue();
+            int velocity = (int) (cellIterator.next().getNumericCellValue());
+            double price = cellIterator.next().getNumericCellValue();
+            int bootVolume = (int) (cellIterator.next().getNumericCellValue());
+            Car.Bodywork bodywork = Enum.valueOf(Car.Bodywork.class,
+                    cellIterator.next().getStringCellValue());
+            automobiles.add(new Car.CarBuilder().setId(id).setBrand(brand)
+                    .setModel(model).setVelocity(velocity).setPrice(price)
+                    .setBootVolume(bootVolume).setBodywork(bodywork)
                     .build());
         }
 
         return automobiles;
     }
 
-    private List<Automobile> loadTrucksFromFile(CSVParser csvParser) {
+    private List<Automobile> loadTrucksFromSheet(Sheet sheet) {
         List<Automobile> automobiles = new ArrayList<Automobile>();
+        Iterator<Row> rowIterator = sheet.rowIterator();
+        rowIterator.next();
 
-        for (CSVRecord csvRecord : csvParser) {
+        while (rowIterator.hasNext()) {
+            Row row = rowIterator.next();
+            Iterator<Cell> cellIterator = row.cellIterator();
+            long id = (long) (cellIterator.next().getNumericCellValue());
+
+            if (id == 0) {
+                break;
+            }
+
+            String brand = cellIterator.next().getStringCellValue();
+            String model = cellIterator.next().getStringCellValue();
+            int velocity = (int) (cellIterator.next().getNumericCellValue());
+            double price = cellIterator.next().getNumericCellValue();
+            String trailerBrand = cellIterator.next().getStringCellValue();
+            String trailerModel = cellIterator.next().getStringCellValue();
+            int carrying = (int) cellIterator.next().getNumericCellValue();
+            int volumeOfCargo = (int) (cellIterator.next().getNumericCellValue());
+            Truck.TrailerType trailerType = Enum.valueOf(Truck.TrailerType.class,
+                    cellIterator.next().getStringCellValue());
+            Truck.Loading loading = Enum.valueOf(Truck.Loading.class,
+                    cellIterator.next().getStringCellValue());
+
             automobiles.add(new Truck.TruckBuilder()
-                    .setId(Long.valueOf(csvRecord.get("id")))
-                    .setBrand(csvRecord.get("brand"))
-                    .setModel(csvRecord.get("model"))
-                    .setVelocity(Integer.valueOf(csvRecord.get("velocity")))
-                    .setPrice(Double.valueOf(csvRecord.get("price")))
-                    .setTrailerBrand(csvRecord.get("trailerBrand"))
-                    .setTrailerModel(csvRecord.get("trailerModel"))
-                    .setCarrying(Integer.valueOf(csvRecord.get("carrying")))
-                    .setVolumeOfCargo(Integer.valueOf(csvRecord
-                            .get("volumeOfCargo")))
-                    .setTrailerType(Enum.valueOf(Truck.TrailerType.class,
-                            csvRecord.get("trailerType")))
-                    .setLoading(Enum.valueOf(Truck.Loading.class,
-                            csvRecord.get("loading")))
+                    .setId(id).setBrand(brand).setModel(model)
+                    .setVelocity(velocity).setPrice(price)
+                    .setTrailerBrand(trailerBrand)
+                    .setTrailerModel(trailerModel)
+                    .setCarrying(carrying).setVolumeOfCargo(volumeOfCargo)
+                    .setTrailerType(trailerType)
+                    .setLoading(loading)
                     .build());
         }
-
         return automobiles;
     }
 }

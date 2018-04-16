@@ -13,68 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3307#3315#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CarPark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoaderFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoaderFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CSVAutomobileLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#1662#1674#0" expanded="true" />
-                <element signature="e#2496#2508#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelAutomobileLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="162">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -84,7 +27,103 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/AutomobileLoader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-169">
+              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVAutomobileLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="777">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelAutomobileLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="e#899#911#0" expanded="true" />
+                <element signature="e#1739#1751#0" expanded="true" />
+                <element signature="e#3035#3047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarPark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1931#1932#0" expanded="true" />
+                <element signature="e#1977#1978#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="118" column="8" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3552#3560#0" expanded="true" />
+                <element signature="e#3923#3931#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XSSFCell.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,22 +191,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobilePriceComparator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/ICarParkLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CarParkLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/CSVReaderWithHeader.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/cars-with-header.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVCarLoader.java" />
         <option value="$PROJECT_DIR$/src/main/resources/trucks-with-header.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/ExcelDriven.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/AutomobileLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java" />
       </list>
     </option>
   </component>
@@ -259,6 +299,15 @@
               <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,11 +333,6 @@
             </path>
             <path>
               <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -305,6 +349,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/jar/commons-logging-1.2.jar!/" />
     <property name="settings.editor.splitter.proportion" value="0.25614035" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -335,32 +380,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExampleTest.CSVDrivenTest">
+  <component name="RunManager" selected="JUnit.ExampleTest.ExcelDrivenTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="ExcelDriven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.catalog.comparator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.catalog.ExcelDriven" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Polimorfism" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -414,6 +440,31 @@
       <option name="PACKAGE_NAME" value="com.catalog" />
       <option name="MAIN_CLASS_NAME" value="com.catalog.ExampleTest" />
       <option name="METHOD_NAME" value="CSVDrivenTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ExampleTest.ExcelDrivenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.catalog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Polimorfism" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.catalog" />
+      <option name="MAIN_CLASS_NAME" value="com.catalog.ExampleTest" />
+      <option name="METHOD_NAME" value="ExcelDrivenTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -537,18 +588,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ExcelDriven" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleStatic" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleCategoryTree" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleStatic" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleCategoryTree" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExampleTest.ExcelDrivenTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleCategoryTree" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleStatic" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleTest.ExcelDrivenTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleCategoryTree" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ExampleTest.usageExampleStatic" />
       </list>
     </recent_temporary>
   </component>
@@ -569,35 +621,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 00m 23s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 12h 59m 52s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 03m 08s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 00m 31s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 05m 50s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 01m 29s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 08m 39s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 02m 49s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 09m 38s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 03m 08s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 11m 07s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 04m 09s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 14m 16s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 05m 09s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 21m 02s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 05m 17s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 14h 42m 59s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 13h 10m 43s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.14 at 16h 02m 05s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="ExampleTest_ExcelDrivenTest - 2018.04.16 at 18h 41m 30s.xml">
+      <configuration name="ExampleTest.ExcelDrivenTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -613,7 +665,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39077938" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39077938" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -669,125 +721,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1194#1195#0" expanded="false" />
-            <element signature="e#1330#1331#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1506#1507#0" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1668#1669#0" expanded="false" />
-            <element signature="e#1698#1699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/Refrigerator.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/TiltCoveredTruck.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3307#3315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#479#480#0" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#651#652#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#804#805#0" expanded="false" />
-            <element signature="e#936#937#0" expanded="false" />
-            <element signature="e#967#968#0" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-            <element signature="e#1120#1121#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#830#831#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-            <element signature="e#1002#1003#0" expanded="false" />
-            <element signature="e#1037#1038#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1194#1195#0" expanded="false" />
-            <element signature="e#1330#1331#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1506#1507#0" expanded="false" />
-            <element signature="e#1540#1541#0" expanded="false" />
-            <element signature="e#1668#1669#0" expanded="false" />
-            <element signature="e#1698#1699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/Refrigerator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/TiltCoveredTruck.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
@@ -796,12 +734,12 @@
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -812,7 +750,8 @@
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3307#3315#0" expanded="true" />
+            <element signature="e#3552#3560#0" expanded="true" />
+            <element signature="e#3923#3931#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -832,7 +771,8 @@
           <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3307#3315#0" expanded="true" />
+            <element signature="e#3552#3560#0" expanded="true" />
+            <element signature="e#3923#3931#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -929,22 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5.jar!/org/apache/commons/io/IOUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="107" column="29" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar!/org/apache/commons/csv/CSVParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
@@ -987,38 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3559">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1522">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/trucks-with-header.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="108" lean-forward="true" selection-start-line="0" selection-start-column="108" selection-end-line="0" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/cars-with-header.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/ExcelDriven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -1035,68 +927,374 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4-sources.jar!/org/apache/commons/csv/CSVParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="246" column="31" lean-forward="true" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.5/commons-io-2.5.jar!/org/apache/commons/io/IOUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+          <folding>
+            <marker date="1511726605142" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1511726605142" expanded="false" signature="145:1172" ph="..." />
+            <marker date="1511726605142" expanded="true" signature="1784:1791" ph="{}" />
+            <marker date="1511726605142" expanded="true" signature="1842:1961" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2013:2060" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2113:2161" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2218:2265" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2324:2372" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2431:2600" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="2663:2951" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="3002:3169" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="3226:3401" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="3458:3625" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="3717:3791" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="3893:3973" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4040:4150" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4227:4343" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4400:4510" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4577:4693" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4750:4860" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="4927:5043" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="5118:5377" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="5462:5727" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="5799:6051" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="6133:6391" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="6468:6636" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="6724:6948" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="7035:7711" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="7717:7735" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="7822:7890" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="7980:8162" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="8251:8323" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="8329:8347" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="8434:8498" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="8565:8613" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="8680:8889" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="8970:9203" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="9209:9227" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="9316:9381" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="9473:9639" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="9730:9799" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="9871:10004" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="10010:10028" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="10117:10182" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="10274:10436" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="10527:10596" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="10665:10803" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="10809:10827" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="10906:10969" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11051:11126" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11207:11274" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11280:11298" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="11377:11440" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11522:11754" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11835:11902" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="11908:11926" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="12010:12077" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="12163:12234" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="12240:12258" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="12354:12420" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="12519:12663" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="12761:12831" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="12907:13164" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="13225:13273" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="13375:13475" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="13576:13649" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="13655:13673" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="13754:13824" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="13908:13973" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14075:14149" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14155:14173" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="14248:14318" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14396:14490" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14586:14710" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14794:14872" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="14963:15276" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="15282:15300" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="15393:15455" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="15551:15671" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="15766:15832" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="15910:15988" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="16073:16386" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="16392:16410" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="16509:16571" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="16673:16804" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="16905:16971" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17055:17145" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17151:17169" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="17274:17336" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17444:17544" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17651:17717" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17795:17873" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="17879:17897" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="17996:18058" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="18160:18277" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="18378:18444" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="18450:18468" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="18567:18656" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="18662:18680" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="18785:18835" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="18841:18859" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="18981:19109" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="19115:19133" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="19264:19344" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="19478:19955" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="20088:20172" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="20282:20677" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="20765:20873" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="20978:21048" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="21142:21191" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="21300:21491" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="21616:21701" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="21841:22643" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="22649:22667" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="22765:22827" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="22933:23078" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="23183:23254" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="23331:23439" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="23522:23586" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="23684:23875" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="23989:24074" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="24203:24962" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="24968:24986" ph="/**...*/" />
+            <marker date="1511726605142" expanded="true" signature="25085:25147" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="25255:25426" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="25533:25605" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="25706:26442" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="26533:27026" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="27126:27653" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="27734:28328" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="28417:29070" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="29146:29740" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="29826:30175" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="30269:30618" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="30699:30881" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="30982:31514" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="31591:31668" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="31774:32306" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="32388:32470" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="32564:32820" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="32927:33122" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="33205:33280" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="33392:33587" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="33675:33755" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="33842:33987" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="34087:34313" ph="{...}" />
+            <marker date="1511726605142" expanded="true" signature="34326:34572" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/cars-with-header.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/poifs/filesystem/NPOIFSFileSystem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/poifs/filesystem/FileMagic.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar!/org/apache/poi/openxml4j/opc/PackageRelationshipCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="164" column="20" lean-forward="false" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+          <folding>
+            <marker date="1523469177569" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523469177569" expanded="false" signature="152:611" ph="..." />
+            <marker date="1523469177569" expanded="true" signature="1130:1235" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="1329:1765" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="1860:1923" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="2014:2058" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="2171:2838" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="2950:3225" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="3288:3435" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="3558:4136" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="4184:4543" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="4605:4837" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="4897:5486" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="5550:5625" ph="{...}" />
+            <marker date="1523469177569" expanded="false" signature="5648:5659" ph=" { " />
+            <marker date="1523469177569" expanded="false" signature="5705:5711" ph=" }" />
+            <marker date="1523469177569" expanded="true" signature="5804:7870" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="7949:8075" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="8129:8195" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="8266:8661" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="8687:8776" ph="{...}" />
+            <marker date="1523469177569" expanded="true" signature="8807:9634" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/util/POILogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding>
+            <marker date="1523473566605" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523473566605" expanded="true" signature="670:677" ph="{}" />
+            <marker date="1523473566605" expanded="true" signature="955:1617" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/org/apache/poi/ss/usermodel/Workbook.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
+          <folding>
+            <marker date="1523735902270" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1523735902270" expanded="false" signature="151:382" ph="..." />
+            <marker date="1523735902270" expanded="true" signature="1381:1399" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/B6710410">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/trucks-with-header.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="94" lean-forward="true" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/AutomobileLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#899#911#0" expanded="true" />
+            <element signature="e#1739#1751#0" expanded="true" />
+            <element signature="e#3035#3047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="577">
+          <caret line="118" column="8" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3307#3315#0" expanded="true" />
+            <element signature="e#3552#3560#0" expanded="true" />
+            <element signature="e#3923#3931#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#1662#1674#0" expanded="true" />
-            <element signature="e#2496#2508#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>

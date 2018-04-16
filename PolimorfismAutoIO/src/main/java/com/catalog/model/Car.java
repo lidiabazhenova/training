@@ -12,7 +12,9 @@ public class Car extends Automobile {
 
     public enum Bodywork {
         SEDAN,
-        COUPE;
+        COUPE,
+        VAN,
+        MINIVAN
     }
 
     private int bootVolume;

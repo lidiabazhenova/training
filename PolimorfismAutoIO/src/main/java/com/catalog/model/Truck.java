@@ -13,13 +13,13 @@ public class Truck extends Automobile {
 
     public enum TrailerType {
         REFRIGARATOR,
-        TILTCOVEREDTRUCK;
+        TILTCOVEREDTRUCK
     }
 
     public enum Loading {
         SIDE,
         TOP,
-        BACK;
+        BACK
     }
 
     private String trailerBrand;
@@ -138,6 +138,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting trailerBrand of truck in TruckBuilder
+         *
          * @param trailerBrand trailer brand
          * @return current object
          */
@@ -149,6 +150,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting trailerModel of truck in TruckBuilder
+         *
          * @param trailerModel trailer model
          * @return current object
          */
@@ -160,6 +162,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting carrying of truck in TruckBuilder
+         *
          * @param carrying truck carrying
          * @return current object
          */
@@ -175,6 +178,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting volumeOfCargo of truck in TruckBuilder
+         *
          * @param volumeOfCargo volume of cargo
          * @return current object
          */
@@ -190,6 +194,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting trailerType of truck in TruckBuilder
+         *
          * @param trailerType trailer type
          * @return current object
          */
@@ -201,6 +206,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for setting loading of truck in TruckBuilder
+         *
          * @param loading trailer loading
          * @return current object
          */
@@ -212,6 +218,7 @@ public class Truck extends Automobile {
 
         /**
          * Method for finish creating truck object in TruckBuilder
+         *
          * @return new object
          */
         public Truck build() {

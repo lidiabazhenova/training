@@ -4,6 +4,7 @@ import com.catalog.loader.LoaderFactory;
 import com.catalog.model.Car;
 import com.catalog.model.CarPark;
 import com.catalog.model.Truck;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -16,6 +17,8 @@ public class ExampleTest {
             "\\PolimorfismAutoIO\\src\\main\\resources\\cars-with-header.csv";
     private static final String CSV_FILE_PATH_2 = "C:\\projects\\training" +
             "\\PolimorfismAutoIO\\src\\main\\resources\\trucks-with-header.csv";
+    private static final String EXCEL_FILE_PATH_1 = "C:\\projects\\training" +
+            "\\PolimorfismAutoIO\\src\\main\\resources\\Automobiles.xlsx";
 
     @Test
     public void carParkList(){
@@ -95,15 +98,29 @@ public class ExampleTest {
 
 
     @Test
-    public void CSVDrivenTest() throws IOException {
+    public void CSVDrivenTest() throws IOException, InvalidFormatException {
         CarPark carPark = new CarPark();
 
         List<String> paths = new ArrayList<String>();
         paths.add(CSV_FILE_PATH_1);
         paths.add(CSV_FILE_PATH_2);
+
         carPark.loadAutomobilesFromFile(LoaderFactory.FileType.CSV, paths);
 
         carPark.printList();
     }
+
+    @Test
+    public void ExcelDrivenTest() throws IOException, InvalidFormatException {
+        CarPark carPark = new CarPark();
+
+        List<String> paths = new ArrayList<String>();
+        paths.add(EXCEL_FILE_PATH_1);
+        
+        carPark.loadAutomobilesFromFile(LoaderFactory.FileType.EXCEL, paths);
+
+        carPark.printList();
+    }
+
 
 }
