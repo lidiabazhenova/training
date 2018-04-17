@@ -1,5 +1,10 @@
 package com.catalog.loader;
 
+/**
+ * Class for generation object of concrete class based on given information.
+ * @author lidia
+ * @version 1.0
+ */
 public class LoaderFactory {
 
     public enum FileType {

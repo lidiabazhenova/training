@@ -11,11 +11,17 @@ package com.catalog.model;
  */
 public class Truck extends Automobile {
 
+    /**
+     * represent a fixed set of trailer type
+     */
     public enum TrailerType {
         REFRIGARATOR,
         TILTCOVEREDTRUCK
     }
 
+    /**
+     * represent a fixed set of loading
+     */
     public enum Loading {
         SIDE,
         TOP,

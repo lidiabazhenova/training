@@ -4,10 +4,13 @@ import com.catalog.model.Automobile;
 
 import java.util.Comparator;
 
+/**
+ ** Class for comparing automobiles by price
+ */
 public class AutomobilePriceComparator implements Comparator<Automobile> {
 
-    public int compare(Automobile o1, Automobile o2) {
-        return ((Double)o1.getPrice()).compareTo(o2.getPrice());
+    public int compare(Automobile automobile1, Automobile automobile2) {
+        return ((Double) automobile1.getPrice()).compareTo(automobile2.getPrice());
     }
 
 }

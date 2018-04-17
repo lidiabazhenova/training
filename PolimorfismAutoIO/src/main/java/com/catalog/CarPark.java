@@ -1,15 +1,13 @@
-package com.catalog.model;
+package com.catalog;
 
 import com.catalog.comparator.AutomobilePriceComparator;
 import com.catalog.comparator.AutomobileVelocityComparator;
+import com.catalog.exception.LoaderException;
 import com.catalog.loader.AutomobileLoader;
-import com.catalog.loader.CSVAutomobileLoader;
 import com.catalog.loader.LoaderFactory;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import com.catalog.model.Automobile;
 
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -51,13 +49,13 @@ public class CarPark {
      * Method for loading automobiles into car park from csv-file
      *
      * @param fileType file type
-     * @param paths list of paths
-     * @throws IOException
+     * @param paths    list of paths
+     * @throws LoaderException exceptions during load the carpark from the file
      */
-    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws IOException, InvalidFormatException {
+    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws LoaderException{
         LoaderFactory loaderFactory = new LoaderFactory();
 
-        for (String path: paths) {
+        for (String path : paths) {
             AutomobileLoader loader = loaderFactory.createLoader(fileType, path);
             automobiles.addAll(loader.load());
         }

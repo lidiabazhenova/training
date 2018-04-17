@@ -1,5 +1,6 @@
 package com.catalog.loader;
 
+import com.catalog.exception.LoaderException;
 import com.catalog.model.Automobile;
 import com.catalog.model.Car;
 import com.catalog.model.Truck;
@@ -18,24 +19,26 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
 
     private String path;
 
+    /**
+     * /**
+     * Create new object with parameters
+     *
+     * @param path xlsx-file path
+     */
     public ExcelAutomobileLoader(String path) {
         this.path = path;
     }
 
-    public List<Automobile> load() throws IOException, InvalidFormatException {
-        File file = new File(path);
-        String fileName = file.getName();
-
-        Workbook workbook = null;
-        Sheet sheet = null;
-
+    public List<Automobile> load() throws LoaderException {
         List<Automobile> automobiles = new ArrayList<Automobile>();
+        File file = new File(path);
+        Workbook workbook = null;
 
         try {
             workbook = WorkbookFactory.create(file);
             Iterator<Sheet> sheetIterator = workbook.sheetIterator();
             while (sheetIterator.hasNext()) {
-                sheet = sheetIterator.next();
+                Sheet sheet = sheetIterator.next();
 
                 if (sheet.getSheetName().startsWith(CAR_SHEET_PREFIX)) {
                     automobiles.addAll(loadCarsFromSheet(sheet));
@@ -43,10 +46,15 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
                     automobiles.addAll(loadTrucksFromSheet(sheet));
                 }
             }
-        }
-        finally {
+        } catch (IOException | InvalidFormatException ex) {
+            throw new LoaderException(ex.getMessage(), ex);
+        } finally {
             if (workbook != null) {
-                workbook.close();
+                try {
+                    workbook.close();
+                } catch (IOException ex) {
+                    throw new LoaderException(ex.getMessage(), ex);
+                }
             }
         }
 
@@ -104,11 +112,14 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
             String trailerBrand = cellIterator.next().getStringCellValue();
             String trailerModel = cellIterator.next().getStringCellValue();
             int carrying = (int) cellIterator.next().getNumericCellValue();
-            int volumeOfCargo = (int) (cellIterator.next().getNumericCellValue());
-            Truck.TrailerType trailerType = Enum.valueOf(Truck.TrailerType.class,
-                    cellIterator.next().getStringCellValue());
-            Truck.Loading loading = Enum.valueOf(Truck.Loading.class,
-                    cellIterator.next().getStringCellValue());
+            int volumeOfCargo = (int) (cellIterator.next()
+                    .getNumericCellValue());
+            Truck.TrailerType trailerType = Enum
+                    .valueOf(Truck.TrailerType.class,
+                            cellIterator.next().getStringCellValue());
+            Truck.Loading loading = Enum
+                    .valueOf(Truck.Loading.class,
+                            cellIterator.next().getStringCellValue());
 
             automobiles.add(new Truck.TruckBuilder()
                     .setId(id).setBrand(brand).setModel(model)

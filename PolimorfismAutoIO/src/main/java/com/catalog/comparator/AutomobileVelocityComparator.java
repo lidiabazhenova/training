@@ -4,10 +4,14 @@ import com.catalog.model.Automobile;
 
 import java.util.Comparator;
 
+/**
+ * Class for comparing automobiles by velocity
+ */
 public class AutomobileVelocityComparator implements Comparator<Automobile> {
 
-    public int compare(Automobile o1, Automobile o2) {
-        return o1.getVelocity().compareTo(o2.getVelocity());
+
+    public int compare(Automobile automobile1, Automobile automobile2) {
+        return ((Integer) automobile1.getVelocity()).compareTo(automobile2.getVelocity());
     }
 
 }

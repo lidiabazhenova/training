@@ -10,6 +10,9 @@ package com.catalog.model;
  */
 public class Car extends Automobile {
 
+    /**
+     * represent a fixed set of bodywork
+     */
     public enum Bodywork {
         SEDAN,
         COUPE,
@@ -76,12 +79,13 @@ public class Car extends Automobile {
 
         /**
          * Method for setting bootVolume of car in CarBuilder
+         *
          * @param bootVolume car boot volume
          * @return current object
          */
         public CarBuilder setBootVolume(Integer bootVolume) {
-            if((bootVolume == 0) || (bootVolume >50)){
-               throw  new IllegalArgumentException("Set correct boot volume");
+            if ((bootVolume == 0) || (bootVolume > 50)) {
+                throw new IllegalArgumentException("Set correct boot volume");
             }
 
             this.bootVolume = bootVolume;
@@ -91,6 +95,7 @@ public class Car extends Automobile {
 
         /**
          * Method for setting bodywork of car in CarBuilder
+         *
          * @param bodywork car bodywork
          * @return current object
          */
@@ -102,6 +107,7 @@ public class Car extends Automobile {
 
         /**
          * Method for finish creating car object in CarBuilder
+         *
          * @return new object
          */
         public Car build() {

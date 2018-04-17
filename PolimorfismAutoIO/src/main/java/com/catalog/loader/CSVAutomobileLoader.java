@@ -1,5 +1,6 @@
 package com.catalog.loader;
 
+import com.catalog.exception.LoaderException;
 import com.catalog.model.Automobile;
 import com.catalog.model.Car;
 import com.catalog.model.Truck;
@@ -15,6 +16,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for loading automobiles from csv-file
+ */
 public class CSVAutomobileLoader implements AutomobileLoader {
 
     private static final String CAR_FILE_PREFIX = "car";
@@ -22,11 +26,16 @@ public class CSVAutomobileLoader implements AutomobileLoader {
 
     private String path;
 
+    /**
+     * /**
+     * Create new object with parameters
+     * @param path csv-file path
+     */
     public CSVAutomobileLoader(String path) {
         this.path = path;
     }
 
-    public List<Automobile> load() throws IOException {
+    public List<Automobile> load() throws LoaderException {
         File file = new File(path);
         String fileName = file.getName();
 
@@ -45,7 +54,8 @@ public class CSVAutomobileLoader implements AutomobileLoader {
             }
 
             throw new IllegalArgumentException("File has invalid prefix");
-
+        } catch (IOException ex) {
+            throw new LoaderException(ex.getMessage(), ex);
         } finally {
             IOUtils.closeQuietly(reader);
         }

@@ -11,7 +11,7 @@ public abstract class Automobile {
     private long id;
     private String brand;
     private String model;
-    private Integer velocity;
+    private int velocity;
     private double price;
 
     /**
@@ -46,7 +46,7 @@ public abstract class Automobile {
      *
      * @return automobile velocity
      */
-    public Integer getVelocity() {
+    public int getVelocity() {
         return velocity;
     }
 

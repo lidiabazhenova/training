@@ -1,27 +1,22 @@
 package com.catalog;
 
+import com.catalog.exception.LoaderException;
 import com.catalog.loader.LoaderFactory;
 import com.catalog.model.Car;
-import com.catalog.model.CarPark;
 import com.catalog.model.Truck;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ExampleTest {
 
-    private static final String CSV_FILE_PATH_1 = "C:\\projects\\training" +
-            "\\PolimorfismAutoIO\\src\\main\\resources\\cars-with-header.csv";
-    private static final String CSV_FILE_PATH_2 = "C:\\projects\\training" +
-            "\\PolimorfismAutoIO\\src\\main\\resources\\trucks-with-header.csv";
-    private static final String EXCEL_FILE_PATH_1 = "C:\\projects\\training" +
-            "\\PolimorfismAutoIO\\src\\main\\resources\\Automobiles.xlsx";
+    private static final String CSV_FILE_PATH_1 = "src\\test\\resources\\cars-with-header.csv";
+    private static final String CSV_FILE_PATH_2 = "src\\test\\resources\\trucks-with-header.csv";
+    private static final String EXCEL_FILE_PATH_1 = "src\\test\\resources\\Automobiles.xlsx";
 
     @Test
-    public void carParkList(){
+    public void carParkList() {
         CarPark carPark = new CarPark();
 
         carPark.printList();
@@ -98,7 +93,7 @@ public class ExampleTest {
 
 
     @Test
-    public void CSVDrivenTest() throws IOException, InvalidFormatException {
+    public void CSVDrivenTest() throws LoaderException {
         CarPark carPark = new CarPark();
 
         List<String> paths = new ArrayList<String>();
@@ -111,12 +106,12 @@ public class ExampleTest {
     }
 
     @Test
-    public void ExcelDrivenTest() throws IOException, InvalidFormatException {
+    public void ExcelDrivenTest() throws LoaderException {
         CarPark carPark = new CarPark();
 
         List<String> paths = new ArrayList<String>();
         paths.add(EXCEL_FILE_PATH_1);
-        
+
         carPark.loadAutomobilesFromFile(LoaderFactory.FileType.EXCEL, paths);
 
         carPark.printList();
