@@ -1,7 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f8fd3da-fa53-4e7f-bad1-3ad3bee20108" name="Default" comment="" />
+    <list default="true" id="4f8fd3da-fa53-4e7f-bad1-3ad3bee20108" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/codeStyles/codeStyleConfig.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__antlr_antlr_2_7_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_validator_commons_validator_1_3_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_compress_1_11.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_csv_1_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_7_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_logging_api_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_7_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_skin_model_1_7_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_archiver_3_1_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_plugins_maven_javadoc_plugin_maven_plugin_3_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_artifact_transfer_0_9_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_common_artifact_filters_3_0_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_invoker_2_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_3_13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_13.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_3_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_30.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_io_2_7_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_java_0_9_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_24.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_iq80_snappy_snappy_0_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_ow2_asm_asm_6_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_tukaani_xz_1_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__sslext_sslext_1_2_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__xmlunit_xmlunit_1_5.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/Polimorfism.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/pom.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/CarPark.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/comparator/AutomobilePriceComparator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/exception/LoaderException.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/AutomobileLoader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/LoaderFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Automobile.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Car.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Truck.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/CarParkTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/ExampleTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/LoaderFactoryTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/model/CarBuilderTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/model/TruckBuilderTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/Automobiles.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/cars-with-header.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/trucks-with-header.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/CarPark.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/comparator/AutomobilePriceComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/comparator/AutomobileVelocityComparator.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/exception/LoaderException.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/AutomobileLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/CSVAutomobileLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/ExcelAutomobileLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/LoaderFactory$FileType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/LoaderFactory.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Automobile$AutomobileBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Automobile.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car$Bodywork.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car$CarBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$Loading.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$TrailerType.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$TruckBuilder.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/~$Automobiles.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/allclasses-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/allclasses-noframe.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/CarParkTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/ExampleTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Automobile.AutomobileBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Automobile.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/AutomobilePriceComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/AutomobileVelocityComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.Bodywork.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.CarBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.Loading.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.TrailerType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.TruckBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobilePriceComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobilePriceComparatorTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobileVelocityComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobileVelocityComparatorTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/LoaderException.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/AutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/CSVAutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/CSVAutomobileLoaderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/ExcelAutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/ExcelAutomobileLoaderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactory.FileType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactory.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactoryTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Automobile.AutomobileBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Automobile.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.Bodywork.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.CarBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/CarBuilderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.Loading.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.TrailerType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.TruckBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/TruckBuilderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/constant-values.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/deprecated-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/help-doc.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-10.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-8.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-9.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/script.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/serialized-form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/stylesheet.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/Automobiles.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/cars-with-header.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/CarParkTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/ExampleTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/comparator/AutomobilePriceComparatorTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/comparator/AutomobileVelocityComparatorTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/CSVAutomobileLoaderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/ExcelAutomobileLoaderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/LoaderFactoryTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/model/CarBuilderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/model/TruckBuilderTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/trucks-with-header.csv" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/~$Automobiles.xlsx" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,12 +241,12 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+                <state relative-caret-position="1071">
+                  <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -28,8 +255,8 @@
           <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="452">
-                  <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+                <state relative-caret-position="21">
+                  <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -38,8 +265,8 @@
           <file leaf-file-name="AutomobilePriceComparatorTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="616">
-                  <caret line="44" column="5" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
+                <state relative-caret-position="882">
+                  <caret line="44" column="5" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -50,8 +277,8 @@
           <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pom.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="819">
-                  <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+                <state relative-caret-position="-197">
+                  <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -60,8 +287,8 @@
           <file leaf-file-name="AutomobileVelocityComparatorTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                <state relative-caret-position="483">
+                  <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -82,7 +309,7 @@
           <file leaf-file-name="AutomobileVelocityComparator.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="263">
+                <state relative-caret-position="231">
                   <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -94,8 +321,8 @@
           <file leaf-file-name="Automobile.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+                <state relative-caret-position="63">
+                  <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
                   <folding>
                     <element signature="e#928#929#0" expanded="true" />
                     <element signature="e#959#960#0" expanded="true" />
@@ -107,8 +334,8 @@
           <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="409">
-                  <caret line="30" column="26" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
+                <state relative-caret-position="483">
+                  <caret line="30" column="26" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -138,7 +365,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="336">
-                  <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+                  <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -147,7 +374,7 @@
           <file leaf-file-name="CarParkTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
+                <state relative-caret-position="336">
                   <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -169,8 +396,8 @@
           <file leaf-file-name="CarPark.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="222">
-                  <caret line="93" column="33" lean-forward="true" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+                <state relative-caret-position="1638">
+                  <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -179,12 +406,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="AutomobilePriceComparatorTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="582">
-                  <caret line="30" column="16" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+                <state relative-caret-position="603">
+                  <caret line="31" column="0" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="31" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -213,6 +440,9 @@
       <replace>workbook</replace>
       <replace>colomnNumber</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -256,7 +486,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/trucks-with-header.csv" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/ExcelDriven.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/AutomobileLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" />
@@ -273,6 +502,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -289,6 +519,7 @@
     <option name="width" value="1578" />
     <option name="height" value="921" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -312,98 +543,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="comparator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
-              <item name="loader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PolimorfismAutoIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PolimorfismAutoIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,12 +553,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.505676" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/jar/commons-logging-1.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.splitter.proportion" value="0.25614035" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -617,6 +758,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Polimorfism" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -724,36 +877,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39077938" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19479166" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" x="568" y="60" width="319" height="624" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -803,7 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1285" column="30" lean-forward="false" selection-start-line="1285" selection-start-column="30" selection-end-line="1285" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,7 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="1214" column="29" lean-forward="false" selection-start-line="1214" selection-start-column="29" selection-end-line="1214" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -822,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,73 +986,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="702" column="21" lean-forward="false" selection-start-line="702" selection-start-column="21" selection-end-line="702" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CSVReaderWithHeader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CSVReaderWithHeader.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.4/commons-csv-1.4.jar!/org/apache/commons/csv/CSVParser.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
           <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <marker date="1523539625508" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523539625508" expanded="false" signature="146:651" ph="..." />
-            <marker date="1523539625508" expanded="true" signature="1092:1284" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="1372:1535" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="1634:1863" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="1938:1983" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="2099:2530" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="2584:2969" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="3014:3098" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="3139:3196" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="3245:3334" ph="{...}" />
-            <marker date="1523539625508" expanded="false" signature="3369:3380" ph=" { " />
-            <marker date="1523539625508" expanded="false" signature="3405:3411" ph=" }" />
-            <marker date="1523539625508" expanded="true" signature="3472:3664" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="3737:5186" ph="{...}" />
-            <marker date="1523539625508" expanded="false" signature="5217:5228" ph=" { " />
-            <marker date="1523539625508" expanded="false" signature="5257:5263" ph=" }" />
-            <marker date="1523539625508" expanded="true" signature="5307:6769" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="5350:6762" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="5438:5648" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="5687:6009" ph="{...}" />
-            <marker date="1523539625508" expanded="true" signature="6047:6643" ph="{...}" />
-            <marker date="1523539625508" expanded="false" signature="6677:6696" ph=" { " />
-            <marker date="1523539625508" expanded="false" signature="6738:6752" ph=" }" />
-            <marker date="1523539625508" expanded="true" signature="6817:8486" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/ExcelDriven.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/ExcelDriven.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/ExcelReader.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="117" column="5" lean-forward="true" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="246" column="31" lean-forward="true" selection-start-line="246" selection-start-column="31" selection-end-line="246" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,155 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
-          <folding>
-            <marker date="1511726605142" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1511726605142" expanded="false" signature="145:1172" ph="..." />
-            <marker date="1511726605142" expanded="true" signature="1784:1791" ph="{}" />
-            <marker date="1511726605142" expanded="true" signature="1842:1961" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2013:2060" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2113:2161" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2218:2265" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2324:2372" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2431:2600" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="2663:2951" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="3002:3169" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="3226:3401" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="3458:3625" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="3717:3791" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="3893:3973" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4040:4150" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4227:4343" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4400:4510" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4577:4693" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4750:4860" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="4927:5043" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="5118:5377" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="5462:5727" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="5799:6051" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="6133:6391" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="6468:6636" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="6724:6948" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="7035:7711" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="7717:7735" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="7822:7890" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="7980:8162" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="8251:8323" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="8329:8347" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="8434:8498" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="8565:8613" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="8680:8889" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="8970:9203" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="9209:9227" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="9316:9381" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="9473:9639" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="9730:9799" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="9871:10004" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="10010:10028" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="10117:10182" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="10274:10436" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="10527:10596" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="10665:10803" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="10809:10827" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="10906:10969" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11051:11126" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11207:11274" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11280:11298" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="11377:11440" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11522:11754" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11835:11902" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="11908:11926" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="12010:12077" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="12163:12234" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="12240:12258" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="12354:12420" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="12519:12663" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="12761:12831" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="12907:13164" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="13225:13273" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="13375:13475" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="13576:13649" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="13655:13673" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="13754:13824" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="13908:13973" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14075:14149" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14155:14173" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="14248:14318" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14396:14490" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14586:14710" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14794:14872" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="14963:15276" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="15282:15300" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="15393:15455" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="15551:15671" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="15766:15832" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="15910:15988" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="16073:16386" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="16392:16410" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="16509:16571" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="16673:16804" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="16905:16971" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17055:17145" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17151:17169" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="17274:17336" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17444:17544" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17651:17717" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17795:17873" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="17879:17897" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="17996:18058" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="18160:18277" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="18378:18444" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="18450:18468" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="18567:18656" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="18662:18680" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="18785:18835" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="18841:18859" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="18981:19109" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="19115:19133" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="19264:19344" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="19478:19955" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="20088:20172" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="20282:20677" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="20765:20873" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="20978:21048" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="21142:21191" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="21300:21491" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="21616:21701" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="21841:22643" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="22649:22667" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="22765:22827" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="22933:23078" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="23183:23254" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="23331:23439" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="23522:23586" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="23684:23875" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="23989:24074" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="24203:24962" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="24968:24986" ph="/**...*/" />
-            <marker date="1511726605142" expanded="true" signature="25085:25147" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="25255:25426" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="25533:25605" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="25706:26442" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="26533:27026" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="27126:27653" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="27734:28328" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="28417:29070" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="29146:29740" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="29826:30175" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="30269:30618" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="30699:30881" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="30982:31514" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="31591:31668" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="31774:32306" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="32388:32470" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="32564:32820" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="32927:33122" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="33205:33280" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="33392:33587" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="33675:33755" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="33842:33987" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="34087:34313" ph="{...}" />
-            <marker date="1511726605142" expanded="true" signature="34326:34572" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,30 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="164" column="20" lean-forward="false" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
-          <folding>
-            <marker date="1523469177569" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523469177569" expanded="false" signature="152:611" ph="..." />
-            <marker date="1523469177569" expanded="true" signature="1130:1235" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="1329:1765" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="1860:1923" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="2014:2058" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="2171:2838" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="2950:3225" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="3288:3435" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="3558:4136" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="4184:4543" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="4605:4837" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="4897:5486" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="5550:5625" ph="{...}" />
-            <marker date="1523469177569" expanded="false" signature="5648:5659" ph=" { " />
-            <marker date="1523469177569" expanded="false" signature="5705:5711" ph=" }" />
-            <marker date="1523469177569" expanded="true" signature="5804:7870" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="7949:8075" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="8129:8195" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="8266:8661" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="8687:8776" ph="{...}" />
-            <marker date="1523469177569" expanded="true" signature="8807:9634" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,11 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding>
-            <marker date="1523473566605" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523473566605" expanded="true" signature="670:677" ph="{}" />
-            <marker date="1523473566605" expanded="true" signature="955:1617" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,27 +1059,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="46" column="10" lean-forward="false" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-          <folding>
-            <marker date="1523735902270" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523735902270" expanded="false" signature="151:382" ph="..." />
-            <marker date="1523735902270" expanded="true" signature="1381:1399" ph="/**...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/B6710410">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/B6710410" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/trucks-with-header.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="94" lean-forward="true" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,11 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1511726600327" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1511726600327" expanded="true" signature="277:284" ph="{}" />
-            <marker date="1511726600327" expanded="true" signature="327:499" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1183,76 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding>
-            <marker date="1523735885403" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1523735885403" expanded="false" signature="153:1543" ph="..." />
-            <marker date="1523735885403" expanded="true" signature="1925:2485" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="2544:2592" ph="{...}" />
-            <marker date="1523735885403" expanded="false" signature="2637:2648" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="2674:2680" ph=" }" />
-            <marker date="1523735885403" expanded="false" signature="2713:2724" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="2756:2762" ph=" }" />
-            <marker date="1523735885403" expanded="false" signature="2791:2802" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="2819:2825" ph=" }" />
-            <marker date="1523735885403" expanded="true" signature="2868:3244" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="3290:3380" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="3422:4077" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="4122:4539" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="4580:4704" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="4761:6156" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="6253:6394" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="6437:6539" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="6590:7764" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="7801:8362" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="8412:9401" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="9450:9600" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="9671:9873" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="9936:10578" ph="{...}" />
-            <marker date="1523735885403" expanded="false" signature="10611:10622" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="10643:10649" ph=" }" />
-            <marker date="1523735885403" expanded="false" signature="10679:10690" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="10719:10725" ph=" }" />
-            <marker date="1523735885403" expanded="true" signature="10760:10886" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="10928:11191" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="11239:11618" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="11656:11758" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="11789:11866" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="11912:12118" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="12172:12620" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="12657:12976" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13019:13164" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13211:13356" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13397:13601" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13639:13769" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13821:13928" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="13984:14074" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="14110:14177" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="14207:14478" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="14519:14713" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="14757:16455" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="16486:17326" ph="{...}" />
-            <marker date="1523735885403" expanded="false" signature="17359:17370" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="17395:17401" ph=" }" />
-            <marker date="1523735885403" expanded="true" signature="17463:17862" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="17978:18210" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="18263:18667" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="18709:18809" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="18859:19064" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="19102:19452" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="19494:19584" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="19636:19957" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="19993:20079" ph="{...}" />
-            <marker date="1523735885403" expanded="false" signature="20124:20135" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="20153:20159" ph=" }" />
-            <marker date="1523735885403" expanded="false" signature="20213:20224" ph=" { " />
-            <marker date="1523735885403" expanded="false" signature="20242:20248" ph=" }" />
-            <marker date="1523735885403" expanded="true" signature="20298:21075" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="21123:22523" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="22576:22943" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="22992:23065" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="23115:23423" ph="{...}" />
-            <marker date="1523735885403" expanded="true" signature="23463:23707" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1260,13 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
           <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="e#745#746#0" expanded="false" />
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#892#904#0" expanded="false" />
-            <element signature="e#2075#2087#0" expanded="false" />
-            <element signature="e#3371#3383#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1274,7 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="153" column="65" lean-forward="true" selection-start-line="153" selection-start-column="65" selection-end-line="153" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,7 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,7 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,7 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,14 +1138,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        <state relative-caret-position="63">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="e#928#929#0" expanded="true" />
             <element signature="e#959#960#0" expanded="true" />
@@ -1339,16 +1154,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        <state relative-caret-position="1071">
+          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1371,7 +1178,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="336">
           <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1381,23 +1188,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="93" column="33" lean-forward="true" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+        <state relative-caret-position="1638">
+          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="483">
+          <caret line="30" column="26" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
+        <state relative-caret-position="231">
           <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1415,8 +1222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
+        <state relative-caret-position="882">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1425,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="483">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1444,15 +1251,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        <state relative-caret-position="-197">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
           <folding />
         </state>
       </provider>
