@@ -1,8 +1,7 @@
 package com.catalog.model;
 
 /**
- * Abstract class for objects with properties:
- * <b>id</b>, <b>brand</b>, <b>model</b>, <b>velocity</b>, <b>price</b>.
+ * Abstract Class for automobiles
  *
  * @author lidia
  * @version 1.0
@@ -64,7 +63,6 @@ public abstract class Automobile {
      *
      * @param automobileBuilder builder
      * @see AutomobileBuilder
-     * @see #Automobile()
      */
     public Automobile(AutomobileBuilder automobileBuilder) {
         this.id = automobileBuilder.id;
@@ -72,12 +70,6 @@ public abstract class Automobile {
         this.model = automobileBuilder.model;
         this.velocity = automobileBuilder.velocity;
         this.price = automobileBuilder.price;
-    }
-
-    /**
-     * Create new empty object
-     */
-    public Automobile() {
     }
 
     /**
@@ -99,7 +91,6 @@ public abstract class Automobile {
 
         return description.toString();
     }
-
 
     @Override
     public boolean equals(Object o) {

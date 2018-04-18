@@ -5,7 +5,7 @@ import com.catalog.model.Automobile;
 import java.util.Comparator;
 
 /**
- ** Class for comparing automobiles by price
+ * * Class for comparing automobiles by price
  */
 public class AutomobilePriceComparator implements Comparator<Automobile> {
 

@@ -1,10 +1,7 @@
 package com.catalog.model;
 
 /**
- * Class for objects with properties:
- * <b>id</b>, <b>brand</b>, <b>model</b>, <b>velocity</b>, <b>price</b>,
- * <b>trailerBrand</b>, <b>trailerModel</b>, <b>carrying</b>,
- * <b>volumeOfCargo</b>, <b>trailerType</b>, <b>loading</b>.
+ * Class that represent truck
  *
  * @author lidia
  * @version 1.0

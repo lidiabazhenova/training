@@ -30,7 +30,7 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
     }
 
     public List<Automobile> load() throws LoaderException {
-        List<Automobile> automobiles = new ArrayList<Automobile>();
+        List<Automobile> automobiles = new ArrayList<>();
         File file = new File(path);
         Workbook workbook = null;
 
@@ -42,7 +42,8 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
 
                 if (sheet.getSheetName().startsWith(CAR_SHEET_PREFIX)) {
                     automobiles.addAll(loadCarsFromSheet(sheet));
-                } else if (sheet.getSheetName().startsWith(TRUCK_SHEET_PREFIX)) {
+                } else if (sheet.getSheetName().startsWith(TRUCK_SHEET_PREFIX))
+                {
                     automobiles.addAll(loadTrucksFromSheet(sheet));
                 }
             }
@@ -62,7 +63,7 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
     }
 
     private List<Automobile> loadCarsFromSheet(Sheet sheet) {
-        List<Automobile> automobiles = new ArrayList<Automobile>();
+        List<Automobile> automobiles = new ArrayList<>();
         Iterator<Row> rowIterator = sheet.rowIterator();
         rowIterator.next();
 
@@ -82,9 +83,14 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
             int bootVolume = (int) (cellIterator.next().getNumericCellValue());
             Car.Bodywork bodywork = Enum.valueOf(Car.Bodywork.class,
                     cellIterator.next().getStringCellValue());
-            automobiles.add(new Car.CarBuilder().setId(id).setBrand(brand)
-                    .setModel(model).setVelocity(velocity).setPrice(price)
-                    .setBootVolume(bootVolume).setBodywork(bodywork)
+            automobiles.add(new Car.CarBuilder()
+                    .setId(id)
+                    .setBrand(brand)
+                    .setModel(model)
+                    .setVelocity(velocity)
+                    .setPrice(price)
+                    .setBootVolume(bootVolume)
+                    .setBodywork(bodywork)
                     .build());
         }
 
@@ -92,7 +98,7 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
     }
 
     private List<Automobile> loadTrucksFromSheet(Sheet sheet) {
-        List<Automobile> automobiles = new ArrayList<Automobile>();
+        List<Automobile> automobiles = new ArrayList<>();
         Iterator<Row> rowIterator = sheet.rowIterator();
         rowIterator.next();
 
@@ -122,15 +128,20 @@ public class ExcelAutomobileLoader implements AutomobileLoader {
                             cellIterator.next().getStringCellValue());
 
             automobiles.add(new Truck.TruckBuilder()
-                    .setId(id).setBrand(brand).setModel(model)
-                    .setVelocity(velocity).setPrice(price)
+                    .setId(id)
+                    .setBrand(brand)
+                    .setModel(model)
+                    .setVelocity(velocity)
+                    .setPrice(price)
                     .setTrailerBrand(trailerBrand)
                     .setTrailerModel(trailerModel)
-                    .setCarrying(carrying).setVolumeOfCargo(volumeOfCargo)
+                    .setCarrying(carrying)
+                    .setVolumeOfCargo(volumeOfCargo)
                     .setTrailerType(trailerType)
                     .setLoading(loading)
                     .build());
         }
+
         return automobiles;
     }
 }

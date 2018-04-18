@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Double.valueOf;
+
 /**
  * Class for loading automobiles from csv-file
  */
@@ -29,6 +31,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     /**
      * /**
      * Create new object with parameters
+     *
      * @param path csv-file path
      */
     public CSVAutomobileLoader(String path) {
@@ -52,8 +55,8 @@ public class CSVAutomobileLoader implements AutomobileLoader {
             } else if (fileName.startsWith(TRUCK_FILE_PREFIX)) {
                 return loadTrucksFromFile(csvParser);
             }
-
             throw new IllegalArgumentException("File has invalid prefix");
+
         } catch (IOException ex) {
             throw new LoaderException(ex.getMessage(), ex);
         } finally {
@@ -62,7 +65,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     }
 
     private List<Automobile> loadCarsFromFile(CSVParser csvParser) {
-        List<Automobile> automobiles = new ArrayList<Automobile>();
+        List<Automobile> automobiles = new ArrayList<>();
 
         for (CSVRecord csvRecord : csvParser) {
             automobiles.add(new Car.CarBuilder()
@@ -70,7 +73,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
                     .setBrand(csvRecord.get("brand"))
                     .setModel(csvRecord.get("model"))
                     .setVelocity(Integer.valueOf(csvRecord.get("velocity")))
-                    .setPrice(Double.valueOf(csvRecord.get("price")))
+                    .setPrice(valueOf(csvRecord.get("price")))
                     .setBootVolume(Integer.valueOf(csvRecord.get("bootVolume")))
                     .setBodywork(Enum.valueOf(Car.Bodywork.class,
                             csvRecord.get("bodywork")))
@@ -81,7 +84,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     }
 
     private List<Automobile> loadTrucksFromFile(CSVParser csvParser) {
-        List<Automobile> automobiles = new ArrayList<Automobile>();
+        List<Automobile> automobiles = new ArrayList<>();
 
         for (CSVRecord csvRecord : csvParser) {
             automobiles.add(new Truck.TruckBuilder()

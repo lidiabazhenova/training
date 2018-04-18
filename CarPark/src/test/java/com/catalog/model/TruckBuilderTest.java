@@ -36,7 +36,7 @@ public class TruckBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testTruckValidationId() throws NullPointerException {
-        Truck R = new Truck.TruckBuilder()
+        new Truck.TruckBuilder()
                 .setBrand("Audi")
                 .setModel("A6")
                 .setVelocity(300)
@@ -46,7 +46,7 @@ public class TruckBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testTruckValidationBrand() throws NullPointerException {
-        Truck truck = new Truck.TruckBuilder()
+        new Truck.TruckBuilder()
                 .setId(123456L)
                 .setModel("FH-16")
                 .setVelocity(300)
@@ -56,7 +56,7 @@ public class TruckBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testTruckValidationModel() throws NullPointerException {
-        Truck truck = new Truck.TruckBuilder()
+        new Truck.TruckBuilder()
                 .setId(123456L)
                 .setBrand("Volvo")
                 .setVelocity(300)
@@ -66,7 +66,7 @@ public class TruckBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testTruckValidationVelocity() throws NullPointerException {
-        Truck truck = new Truck.TruckBuilder()
+        new Truck.TruckBuilder()
                 .setId(123456L)
                 .setBrand("Volvo")
                 .setModel("FH-16")
@@ -76,7 +76,7 @@ public class TruckBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testTruckValidationPrice() throws NullPointerException {
-        Truck truck = new Truck.TruckBuilder()
+        new Truck.TruckBuilder()
                 .setId(123456L)
                 .setBrand("Volvo")
                 .setModel("FH-16")
@@ -86,25 +86,25 @@ public class TruckBuilderTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testTruckValidationPriceLower() throws IllegalArgumentException {
-        Truck truck = new Truck.TruckBuilder().setPrice(99.0)
+        new Truck.TruckBuilder().setPrice(99.0)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testTruckValidationPriceHigher() throws IllegalArgumentException {
-        Truck truck = new Truck.TruckBuilder().setPrice(9900000.0)
+        new Truck.TruckBuilder().setPrice(9900000.0)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testTruckValidationVelocityLower() throws IllegalArgumentException {
-        Truck truck = new Truck.TruckBuilder().setVelocity(-99)
+        new Truck.TruckBuilder().setVelocity(-99)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testTruckValidationVelocityHigher() throws IllegalArgumentException {
-        Truck truck = new Truck.TruckBuilder().setVelocity(990)
+        new Truck.TruckBuilder().setVelocity(990)
                 .build();
     }
 }

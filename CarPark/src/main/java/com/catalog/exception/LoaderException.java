@@ -7,8 +7,9 @@ public class LoaderException extends Exception {
 
     /**
      * Exception constructor.
+     *
      * @param message exception message
-     * @param cause cause of the exception
+     * @param cause   cause of the exception
      */
     public LoaderException(String message, Throwable cause) {
         super(message, cause);

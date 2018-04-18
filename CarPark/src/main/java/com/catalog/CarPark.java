@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Class for objects with property automobiles
+ * Class contains methods for use automobiles in car park
  *
  * @author lidia
  * @version 1.0
@@ -24,7 +24,7 @@ public class CarPark {
      * Create new empty object
      */
     public CarPark() {
-        automobiles = new ArrayList<Automobile>();
+        automobiles = new ArrayList<>();
     }
 
     /**
@@ -50,7 +50,7 @@ public class CarPark {
      *
      * @param fileType file type
      * @param paths    list of paths
-     * @throws LoaderException exceptions during load the carpark from the file
+     * @throws LoaderException exceptions during load the car park from the file
      */
     public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws LoaderException{
         LoaderFactory loaderFactory = new LoaderFactory();

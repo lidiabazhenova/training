@@ -30,7 +30,7 @@ public class CarBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testCarValidationId() throws NullPointerException {
-        Car car = new Car.CarBuilder()
+        new Car.CarBuilder()
                 .setBrand("Audi")
                 .setModel("A6")
                 .setVelocity(300)
@@ -40,7 +40,7 @@ public class CarBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testCarValidationBrand() throws NullPointerException {
-        Car car = new Car.CarBuilder()
+        new Car.CarBuilder()
                 .setId(123456L)
                 .setModel("A6")
                 .setVelocity(300)
@@ -50,7 +50,7 @@ public class CarBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testCarValidationModel() throws NullPointerException {
-        Car car = new Car.CarBuilder()
+        new Car.CarBuilder()
                 .setId(123456L)
                 .setBrand("Audi")
                 .setVelocity(300)
@@ -60,7 +60,7 @@ public class CarBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testCarValidationVelocity() throws NullPointerException {
-        Car car = new Car.CarBuilder()
+        new Car.CarBuilder()
                 .setId(123456L)
                 .setBrand("Audi")
                 .setModel("A6")
@@ -70,7 +70,7 @@ public class CarBuilderTest {
 
     @Test(expected = NullPointerException.class)
     public void testCarValidationPriceNotNull() throws NullPointerException {
-        Car car = new Car.CarBuilder()
+        new Car.CarBuilder()
                 .setId(123456L)
                 .setBrand("Audi")
                 .setModel("A6")
@@ -80,25 +80,37 @@ public class CarBuilderTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void testCarValidationPriceLower() throws IllegalArgumentException {
-        Car car = new Car.CarBuilder().setPrice(99.0)
+        new Car.CarBuilder().setPrice(99.0)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testCarValidationPriceHigher() throws IllegalArgumentException {
-        Car car = new Car.CarBuilder().setPrice(9900000.0)
+        new Car.CarBuilder().setPrice(9900000.0)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testCarValidationVelocityLower() throws IllegalArgumentException {
-        Car car = new Car.CarBuilder().setVelocity(-99)
+        new Car.CarBuilder().setVelocity(-99)
                 .build();
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testCarValidationVelocityHigher() throws IllegalArgumentException {
-        Car car = new Car.CarBuilder().setVelocity(990)
+        new Car.CarBuilder().setVelocity(990)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCarValidationBootVolumeLower() throws IllegalArgumentException {
+        new Car.CarBuilder().setBootVolume(-90)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCarValidationsBootVolumeHigher() throws IllegalArgumentException {
+        new Car.CarBuilder().setBootVolume(990)
                 .build();
     }
 }

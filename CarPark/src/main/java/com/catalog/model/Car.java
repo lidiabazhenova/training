@@ -1,10 +1,7 @@
 package com.catalog.model;
 
 /**
- * Class for objects with properties:
- * <b>id</b>, <b>brand</b>, <b>model</b>, <b>velocity</b>, <b>price</b>,
- * <b>bootVolume</b>, <b>bodywork</b>.
- *
+ * Class that represent car
  * @author lidia
  * @version 1.0
  */
@@ -84,7 +81,7 @@ public class Car extends Automobile {
          * @return current object
          */
         public CarBuilder setBootVolume(int bootVolume) {
-            if ((bootVolume == 0) || (bootVolume > 50)) {
+            if ((bootVolume <= 0) || (bootVolume > 50)) {
                 throw new IllegalArgumentException("Set correct boot volume");
             }
 

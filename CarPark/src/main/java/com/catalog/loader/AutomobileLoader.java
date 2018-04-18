@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * Interface
+ *
  * @author lidia
  * @version 1.0
  */
@@ -17,6 +18,7 @@ public interface AutomobileLoader {
 
     /**
      * Method for loading automobiles from file
+     *
      * @return list of automobiles
      * @throws LoaderException exceptions during load from the file
      */
