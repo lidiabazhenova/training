@@ -17,7 +17,7 @@ public class TruckBuilderTest {
                 .setTrailerModel("B1997")
                 .setTrailerType(com.catalog.model.Truck.TrailerType.REFRIGARATOR)
                 .setCarrying(20)
-                //.setVolumeOfCargo(92)
+                .setVolumeOfCargo(92)
                 .setLoading(com.catalog.model.Truck.Loading.BACK)
                 .build();
 
@@ -30,9 +30,81 @@ public class TruckBuilderTest {
         assertEquals("B1997", truck.getTrailerModel());
         assertEquals(com.catalog.model.Truck.TrailerType.REFRIGARATOR, truck.getTrailerType());
         assertEquals(20, truck.getCarrying());
-       // assertEquals(92, truck.getVolumeOfCargo());
+        assertEquals(92, truck.getVolumeOfCargo());
         assertEquals(com.catalog.model.Truck.Loading.BACK, truck.getLoading());
+    }
 
+    @Test(expected = NullPointerException.class)
+    public void testTruckValidationId() throws NullPointerException {
+        Truck R = new Truck.TruckBuilder()
+                .setBrand("Audi")
+                .setModel("A6")
+                .setVelocity(300)
+                .setPrice(12000.0)
+                .build();
+    }
 
+    @Test(expected = NullPointerException.class)
+    public void testTruckValidationBrand() throws NullPointerException {
+        Truck truck = new Truck.TruckBuilder()
+                .setId(123456L)
+                .setModel("FH-16")
+                .setVelocity(300)
+                .setPrice(32000.0)
+                .build();
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testTruckValidationModel() throws NullPointerException {
+        Truck truck = new Truck.TruckBuilder()
+                .setId(123456L)
+                .setBrand("Volvo")
+                .setVelocity(300)
+                .setPrice(32000.0)
+                .build();
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testTruckValidationVelocity() throws NullPointerException {
+        Truck truck = new Truck.TruckBuilder()
+                .setId(123456L)
+                .setBrand("Volvo")
+                .setModel("FH-16")
+                .setPrice(32000.0)
+                .build();
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testTruckValidationPrice() throws NullPointerException {
+        Truck truck = new Truck.TruckBuilder()
+                .setId(123456L)
+                .setBrand("Volvo")
+                .setModel("FH-16")
+                .setVelocity(250)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTruckValidationPriceLower() throws IllegalArgumentException {
+        Truck truck = new Truck.TruckBuilder().setPrice(99.0)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTruckValidationPriceHigher() throws IllegalArgumentException {
+        Truck truck = new Truck.TruckBuilder().setPrice(9900000.0)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTruckValidationVelocityLower() throws IllegalArgumentException {
+        Truck truck = new Truck.TruckBuilder().setVelocity(-99)
+                .build();
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTruckValidationVelocityHigher() throws IllegalArgumentException {
+        Truck truck = new Truck.TruckBuilder().setVelocity(990)
+                .build();
     }
 }
