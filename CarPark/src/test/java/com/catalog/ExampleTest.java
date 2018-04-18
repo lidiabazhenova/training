@@ -33,29 +33,6 @@ public class ExampleTest {
                 .setBodywork(Car.Bodywork.SEDAN)
                 .build());
 
-        carPark.add(new Car.CarBuilder()
-                .setId(43354454L).setBrand("Audi")
-                .setModel("A4")
-                .setVelocity(280)
-                .setPrice(12346.5)
-                .setBootVolume(2)
-                .setBodywork(Car.Bodywork.COUPE)
-                .build());
-
-        carPark.add(new Truck.TruckBuilder()
-                .setId(123214L)
-                .setBrand("Volvo")
-                .setModel("FH-16")
-                .setVelocity(330)
-                .setPrice(50344.4)
-                .setTrailerBrand("Smitz")
-                .setTrailerModel("1997")
-                .setCarrying(20)
-                .setVolumeOfCargo(86)
-                .setLoading(Truck.Loading.BACK)
-                .setTrailerType(Truck.TrailerType.REFRIGARATOR)
-                .build());
-
         carPark.add(new Truck.TruckBuilder()
                 .setId(123214L)
                 .setBrand("Volvo")
@@ -73,6 +50,7 @@ public class ExampleTest {
         System.out.println("My cars:");
 
         carPark.printList();
+
         Car carForSale = new Car.CarBuilder()
                 .setId(45354454L)
                 .setBrand("Audi")
@@ -95,30 +73,7 @@ public class ExampleTest {
     }
 
 
-    @Test
-    public void CSVDrivenTest() throws LoaderException {
-        CarPark carPark = new CarPark();
 
-        List<String> paths = new ArrayList<String>();
-        paths.add(CSV_FILE_PATH_1);
-        paths.add(CSV_FILE_PATH_2);
-
-        carPark.loadAutomobilesFromFile(LoaderFactory.FileType.CSV, paths);
-
-        carPark.printList();
-    }
-
-    @Test
-    public void ExcelDrivenTest() throws LoaderException {
-        CarPark carPark = new CarPark();
-
-        List<String> paths = new ArrayList<String>();
-        paths.add(EXCEL_FILE_PATH_1);
-
-        carPark.loadAutomobilesFromFile(LoaderFactory.FileType.EXCEL, paths);
-
-        carPark.printList();
-    }
 
 
 }
