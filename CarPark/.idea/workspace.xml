@@ -2,232 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8fd3da-fa53-4e7f-bad1-3ad3bee20108" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/codeStyles/codeStyleConfig.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__antlr_antlr_2_7_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_2_0_M7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__commons_validator_commons_validator_1_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_compress_1_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_csv_1_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_7_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_logging_api_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_7_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_doxia_doxia_skin_model_1_7_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_archiver_3_1_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_plugins_maven_javadoc_plugin_maven_plugin_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_3_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_artifact_transfer_0_9_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_common_artifact_filters_3_0_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_invoker_2_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_3_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_3_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_30.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_io_2_7_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_java_0_9_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_24.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_iq80_snappy_snappy_0_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_ow2_asm_asm_6_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__org_tukaani_xz_1_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__sslext_sslext_1_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/libraries/Maven__xmlunit_xmlunit_1_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/uiDesigner.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/Polimorfism.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/README.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/pom.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/CarPark.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/comparator/AutomobilePriceComparator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/exception/LoaderException.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/AutomobileLoader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/loader/LoaderFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Automobile.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Car.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/main/java/com/catalog/model/Truck.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/CarParkTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/ExampleTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/loader/LoaderFactoryTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/model/CarBuilderTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/java/com/catalog/model/TruckBuilderTest.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/Automobiles.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/cars-with-header.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/src/test/resources/trucks-with-header.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/CarPark.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/comparator/AutomobilePriceComparator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/comparator/AutomobileVelocityComparator.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/exception/LoaderException.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/AutomobileLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/CSVAutomobileLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/ExcelAutomobileLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/LoaderFactory$FileType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/loader/LoaderFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Automobile$AutomobileBuilder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Automobile.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car$Bodywork.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car$CarBuilder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Car.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$Loading.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$TrailerType.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck$TruckBuilder.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/com/catalog/model/Truck.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/classes/~$Automobiles.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/allclasses-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/allclasses-noframe.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/CarPark.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/CarParkTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/ExampleTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Automobile.AutomobileBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Automobile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/AutomobilePriceComparator.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/AutomobileVelocityComparator.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.Bodywork.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.CarBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Car.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/CarPark.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.Loading.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.TrailerType.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.TruckBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/Truck.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/carpark/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobilePriceComparator.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobilePriceComparatorTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobileVelocityComparator.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/AutomobileVelocityComparatorTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/comparator/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/LoaderException.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/exception/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/AutomobileLoader.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/CSVAutomobileLoader.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/CSVAutomobileLoaderTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/ExcelAutomobileLoader.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/ExcelAutomobileLoaderTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactory.FileType.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactory.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/LoaderFactoryTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/loader/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Automobile.AutomobileBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Automobile.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.Bodywork.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.CarBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Car.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/CarBuilderTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/CarPark.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.Loading.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.TrailerType.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.TruckBuilder.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/Truck.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/TruckBuilderTest.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/model/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/com/catalog/package-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/constant-values.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/deprecated-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/help-doc.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-1.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-10.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-3.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-4.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-5.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-6.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-7.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-8.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index-files/index-9.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-frame.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-summary.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/overview-tree.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/script.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/serialized-form.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/javadoc/stylesheet.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/Automobiles.xlsx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/cars-with-header.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/CarParkTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/ExampleTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/comparator/AutomobilePriceComparatorTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/comparator/AutomobileVelocityComparatorTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/CSVAutomobileLoaderTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/ExcelAutomobileLoaderTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/loader/LoaderFactoryTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/model/CarBuilderTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/com/catalog/model/TruckBuilderTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/trucks-with-header.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../PolimorfismAutoIO/target/test-classes/~$Automobiles.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java" afterPath="$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" afterPath="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Automobiles.xlsx" afterPath="$PROJECT_DIR$/src/test/resources/Automobiles.xlsx" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/trucks-with-header.csv" afterPath="$PROJECT_DIR$/src/test/resources/trucks-with-header.csv" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/catalog/loader/LoaderFactory$FileType.class" afterPath="$PROJECT_DIR$/target/classes/com/catalog/loader/LoaderFactory$FileType.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/catalog/loader/LoaderFactory.class" afterPath="$PROJECT_DIR$/target/classes/com/catalog/loader/LoaderFactory.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/~$Automobiles.xlsx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/allclasses-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/allclasses-noframe.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/CarParkTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/ExampleTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Automobile.AutomobileBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Automobile.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/AutomobilePriceComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/AutomobileVelocityComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Car.Bodywork.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Car.CarBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Car.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Truck.Loading.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Truck.TrailerType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Truck.TruckBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/Truck.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/carpark/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/AutomobilePriceComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/AutomobilePriceComparatorTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/AutomobileVelocityComparator.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/AutomobileVelocityComparatorTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/comparator/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/exception/LoaderException.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/exception/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/exception/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/exception/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/AutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/CSVAutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/CSVAutomobileLoaderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/ExcelAutomobileLoader.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/ExcelAutomobileLoaderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/LoaderFactory.FileType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/LoaderFactory.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/LoaderFactoryTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/loader/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Automobile.AutomobileBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Automobile.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Car.Bodywork.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Car.CarBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Car.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/CarBuilderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/CarPark.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Truck.Loading.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Truck.TrailerType.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Truck.TruckBuilder.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/Truck.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/TruckBuilderTest.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/model/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/package-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/package-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/com/catalog/package-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/constant-values.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/deprecated-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/help-doc.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-10.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-8.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index-files/index-9.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/overview-frame.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/overview-summary.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/overview-tree.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/script.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/serialized-form.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc/stylesheet.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Automobiles.xlsx" afterPath="$PROJECT_DIR$/target/test-classes/Automobiles.xlsx" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/catalog/ExampleTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/catalog/ExampleTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/CSVAutomobileLoaderTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/CSVAutomobileLoaderTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/ExcelAutomobileLoaderTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/ExcelAutomobileLoaderTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/LoaderFactoryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/catalog/loader/LoaderFactoryTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/catalog/model/CarBuilderTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/catalog/model/CarBuilderTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -239,189 +117,172 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1071">
-                  <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21">
-                  <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutomobilePriceComparatorTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="882">
-                  <caret line="44" column="5" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/pom.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-197">
-                  <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutomobileVelocityComparatorTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutomobilePriceComparator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobilePriceComparator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="25" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AutomobileVelocityComparator.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="231">
-                  <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Automobile.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#928#929#0" expanded="true" />
-                    <element signature="e#959#960#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="30" column="26" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CSVAutomobileLoaderTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoaderFactoryTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoaderFactory.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CarParkTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CarBuilderTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CarPark.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1638">
-                  <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="AutomobilePriceComparatorTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="603">
-                  <caret line="31" column="0" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="31" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Car.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Truck.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutomobilePriceComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutomobileVelocityComparatorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVAutomobileLoaderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelAutomobileLoaderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Automobile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="207" column="19" lean-forward="false" selection-start-line="207" selection-start-column="19" selection-end-line="207" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoaderFactoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExampleTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CSVAutomobileLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarParkTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarBuilderTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TruckBuilderTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trucks-with-header.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/trucks-with-header.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="56" lean-forward="false" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CarPark.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1638">
+              <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -435,10 +296,12 @@
       <find>final</find>
       <find>wb</find>
       <find>col</find>
+      <find>Car</find>
     </findStrings>
     <replaceStrings>
       <replace>workbook</replace>
       <replace>colomnNumber</replace>
+      <replace>Truck</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -452,14 +315,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/refrigerators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/MobilePhone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/Refrigerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/SemiTrailers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/SemiTrailer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/product/Automobile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/autopark/Automobile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/carpark/SemiTrailer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/carpark/Bus.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/carpark/Refrigerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/carpark/TiltCoveredTruck.java" />
@@ -488,21 +343,29 @@
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/CarPark.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/AutomobileLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobilePriceComparator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/exception/LoaderException.java" />
-        <option value="$PROJECT_DIR$/README.txt" />
-        <option value="$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/Employee.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/Ex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/catalog/loader/LoaderFactory.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/resources/trucks-with-header.csv" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java" />
       </list>
     </option>
   </component>
@@ -545,6 +408,105 @@
             <path>
               <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
               <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="loader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="comparator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="loader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catalog" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CarPark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CarPark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -591,7 +553,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AutomobileVelocityComparatorTest">
+  <component name="RunManager" selected="JUnit.CarBuilderTest.testCarBuilder">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -613,18 +575,18 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="AutomobilePriceComparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.catalog.comparator.*" />
+          <option name="PATTERN" value="com.catalog.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Polimorfism" />
+      <module name="CarPark" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.catalog.comparator" />
-      <option name="MAIN_CLASS_NAME" value="com.catalog.comparator.AutomobilePriceComparatorTest" />
+      <option name="PACKAGE_NAME" value="com.catalog.model" />
+      <option name="MAIN_CLASS_NAME" value="com.catalog.model.CarBuilderTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -638,20 +600,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="AutomobileVelocityComparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarBuilderTest.testCarBuilder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.catalog.comparator.*" />
+          <option name="PATTERN" value="com.catalog.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Polimorfism" />
+      <module name="CarPark" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.catalog.comparator" />
-      <option name="MAIN_CLASS_NAME" value="com.catalog.comparator.AutomobileVelocityComparatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.catalog.model" />
+      <option name="MAIN_CLASS_NAME" value="com.catalog.model.CarBuilderTest" />
+      <option name="METHOD_NAME" value="testCarBuilder" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -666,11 +628,11 @@
     <configuration name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.catalog.comparator.*" />
+          <option name="PATTERN" value="com.catalog.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Polimorfism" />
+      <module name="CarPark" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.catalog" />
@@ -688,20 +650,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ExampleTest.CSVDrivenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoaderFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.catalog.comparator.*" />
+          <option name="PATTERN" value="com.catalog.loader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Polimorfism" />
+      <module name="CarPark" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.catalog.ExampleTest" />
-      <option name="METHOD_NAME" value="CSVDrivenTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.catalog.loader" />
+      <option name="MAIN_CLASS_NAME" value="com.catalog.loader.LoaderFactoryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -713,20 +675,20 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ExampleTest.ExcelDrivenTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TruckBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.catalog.*" />
+          <option name="PATTERN" value="com.catalog.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Polimorfism" />
+      <module name="CarPark" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.catalog" />
-      <option name="MAIN_CLASS_NAME" value="com.catalog.ExampleTest" />
-      <option name="METHOD_NAME" value="ExcelDrivenTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.catalog.model" />
+      <option name="MAIN_CLASS_NAME" value="com.catalog.model.TruckBuilderTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -811,19 +773,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExampleTest.ExcelDrivenTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AutomobileVelocityComparatorTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AutomobilePriceComparatorTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LoaderFactoryTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CarBuilderTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TruckBuilderTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CarBuilderTest.testCarBuilder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AutomobileVelocityComparatorTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AutomobilePriceComparatorTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest.CSVDrivenTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExampleTest.ExcelDrivenTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CarBuilderTest.testCarBuilder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CarBuilderTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TruckBuilderTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoaderFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -844,58 +806,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutomobilePriceComparatorTest - 2018.04.17 at 22h 34m 36s.xml">
-      <configuration name="AutomobilePriceComparatorTest" configurationId="JUnit" />
+    <history-entry file="CarBuilderTest - 2018.04.18 at 12h 16m 45s.xml">
+      <configuration name="CarBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomobileVelocityComparatorTest - 2018.04.17 at 22h 33m 12s.xml">
-      <configuration name="AutomobileVelocityComparatorTest" configurationId="JUnit" />
+    <history-entry file="CarBuilderTest - 2018.04.18 at 12h 17m 12s.xml">
+      <configuration name="CarBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomobileVelocityComparatorTest - 2018.04.17 at 22h 34m 19s.xml">
-      <configuration name="AutomobileVelocityComparatorTest" configurationId="JUnit" />
+    <history-entry file="CarBuilderTest_testCarBuilder - 2018.04.18 at 12h 17m 42s.xml">
+      <configuration name="CarBuilderTest.testCarBuilder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomobileVelocityComparatorTest - 2018.04.17 at 22h 37m 03s.xml">
-      <configuration name="AutomobileVelocityComparatorTest" configurationId="JUnit" />
+    <history-entry file="CarBuilderTest_testCarBuilder - 2018.04.18 at 12h 18m 07s.xml">
+      <configuration name="CarBuilderTest.testCarBuilder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AutomobileVelocityComparatorTest - 2018.04.17 at 22h 44m 25s.xml">
-      <configuration name="AutomobileVelocityComparatorTest" configurationId="JUnit" />
+    <history-entry file="CarBuilderTest_testCarBuilder - 2018.04.18 at 12h 20m 36s.xml">
+      <configuration name="CarBuilderTest.testCarBuilder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest - 2018.04.17 at 21h 32m 43s.xml">
-      <configuration name="ExampleTest" configurationId="JUnit" />
+    <history-entry file="TruckBuilderTest - 2018.04.18 at 12h 10m 07s.xml">
+      <configuration name="TruckBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest - 2018.04.17 at 22h 39m 01s.xml">
-      <configuration name="ExampleTest" configurationId="JUnit" />
+    <history-entry file="TruckBuilderTest - 2018.04.18 at 12h 10m 20s.xml">
+      <configuration name="TruckBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest - 2018.04.17 at 22h 44m 20s.xml">
-      <configuration name="ExampleTest" configurationId="JUnit" />
+    <history-entry file="TruckBuilderTest - 2018.04.18 at 12h 11m 51s.xml">
+      <configuration name="TruckBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.17 at 21h 24m 42s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="TruckBuilderTest - 2018.04.18 at 12h 12m 50s.xml">
+      <configuration name="TruckBuilderTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ExampleTest_CSVDrivenTest - 2018.04.17 at 21h 31m 56s.xml">
-      <configuration name="ExampleTest.CSVDrivenTest" configurationId="JUnit" />
+    <history-entry file="TruckBuilderTest - 2018.04.18 at 12h 14m 26s.xml">
+      <configuration name="TruckBuilderTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39077938" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19479166" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" x="568" y="60" width="319" height="624" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" x="568" y="60" width="319" height="624" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -903,7 +867,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -943,21 +906,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java</url>
+          <line>112</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/Order.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/Category.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/Bus.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1285" column="30" lean-forward="false" selection-start-line="1285" selection-start-column="30" selection-end-line="1285" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/TiltCoveredTruck.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/carpark/Refrigerator.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Integer.java">
@@ -972,6 +939,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="274" column="11" lean-forward="false" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/cars-with-header.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.17/poi-3.17.jar!/org/apache/poi/poifs/filesystem/NPOIFSFileSystem.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -1063,31 +1024,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/B6710410" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/trucks-with-header.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="94" lean-forward="true" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1102,27 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1131,84 +1050,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding>
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1220,31 +1062,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="44" column="5" lean-forward="false" selection-start-line="35" selection-start-column="3" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="808">
+          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/comparator/AutomobileVelocityComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,19 +1096,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="99" column="16" lean-forward="false" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+        <state relative-caret-position="150">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-197">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="441">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+          <folding>
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/ExcelAutomobileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1066">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/Ex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/CarPark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1638">
+          <caret line="93" column="33" lean-forward="false" selection-start-line="93" selection-start-column="33" selection-end-line="93" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/loader/CSVAutomobileLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobileVelocityComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/cars-with-header.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/trucks-with-header.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="56" lean-forward="false" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/TruckBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/comparator/AutomobilePriceComparatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/ExampleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/CSVAutomobileLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/ExcelAutomobileLoaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/loader/LoaderFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Truck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/model/Automobile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="207" column="19" lean-forward="false" selection-start-line="207" selection-start-column="19" selection-end-line="207" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/CarParkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/catalog/model/CarBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

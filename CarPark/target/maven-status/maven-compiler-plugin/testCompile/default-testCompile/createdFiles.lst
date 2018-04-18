@@ -1,0 +1,9 @@
+com\catalog\loader\LoaderFactoryTest.class
+com\catalog\comparator\AutomobileVelocityComparatorTest.class
+com\catalog\loader\ExcelAutomobileLoaderTest.class
+com\catalog\model\TruckBuilderTest.class
+com\catalog\comparator\AutomobilePriceComparatorTest.class
+com\catalog\CarParkTest.class
+com\catalog\ExampleTest.class
+com\catalog\loader\CSVAutomobileLoaderTest.class
+com\catalog\model\CarBuilderTest.class

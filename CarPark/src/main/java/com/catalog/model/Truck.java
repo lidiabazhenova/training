@@ -137,8 +137,8 @@ public class Truck extends Automobile {
     public static class TruckBuilder extends AutomobileBuilder<TruckBuilder> {
         private String trailerBrand;
         private String trailerModel;
-        private Integer carrying;
-        private Integer volumeOfCargo;
+        private int carrying;
+        private int volumeOfCargo;
         private TrailerType trailerType;
         private Loading loading;
 
@@ -172,7 +172,7 @@ public class Truck extends Automobile {
          * @param carrying truck carrying
          * @return current object
          */
-        public TruckBuilder setCarrying(Integer carrying) {
+        public TruckBuilder setCarrying(int carrying) {
             if ((carrying < 3) || (carrying > 100)) {
                 throw new IllegalArgumentException("Set correct carrying");
             }
@@ -188,7 +188,7 @@ public class Truck extends Automobile {
          * @param volumeOfCargo volume of cargo
          * @return current object
          */
-        public TruckBuilder setVolumeOfCargo(Integer volumeOfCargo) {
+        public TruckBuilder setVolumeOfCargo(int volumeOfCargo) {
             if ((volumeOfCargo < 10) || (volumeOfCargo > 120)) {
                 throw new IllegalArgumentException("Set correct volumeOfCargo");
             }

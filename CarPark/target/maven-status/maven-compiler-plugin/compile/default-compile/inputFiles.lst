@@ -1,0 +1,11 @@
+C:\projects\training\CarPark\src\main\java\com\catalog\exception\LoaderException.java
+C:\projects\training\CarPark\src\main\java\com\catalog\loader\ExcelAutomobileLoader.java
+C:\projects\training\CarPark\src\main\java\com\catalog\model\Car.java
+C:\projects\training\CarPark\src\main\java\com\catalog\loader\AutomobileLoader.java
+C:\projects\training\CarPark\src\main\java\com\catalog\model\Truck.java
+C:\projects\training\CarPark\src\main\java\com\catalog\comparator\AutomobileVelocityComparator.java
+C:\projects\training\CarPark\src\main\java\com\catalog\comparator\AutomobilePriceComparator.java
+C:\projects\training\CarPark\src\main\java\com\catalog\CarPark.java
+C:\projects\training\CarPark\src\main\java\com\catalog\loader\LoaderFactory.java
+C:\projects\training\CarPark\src\main\java\com\catalog\loader\CSVAutomobileLoader.java
+C:\projects\training\CarPark\src\main\java\com\catalog\model\Automobile.java

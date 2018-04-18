@@ -4,6 +4,8 @@ import com.catalog.model.Car;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 public class AutomobilePriceComparatorTest {
 
     @Test
@@ -12,7 +14,7 @@ public class AutomobilePriceComparatorTest {
         int result = comparator.compare(getCarForTest(100),
                 getCarForTest(100));
 
-        Assert.assertTrue(result == 0);
+        assertTrue(result == 0);
     }
 
     @Test
@@ -21,7 +23,7 @@ public class AutomobilePriceComparatorTest {
         int result = comparator.compare(getCarForTest(101),
                 getCarForTest(100));
 
-        Assert.assertTrue(result > 0);
+        assertTrue(result > 0);
     }
 
     @Test
@@ -30,7 +32,7 @@ public class AutomobilePriceComparatorTest {
         int result = comparator.compare(getCarForTest(100),
                 getCarForTest(101));
 
-        Assert.assertTrue(result < 0);
+        assertTrue(result < 0);
     }
 
     private Car getCarForTest(double price) {

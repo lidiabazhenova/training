@@ -74,7 +74,7 @@ public class Car extends Automobile {
      * @version 1.0
      */
     public static class CarBuilder extends AutomobileBuilder<CarBuilder> {
-        private Integer bootVolume;
+        private int bootVolume;
         private Bodywork bodywork;
 
         /**
@@ -83,7 +83,7 @@ public class Car extends Automobile {
          * @param bootVolume car boot volume
          * @return current object
          */
-        public CarBuilder setBootVolume(Integer bootVolume) {
+        public CarBuilder setBootVolume(int bootVolume) {
             if ((bootVolume == 0) || (bootVolume > 50)) {
                 throw new IllegalArgumentException("Set correct boot volume");
             }

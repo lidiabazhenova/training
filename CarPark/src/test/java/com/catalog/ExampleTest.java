@@ -11,9 +11,12 @@ import java.util.List;
 
 public class ExampleTest {
 
-    private static final String CSV_FILE_PATH_1 = "src\\test\\resources\\cars-with-header.csv";
-    private static final String CSV_FILE_PATH_2 = "src\\test\\resources\\trucks-with-header.csv";
-    private static final String EXCEL_FILE_PATH_1 = "src\\test\\resources\\Automobiles.xlsx";
+    private static final String CSV_FILE_PATH_1
+            = "src/test/resources/cars-with-header.csv";
+    private static final String CSV_FILE_PATH_2
+            = "src/test/resources/trucks-with-header.csv";
+    private static final String EXCEL_FILE_PATH_1
+            = "src/test/resources/Automobiles.xlsx";
 
     @Test
     public void carParkList() {

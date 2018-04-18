@@ -17,7 +17,7 @@ public class CarParkTest {
         carPark.add(new Car.CarBuilder()
                 .setId(123123L).setBrand("Toyota").setModel("Camry")
                 .setPrice(34000.0).setVelocity(230).build());
-        //Assert.assertArrayEquals(carPark.getTheMostExpensiveAutomobile(), );
+        //assertArrayEquals(carPark.getTheMostExpensiveAutomobile(), );
     }
 
 }
