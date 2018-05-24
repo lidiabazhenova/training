@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/exception/LoaderException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="e#350#351#0" expanded="true" />
                 <element signature="e#387#388#0" expanded="true" />
@@ -1015,7 +1015,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/catalog/exception/LoaderException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#350#351#0" expanded="true" />
             <element signature="e#387#388#0" expanded="true" />
