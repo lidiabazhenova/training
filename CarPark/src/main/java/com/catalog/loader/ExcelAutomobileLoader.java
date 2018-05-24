@@ -12,24 +12,15 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Class for loading automobiles from excel-file
+ */
 public class ExcelAutomobileLoader implements AutomobileLoader {
 
     private static final String CAR_SHEET_PREFIX = "car";
     private static final String TRUCK_SHEET_PREFIX = "truck";
 
-    private String path;
-
-    /**
-     * /**
-     * Create new object with parameters
-     *
-     * @param path xlsx-file path
-     */
-    public ExcelAutomobileLoader(String path) {
-        this.path = path;
-    }
-
-    public List<Automobile> load() throws LoaderException {
+    public List<Automobile> load(String path) throws LoaderException {
         List<Automobile> automobiles = new ArrayList<>();
         File file = new File(path);
         Workbook workbook = null;

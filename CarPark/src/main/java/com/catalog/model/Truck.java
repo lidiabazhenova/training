@@ -33,6 +33,22 @@ public class Truck extends Automobile {
     private Loading loading;
 
     /**
+     * Create new object with parameters from Builder Class
+     *
+     * @param truckBuilder builder
+     * @see TruckBuilder
+     */
+    private Truck(TruckBuilder truckBuilder) {
+        super(truckBuilder);
+        this.trailerBrand = truckBuilder.trailerBrand;
+        this.trailerModel = truckBuilder.trailerModel;
+        this.carrying = truckBuilder.carrying;
+        this.volumeOfCargo = truckBuilder.volumeOfCargo;
+        this.trailerType = truckBuilder.trailerType;
+        this.loading = truckBuilder.loading;
+    }
+
+    /**
      * Method for getting field value
      *
      * @return trailerModel of truck
@@ -84,22 +100,6 @@ public class Truck extends Automobile {
      */
     public Loading getLoading() {
         return loading;
-    }
-
-    /**
-     * Create new object with parameters from Builder Class
-     *
-     * @param truckBuilder builder
-     * @see TruckBuilder
-     */
-    public Truck(TruckBuilder truckBuilder) {
-        super(truckBuilder);
-        this.trailerBrand = truckBuilder.trailerBrand;
-        this.trailerModel = truckBuilder.trailerModel;
-        this.carrying = truckBuilder.carrying;
-        this.volumeOfCargo = truckBuilder.volumeOfCargo;
-        this.trailerType = truckBuilder.trailerType;
-        this.loading = truckBuilder.loading;
     }
 
     @Override

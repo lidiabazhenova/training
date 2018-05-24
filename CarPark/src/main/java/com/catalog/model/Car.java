@@ -2,6 +2,7 @@ package com.catalog.model;
 
 /**
  * Class that represent car
+ *
  * @author lidia
  * @version 1.0
  */
@@ -21,6 +22,18 @@ public class Car extends Automobile {
     private Bodywork bodywork;
 
     /**
+     * Create new object with parameters from Builder Class
+     *
+     * @param carBuilder builder
+     * @see CarBuilder
+     */
+    private Car(CarBuilder carBuilder) {
+        super(carBuilder);
+        this.bootVolume = carBuilder.bootVolume;
+        this.bodywork = carBuilder.bodywork;
+    }
+
+    /**
      * Method for getting field value
      *
      * @return bootVolume of car
@@ -36,18 +49,6 @@ public class Car extends Automobile {
      */
     public Bodywork getBodywork() {
         return bodywork;
-    }
-
-    /**
-     * Create new object with parameters from Builder Class
-     *
-     * @param carBuilder builder
-     * @see CarBuilder
-     */
-    public Car(CarBuilder carBuilder) {
-        super(carBuilder);
-        this.bootVolume = carBuilder.bootVolume;
-        this.bodywork = carBuilder.bodywork;
     }
 
     @Override

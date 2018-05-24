@@ -22,6 +22,6 @@ public interface AutomobileLoader {
      * @return list of automobiles
      * @throws LoaderException exceptions during load from the file
      */
-    List<Automobile> load() throws LoaderException;
+    List<Automobile> load(String path) throws LoaderException;
 
 }

@@ -1,11 +1,10 @@
 package com.catalog;
 
-import com.catalog.comparator.AutomobilePriceComparator;
-import com.catalog.comparator.AutomobileVelocityComparator;
 import com.catalog.exception.LoaderException;
 import com.catalog.loader.AutomobileLoader;
 import com.catalog.loader.LoaderFactory;
 import com.catalog.model.Automobile;
+import org.apache.commons.collections.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -52,12 +51,12 @@ public class CarPark {
      * @param paths    list of paths
      * @throws LoaderException exceptions during load the car park from the file
      */
-    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws LoaderException{
+    public void loadAutomobilesFromFile(LoaderFactory.FileType fileType, List<String> paths) throws LoaderException {
         LoaderFactory loaderFactory = new LoaderFactory();
 
         for (String path : paths) {
-            AutomobileLoader loader = loaderFactory.createLoader(fileType, path);
-            automobiles.addAll(loader.load());
+            AutomobileLoader loader = loaderFactory.createLoader(fileType);
+            automobiles.addAll(loader.load(path));
         }
     }
 
@@ -74,14 +73,13 @@ public class CarPark {
      * * Method for printing automobiles from car park
      */
     public void printList() {
-        if (automobiles.isEmpty())
+        if (CollectionUtils.isEmpty(automobiles))
             System.out.println("Empty list of automobiles");
         else {
-
-            for (Automobile car : automobiles) {
+            automobiles.forEach((car) -> {
                 System.out.print(car.getDescription());
                 System.out.println("***");
-            }
+            });
         }
     }
 
@@ -91,7 +89,8 @@ public class CarPark {
      * @return the most expensive automobile
      */
     public Automobile getTheMostExpensiveAutomobile() {
-        return Collections.max(automobiles, new AutomobilePriceComparator());
+        return Collections.max(automobiles, (automobile1, automobile2) -> ((Double) automobile1.getPrice())
+                .compareTo(automobile2.getPrice()));
     }
 
     /**
@@ -100,6 +99,7 @@ public class CarPark {
      * @return the most high-speed automobile
      */
     public Automobile getTheMostHighSpeedAutomobile() {
-        return Collections.max(automobiles, new AutomobileVelocityComparator());
+        return Collections.max(automobiles, (automobile1, automobile2) -> ((Integer) automobile1.getVelocity())
+                .compareTo(automobile2.getVelocity()));
     }
 }

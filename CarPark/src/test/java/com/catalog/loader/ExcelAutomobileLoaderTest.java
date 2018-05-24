@@ -14,8 +14,8 @@ public class ExcelAutomobileLoaderTest {
     @Test
     public void testNumberOfRowsInExcel() throws LoaderException {
         ExcelAutomobileLoader excelAutomobileLoader
-                = new ExcelAutomobileLoader(EXCEL_FILE_PATH);
+                = new ExcelAutomobileLoader();
 
-        assertEquals(5, (excelAutomobileLoader.load()).size());
+        assertEquals(5, (excelAutomobileLoader.load(EXCEL_FILE_PATH)).size());
     }
 }

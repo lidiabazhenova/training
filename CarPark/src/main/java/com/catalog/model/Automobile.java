@@ -14,6 +14,20 @@ public abstract class Automobile {
     private double price;
 
     /**
+     * Create new object with parameters from Builder Class
+     *
+     * @param automobileBuilder builder
+     * @see AutomobileBuilder
+     */
+    protected Automobile(AutomobileBuilder automobileBuilder) {
+        this.id = automobileBuilder.id;
+        this.brand = automobileBuilder.brand;
+        this.model = automobileBuilder.model;
+        this.velocity = automobileBuilder.velocity;
+        this.price = automobileBuilder.price;
+    }
+
+    /**
      * Method for getting field value
      *
      * @return identification number
@@ -56,20 +70,6 @@ public abstract class Automobile {
      */
     public double getPrice() {
         return price;
-    }
-
-    /**
-     * Create new object with parameters from Builder Class
-     *
-     * @param automobileBuilder builder
-     * @see AutomobileBuilder
-     */
-    public Automobile(AutomobileBuilder automobileBuilder) {
-        this.id = automobileBuilder.id;
-        this.brand = automobileBuilder.brand;
-        this.model = automobileBuilder.model;
-        this.velocity = automobileBuilder.velocity;
-        this.price = automobileBuilder.price;
     }
 
     /**

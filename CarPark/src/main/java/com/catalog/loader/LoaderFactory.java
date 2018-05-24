@@ -16,14 +16,13 @@ public class LoaderFactory {
     /**
      * Method for creating loader in depending on the type of file
      * @param fileType file type
-     * @param path file path
      * @return loader
      */
-    public AutomobileLoader createLoader(FileType fileType, String path) {
+    public AutomobileLoader createLoader(FileType fileType) {
         if (FileType.CSV == fileType) {
-            return new CSVAutomobileLoader(path);
+            return new CSVAutomobileLoader();
         } else if (FileType.EXCEL == fileType) {
-            return new ExcelAutomobileLoader(path);
+            return new ExcelAutomobileLoader();
         } else {
             throw new IllegalArgumentException("File type '"
                     + fileType + "' is not supported");

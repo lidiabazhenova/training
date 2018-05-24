@@ -26,19 +26,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     private static final String CAR_FILE_PREFIX = "car";
     private static final String TRUCK_FILE_PREFIX = "truck";
 
-    private String path;
-
-    /**
-     * /**
-     * Create new object with parameters
-     *
-     * @param path csv-file path
-     */
-    public CSVAutomobileLoader(String path) {
-        this.path = path;
-    }
-
-    public List<Automobile> load() throws LoaderException {
+    public List<Automobile> load(String path) throws LoaderException {
         File file = new File(path);
         String fileName = file.getName();
 
@@ -67,7 +55,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     private List<Automobile> loadCarsFromFile(CSVParser csvParser) {
         List<Automobile> automobiles = new ArrayList<>();
 
-        for (CSVRecord csvRecord : csvParser) {
+        csvParser.forEach((csvRecord) -> {
             automobiles.add(new Car.CarBuilder()
                     .setId(Long.valueOf(csvRecord.get("id")))
                     .setBrand(csvRecord.get("brand"))
@@ -78,7 +66,7 @@ public class CSVAutomobileLoader implements AutomobileLoader {
                     .setBodywork(Enum.valueOf(Car.Bodywork.class,
                             csvRecord.get("bodywork")))
                     .build());
-        }
+        });
 
         return automobiles;
     }
@@ -86,25 +74,25 @@ public class CSVAutomobileLoader implements AutomobileLoader {
     private List<Automobile> loadTrucksFromFile(CSVParser csvParser) {
         List<Automobile> automobiles = new ArrayList<>();
 
-        for (CSVRecord csvRecord : csvParser) {
-            automobiles.add(new Truck.TruckBuilder()
-                    .setId(Long.valueOf(csvRecord.get("id")))
-                    .setBrand(csvRecord.get("brand"))
-                    .setModel(csvRecord.get("model"))
-                    .setVelocity(Integer.valueOf(csvRecord.get("velocity")))
-                    .setPrice(Double.valueOf(csvRecord.get("price")))
-                    .setTrailerBrand(csvRecord.get("trailerBrand"))
-                    .setTrailerModel(csvRecord.get("trailerModel"))
-                    .setCarrying(Integer.valueOf(csvRecord.get("carrying")))
-                    .setVolumeOfCargo(Integer.valueOf(csvRecord
-                            .get("volumeOfCargo")))
-                    .setTrailerType(Enum.valueOf(Truck.TrailerType.class,
-                            csvRecord.get("trailerType")))
-                    .setLoading(Enum.valueOf(Truck.Loading.class,
-                            csvRecord.get("loading")))
-                    .build());
-        }
-
+        csvParser.forEach((csvRecord) -> {
+                    automobiles.add(new Truck.TruckBuilder()
+                            .setId(Long.valueOf(csvRecord.get("id")))
+                            .setBrand(csvRecord.get("brand"))
+                            .setModel(csvRecord.get("model"))
+                            .setVelocity(Integer.valueOf(csvRecord.get("velocity")))
+                            .setPrice(Double.valueOf(csvRecord.get("price")))
+                            .setTrailerBrand(csvRecord.get("trailerBrand"))
+                            .setTrailerModel(csvRecord.get("trailerModel"))
+                            .setCarrying(Integer.valueOf(csvRecord.get("carrying")))
+                            .setVolumeOfCargo(Integer.valueOf(csvRecord
+                                    .get("volumeOfCargo")))
+                            .setTrailerType(Enum.valueOf(Truck.TrailerType.class,
+                                    csvRecord.get("trailerType")))
+                            .setLoading(Enum.valueOf(Truck.Loading.class,
+                                    csvRecord.get("loading")))
+                            .build());
+                }
+        );
         return automobiles;
     }
 }

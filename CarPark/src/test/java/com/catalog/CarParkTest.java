@@ -1,11 +1,9 @@
 package com.catalog;
 
-import com.catalog.comparator.AutomobilePriceComparator;
 import com.catalog.exception.LoaderException;
 import com.catalog.loader.LoaderFactory;
 import com.catalog.model.Car;
 import com.catalog.model.Truck;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -126,7 +124,7 @@ public class CarParkTest {
                 .setVelocity(230)
                 .build());
         carPark.add(new Truck.TruckBuilder()
-                .setId(123123L)
+                .setId(123124L)
                 .setBrand("Volvo")
                 .setModel("FH-16")
                 .setPrice(44000.0)
@@ -147,7 +145,7 @@ public class CarParkTest {
                 .setVelocity(230)
                 .build());
         carPark.add(new Truck.TruckBuilder()
-                .setId(123123L)
+                .setId(123124L)
                 .setBrand("Volvo")
                 .setModel("FH-16")
                 .setPrice(44000.0)

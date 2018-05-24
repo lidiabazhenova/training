@@ -1,6 +1,7 @@
 package com.catalog.loader;
 
 import com.catalog.exception.LoaderException;
+import org.codehaus.plexus.util.CollectionUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -12,10 +13,11 @@ public class CSVAutomobileLoaderTest {
             = "src/test/resources/cars-with-header.csv";
 
     @Test
+
     public void testNumberOfAutomobilesInCSV() throws LoaderException {
         CSVAutomobileLoader csvAutomobileLoader
-                = new CSVAutomobileLoader(CSV_FILE_PATH);
+                = new CSVAutomobileLoader();
 
-        assertEquals(2, (csvAutomobileLoader.load()).size());
+        assertEquals(2, (csvAutomobileLoader.load(CSV_FILE_PATH)).size());
     }
 }
