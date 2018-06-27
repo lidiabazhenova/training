@@ -17,11 +17,12 @@ public class Task8Test {
         Map<String, List<String>> map2 = new HashMap<>();
 
         map1.put("mykey1", Arrays.asList("one", "two", "three"));
-        map1.put("mykey1", Arrays.asList("four", "five", "six"));
+        map1.put("mykey2", Arrays.asList("four", "five", "six"));
+        System.out.println(map1);
         list1.add(map1);
 
         map2.put("mykey1", Arrays.asList("seven", "eight", "nine"));
-        map2.put("mykey1", Arrays.asList("ten", "eleven", "twelve"));
+        map2.put("mykey2", Arrays.asList("ten", "eleven", "twelve"));
         list1.add(map2);
 
         List<Map<String,List<String>>> list2 = new ArrayList<>();
@@ -29,11 +30,11 @@ public class Task8Test {
         Map<String, List<String>> map4 = new HashMap<>();
 
         map3.put("mykey1", Arrays.asList("one", "two", "three"));
-        map3.put("mykey1", Arrays.asList("four", "five", "six"));
+        map3.put("mykey2", Arrays.asList("four", "five", "six"));
         list2.add(map3);
 
-        map4.put("mykey1", Arrays.asList("seven", "eight", "nine"));
-        map4.put("mykey1", Arrays.asList("ten", "eleven", "twelve"));
+        map4.put("mykey1", Arrays.asList("zero", "eight", "nine"));
+        map4.put("mykey2", Arrays.asList("ten", "eleven", "twelve"));
 
         list2.add(map4);
 
@@ -60,11 +61,8 @@ public class Task8Test {
             }
         });
 
-
-
-        //Collections.sort(list1, Comparator.comparing(map -> map.get()));
-
         System.out.println(list1.equals(list2));
         System.out.println(list1);
+        System.out.println(list2);
     }
 }
