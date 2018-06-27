@@ -1,13 +1,11 @@
 package com.lidiabazhenova.task8;
 
-import com.lidiabazhenova.common.CSVReaderUtil;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.util.*;
 
 public class Task8Test {
-    private static final String USERS_CSV_FILE_PATH = "src/test/resources/users.csv";
 
     @Test
     public void task8Test() throws IOException {
@@ -39,14 +37,11 @@ public class Task8Test {
         list2.add(map4);
 
 
-        Comparator<String> myComparator = new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                if (s1==null && s2==null) return 0;
-                if (s1==null) return  1;
-                if (s2==null) return -1;
-                return s1.compareTo(s2);
-            }
+        Comparator<String> myComparator = (s1, s2) -> {
+            if (s1==null && s2==null) return 0;
+            if (s1==null) return  1;
+            if (s2==null) return -1;
+            return s1.compareTo(s2);
         };
 
         list1.forEach((map) -> {
