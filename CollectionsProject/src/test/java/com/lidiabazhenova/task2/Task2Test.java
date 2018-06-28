@@ -1,6 +1,7 @@
 package com.lidiabazhenova.task2;
 
 import com.lidiabazhenova.common.CSVReaderUtil;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -28,7 +29,16 @@ public class Task2Test {
             newPerson.put(key2, person.get(key2));
             return newPerson;
         }).collect(Collectors.toList());
+        
+        Assert.assertEquals("Ivan", newPeople.get(0).get(key1));
+        Assert.assertEquals("18", newPeople.get(0).get(key2));
+        Assert.assertEquals("Olga", people.get(1).get(key1));
+        Assert.assertEquals("5", people.get(1).get(key2));
+        Assert.assertEquals("Sergey", people.get(2).get(key1));
+        Assert.assertEquals("48", people.get(2).get(key2));
+        Assert.assertEquals("Katja", people.get(3).get(key1));
+        Assert.assertEquals("5", people.get(3).get(key2));
 
-        System.out.println(newPeople);
+
     }
 }
