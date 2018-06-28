@@ -29,7 +29,7 @@ public class Task2Test {
             newPerson.put(key2, person.get(key2));
             return newPerson;
         }).collect(Collectors.toList());
-        
+
         Assert.assertEquals("Ivan", newPeople.get(0).get(key1));
         Assert.assertEquals("18", newPeople.get(0).get(key2));
         Assert.assertEquals("Olga", people.get(1).get(key1));

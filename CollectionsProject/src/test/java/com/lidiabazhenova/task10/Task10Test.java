@@ -1,6 +1,7 @@
 package com.lidiabazhenova.task10;
 
 import com.lidiabazhenova.common.CSVReaderUtil;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -25,5 +26,10 @@ public class Task10Test {
         final List<String> valuesByKey = people.stream().map((person) -> person.get(key)).collect(Collectors.toList());
 
         System.out.println(valuesByKey);
+
+        Assert.assertEquals("Ivanou", valuesByKey.get(0));
+        Assert.assertEquals("Ivanova", valuesByKey.get(1));
+        Assert.assertEquals("Vasiliev", valuesByKey.get(2));
+        Assert.assertEquals("Novikava", valuesByKey.get(3));
     }
 }
