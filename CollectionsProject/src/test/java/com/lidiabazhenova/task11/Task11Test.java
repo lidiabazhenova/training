@@ -8,6 +8,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Преобразовать все значения из List<String> в List<Double>. Добавить проверку на то, что это число
+ */
 public class Task11Test {
 
     @Test
