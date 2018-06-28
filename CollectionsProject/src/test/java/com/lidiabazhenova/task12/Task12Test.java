@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class Task12Test {
 
     @Test
-    public void task8Test() throws IOException {
+    public void task12Test() throws IOException {
 
         List<Map<String, List<String>>> list = new ArrayList<>();
         Map<String, List<String>> map1 = new HashMap<>();
@@ -23,11 +23,11 @@ public class Task12Test {
         map1.put("mykey2", Arrays.asList("four", "five", "six"));
         list.add(map1);
 
-        map2.put("mykey1", Arrays.asList("seven", "eight", "nine"));
-        map2.put("mykey2", Arrays.asList("ten", "eleven", "twelve"));
+        map2.put("mykey3", Arrays.asList("seven", "eight", "nine"));
+        map2.put("mykey4", Arrays.asList("ten", "eleven", "twelve"));
         list.add(map2);
 
-        Comparator<String> internalListComparator = (s1, s2) -> {
+        Comparator<String> listComparator = (s1, s2) -> {
             if (s1 == null && s2 == null) return 0;
             if (s1 == null) return 1;
             if (s2 == null) return -1;
@@ -36,7 +36,7 @@ public class Task12Test {
 
         list.stream().map((listMap) -> {
             for (List<String> listString : listMap.values()) {
-                Collections.sort(listString, internalListComparator);
+                Collections.sort(listString, listComparator);
             }
             return list;
         }).collect(Collectors.toList());
