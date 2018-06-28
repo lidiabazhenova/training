@@ -37,7 +37,7 @@ public class Task8Test {
         map4.put("mykey1", Arrays.asList("seven", "eight", "nine"));
         map4.put("mykey2", Arrays.asList("ten", "eleven", "twelve"));
         list2.add(map4);
-        
+
         Assert.assertFalse(list1.equals(list2));
     }
 }
