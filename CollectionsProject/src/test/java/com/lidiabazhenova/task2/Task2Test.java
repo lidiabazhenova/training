@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Результат первого задания отфильтровать, результатом будет такая же коллекция, только с колонками first name и age
+ */
 public class Task2Test {
     private static final String USERS_CSV_FILE_PATH = "src/test/resources/users.csv";
 
@@ -23,6 +26,7 @@ public class Task2Test {
             newPerson.put("age", person.get("age"));
             newPeople.add(newPerson);
         });
+
         System.out.println(newPeople);
     }
 }

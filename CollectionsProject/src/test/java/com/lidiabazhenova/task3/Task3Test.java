@@ -10,6 +10,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Первое задание, только изначально получаем значения только для выбранных колонок
+ */
 public class Task3Test {
     private static final String USERS_CSV_FILE_PATH = "src/test/resources/users.csv";
 

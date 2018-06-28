@@ -7,9 +7,11 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * Из результатов первого задания получить коллекцию, содержащую только только имена колонок
+ */
 public class Task4Test {
     private static final String USERS_CSV_FILE_PATH = "src/test/resources/users.csv";
-    Set<String> keyset;
 
     @Test
     public void task4OneKeyTest() throws IOException {
@@ -18,17 +20,5 @@ public class Task4Test {
         Assert.assertEquals(4, keyset.size());
     }
 
-    @Test
-    public void task4AllKeysTest() throws IOException {
-        List<Map<String, String>> people = CSVReaderUtil.loadAllPersonsFromFile(USERS_CSV_FILE_PATH);
-
-        people.forEach((person) -> {
-            keyset = person.keySet();
-            System.out.println(keyset);
-        });
-
-
-
-    }
 }
 

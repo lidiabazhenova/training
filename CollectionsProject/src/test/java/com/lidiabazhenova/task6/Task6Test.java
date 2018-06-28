@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Преобразовать произвольный массив строк в лист
+ */
 public class Task6Test {
 
     @Test

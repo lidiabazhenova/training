@@ -8,6 +8,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * Результат первого задания отсортировать по first name
+ */
 public class Task5Test {
     private static final String USERS_CSV_FILE_PATH = "src/test/resources/users.csv";
     private static final String key = "first name";
