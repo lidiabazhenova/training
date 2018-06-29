@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Отсортировать внешний и внутренний листы в List<Map<String, List<String>>>
+ * Убрать заданное значение из листа в Map<String, List<String>>
  */
 public class Task13Test {
     private static final String key = "one";
