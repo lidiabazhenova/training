@@ -1,22 +1,33 @@
 package com.lidiabazhenova.task17;
 
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.*;
 
 public class Task17Test {
 
-    private static final int ELCOUNT = 5000;
+    private static final int ALL_EL_COUNT = 1000000;
+    private static final int EL_COUNT = 5000;
+    private static final List<Integer> arrayList = new ArrayList();
+    private static final List<Integer> linkedList = new LinkedList<>();
+
+    @BeforeClass
+    public static void createLists() {
+        System.out.print("ArrayList: ");
+        createList(arrayList);
+        System.out.print("LinkedList: ");
+        createList(linkedList);
+    }
 
     @Test
     public void task17InTheMidleListTest() {
-        List<Integer> arrayList = new ArrayList();
+        System.out.println("\tFor " + EL_COUNT + " elements: ");
+        System.out.println("\tget in the middle of the list:");
         System.out.print("ArrayList: ");
-        createList(arrayList);
-
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        System.out.print("LinkedList: ");
-        createList(linkedList);
+        System.out.print(estimateGetInTheMiddle(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateGetInTheMiddle(linkedList));
 
         System.out.println("\tadd in the middle of the list:");
         System.out.print("ArrayList: ");
@@ -30,12 +41,6 @@ public class Task17Test {
         System.out.print("\tLinkedList: ");
         System.out.println(estimateRemoveInTheMiddle(linkedList));
 
-        System.out.println("\tget in the middle of the list:");
-        System.out.print("ArrayList: ");
-        System.out.print(estimateGetInTheMiddle(arrayList));
-        System.out.print("\tLinkedList: ");
-        System.out.println(estimateGetInTheMiddle(linkedList));
-
         System.out.println("ArrayList size = " + arrayList.size());
         System.out.println("LinkedList size = " + linkedList.size());
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
@@ -43,11 +48,12 @@ public class Task17Test {
 
     @Test
     public void task17AtTheEndListTest() {
-        List<Integer> arrayList = new ArrayList();
-        createList(arrayList);
-
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        createList(linkedList);
+        System.out.println("\tFor " + EL_COUNT + " elements: ");
+        System.out.println("\tget at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateGetFromEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateGetFromEnd(linkedList));
 
         System.out.println("\tadd at the end of the list:");
         System.out.print("ArrayList: ");
@@ -61,26 +67,20 @@ public class Task17Test {
         System.out.print("\tLinkedList: ");
         System.out.println(estimateRemoveFromEnd(linkedList));
 
-        System.out.println("\tget at the end of the list:");
-        System.out.print("ArrayList: ");
-        System.out.print(estimateGetFromEnd(arrayList));
-        System.out.print("\tLinkedList: ");
-        System.out.println(estimateGetFromEnd(linkedList));
-
         System.out.println("ArrayList size = " + arrayList.size());
         System.out.println("LinkedList size = " + linkedList.size());
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
-    private List<Integer> createList(final List<Integer> list) {
+    public static List<Integer> createList(final List<Integer> list) {
         final long start = System.currentTimeMillis();
-        for (int i = 1; i <= 1000000; i++) {
+        for (int i = 1; i <= ALL_EL_COUNT; i++) {
             list.add(i);
         }
 
         final long finish = System.currentTimeMillis();
         System.out.print("add 1000000 elements: ");
-        System.out.println(finish-start);
+        System.out.println(finish - start);
 
         return list;
     }
@@ -89,7 +89,7 @@ public class Task17Test {
         final long start = System.currentTimeMillis();
         final int startIndex = list.size() / 2;
 
-        for (int i = 0; i < ELCOUNT; i++) {
+        for (int i = 0; i < EL_COUNT; i++) {
             list.get(startIndex + i);
         }
         final long finish = System.currentTimeMillis();
@@ -101,7 +101,7 @@ public class Task17Test {
         final long startList = System.currentTimeMillis();
         final int startIndex = list.size() / 2;
 
-        for (int i = 0; i < ELCOUNT; i++) {
+        for (int i = 0; i < EL_COUNT; i++) {
             list.add(startIndex, i);
         }
         final long finishList = System.currentTimeMillis();
@@ -113,7 +113,7 @@ public class Task17Test {
         final long startList = System.currentTimeMillis();
         final int startIndex = list.size() / 2;
 
-        for (int i = 0; i < ELCOUNT; i++) {
+        for (int i = 0; i < EL_COUNT; i++) {
             list.remove(startIndex + i);
         }
         final long finishList = System.currentTimeMillis();
@@ -125,7 +125,7 @@ public class Task17Test {
         final long startList = System.currentTimeMillis();
         final int startIndex = list.size() - 1;
 
-        for (int i = startIndex; i >= list.size() - 10; i--) {
+        for (int i = startIndex; i >= list.size() - EL_COUNT; i--) {
             list.get(i);
         }
         final long finishList = System.currentTimeMillis();
@@ -136,7 +136,7 @@ public class Task17Test {
     private long estimateAddToEnd(final List<Integer> list) {
         final long startList = System.currentTimeMillis();
 
-        for (int i = 0; i < ELCOUNT; i++) {
+        for (int i = 0; i < EL_COUNT; i++) {
             list.add(i);
         }
         final long finishList = System.currentTimeMillis();
@@ -147,7 +147,7 @@ public class Task17Test {
     private long estimateRemoveFromEnd(final List<Integer> list) {
         final long startList = System.currentTimeMillis();
 
-        for (int i = 0; i < ELCOUNT; i++) {
+        for (int i = 0; i < EL_COUNT; i++) {
             list.remove(list.size() - 1);
         }
         final long finishList = System.currentTimeMillis();

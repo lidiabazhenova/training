@@ -15,13 +15,13 @@ public class Task13Test {
     @Test
     public void task13Test() throws IOException {
 
-        List<Map<String, List<String>>> list = new LinkedList<>();
+        List<Map<String, List<String>>> list = new ArrayList<>();
         Map<String, List<String>> map1 = new HashMap<>();
         Map<String, List<String>> map2 = new HashMap<>();
-        List<String> list1 = new LinkedList<>(Arrays.asList("one", "two", "three"));
-        List<String> list2 = new LinkedList<>(Arrays.asList("four", "five", "six"));
-        List<String> list3 = new LinkedList<>(Arrays.asList("seven", "eight", "nine"));
-        List<String> list4 = new LinkedList<>(Arrays.asList("one", "eight", "nine"));
+        List<String> list1 = new ArrayList<>(Arrays.asList("one", "two", "three"));
+        List<String> list2 = new ArrayList<>(Arrays.asList("four", "five", "six"));
+        List<String> list3 = new ArrayList<>(Arrays.asList("seven", "eight", "nine"));
+        List<String> list4 = new ArrayList<>(Arrays.asList("one", "eight", "nine"));
 
         map1.put("mykey1", list1);
         map1.put("mykey2", list2);
