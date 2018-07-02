@@ -67,6 +67,12 @@ public class Task17Test {
         System.out.print("\tLinkedList: ");
         System.out.println(estimateRemoveFromEnd(linkedList));
 
+        System.out.println("\tremove Iterator at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateIteratorRemoveFromEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateIteratorRemoveFromEnd(linkedList));
+
         System.out.println("ArrayList size = " + arrayList.size());
         System.out.println("LinkedList size = " + linkedList.size());
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
@@ -149,6 +155,24 @@ public class Task17Test {
 
         for (int i = 0; i < EL_COUNT; i++) {
             list.remove(list.size() - 1);
+        }
+        final long finishList = System.currentTimeMillis();
+
+        return finishList - startList;
+    }
+
+    private long estimateIteratorRemoveFromEnd(final List<Integer> list) {
+        final long startList = System.currentTimeMillis();
+        int count = 0;
+
+        ListIterator<Integer> listIterator = list.listIterator(list.size());
+        while (listIterator.hasPrevious()) {
+            listIterator.previous();
+            if (count< EL_COUNT) {
+                listIterator.remove();
+                count++;
+            }
+            break;
         }
         final long finishList = System.currentTimeMillis();
 
