@@ -13,8 +13,8 @@ public class Task17Test {
     private static final List<Integer> arrayList = new ArrayList();
     private static final List<Integer> linkedList = new LinkedList<>();
 
-    @Before
-    public void createLists() {
+    @BeforeClass
+    public static void createList() {
         System.out.print("ArrayList: ");
         createList(arrayList);
         System.out.print("LinkedList: ");
@@ -107,7 +107,7 @@ public class Task17Test {
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
-    public List<Integer> createList(final List<Integer> list) {
+    public static List<Integer> createList(final List<Integer> list) {
         final long start = System.currentTimeMillis();
         for (int i = 1; i <= ALL_EL_COUNT; i++) {
             list.add(i);
