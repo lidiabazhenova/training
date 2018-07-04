@@ -24,35 +24,35 @@ public class Task17Test {
     @Test
     public void task17InTheMidleListTest() {
         System.out.println("\tFor " + EL_COUNT + " elements: ");
-//        System.out.println("\tget in the middle of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateGetInTheMiddle(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateGetInTheMiddle(linkedList));
+        System.out.println("\tget in the middle of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateGetInTheMiddle(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateGetInTheMiddle(linkedList));
 
         System.out.println("\tadd in the middle of the list:");
         System.out.print("ArrayList: ");
         System.out.print(estimateAddInTheMiddle(arrayList));
         System.out.print("\tLinkedList: ");
         System.out.println(estimateAddInTheMiddle(linkedList));
-//
-//        System.out.println("\tadd Iterator in the middle of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateIteratorAddInTheMiddle(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateIteratorAddInTheMiddle(linkedList));
-//
+
+        System.out.println("\tadd Iterator in the middle of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateIteratorAddInTheMiddle(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateIteratorAddInTheMiddle(linkedList));
+
         System.out.println("\tremove in the middle of the list:");
         System.out.print("ArrayList: ");
         System.out.print(estimateRemoveInTheMiddle(arrayList));
         System.out.print("\tLinkedList: ");
         System.out.println(estimateRemoveInTheMiddle(linkedList));
 
-//        System.out.println("\tremove Iterator in the middle of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateIteratorRemoveInTheMiddle(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateIteratorRemoveInTheMiddle(linkedList));
+        System.out.println("\tremove Iterator in the middle of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateIteratorRemoveInTheMiddle(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateIteratorRemoveInTheMiddle(linkedList));
 
         System.out.println("ArrayList size = " + arrayList.size());
         System.out.println(arrayList.get(ALL_EL_COUNT / 2 - 1));
@@ -65,36 +65,36 @@ public class Task17Test {
 
     @Test
     public void task17AtTheEndListTest() {
-//        System.out.println("\tFor " + EL_COUNT + " elements: ");
-//        System.out.println("\tget at the end of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateGetFromEnd(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateGetFromEnd(linkedList));
-//
-//        System.out.println("\tadd at the end of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateAddAtTheEnd(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateAddAtTheEnd(linkedList));
-//
+        System.out.println("\tFor " + EL_COUNT + " elements: ");
+        System.out.println("\tget at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateGetFromEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateGetFromEnd(linkedList));
+
+        System.out.println("\tadd at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateAddAtTheEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateAddAtTheEnd(linkedList));
+
         System.out.println("\tadd Iterator at the end of the list:");
         System.out.print("ArrayList: ");
         System.out.print(estimateIteratorAddAtTheEnd(arrayList));
         System.out.print("\tLinkedList: ");
         System.out.println(estimateIteratorAddAtTheEnd(linkedList));
-//
-//        System.out.println("\tremove at the end of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateRemoveFromEnd(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateRemoveFromEnd(linkedList));
 
-//        System.out.println("\tremove Iterator at the end of the list:");
-//        System.out.print("ArrayList: ");
-//        System.out.print(estimateIteratorRemoveFromEnd(arrayList));
-//        System.out.print("\tLinkedList: ");
-//        System.out.println(estimateIteratorRemoveFromEnd(linkedList));
+        System.out.println("\tremove at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateRemoveFromEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateRemoveFromEnd(linkedList));
+
+        System.out.println("\tremove Iterator at the end of the list:");
+        System.out.print("ArrayList: ");
+        System.out.print(estimateIteratorRemoveFromEnd(arrayList));
+        System.out.print("\tLinkedList: ");
+        System.out.println(estimateIteratorRemoveFromEnd(linkedList));
 
         System.out.print("ArrayList lastElem = ");
         System.out.println(arrayList.get(arrayList.size() - 2));
@@ -152,12 +152,12 @@ public class Task17Test {
         int index = 0;
 
         ListIterator<Integer> listIterator = list.listIterator();
-        while (index < (ALL_EL_COUNT / 2 + EL_COUNT)) {
+        while (index <= (ALL_EL_COUNT / 2 + EL_COUNT)) {
             listIterator.next();
             index++;
-            if ((index >= ALL_EL_COUNT / 2) & (count < EL_COUNT)) {
+            if ((index > ALL_EL_COUNT / 2) & (count < EL_COUNT)) {
                 listIterator.previous();
-                listIterator.add(i++);
+                listIterator.add(++i);
                 count++;
             }
         }
@@ -185,11 +185,11 @@ public class Task17Test {
         int index = 0;
         Iterator<Integer> iterator = list.iterator();
 
-        while (index < (ALL_EL_COUNT / 2 + EL_COUNT)) {
+        while (index <= (ALL_EL_COUNT / 2 + EL_COUNT)) {
             iterator.next();
             index++;
-            if (count < EL_COUNT) {
 
+            if ((index > (ALL_EL_COUNT / 2) & (count < EL_COUNT))) {
                 iterator.remove();
                 count++;
             }
@@ -215,7 +215,7 @@ public class Task17Test {
     private long estimateAddAtTheEnd(final List<Integer> list) {
         final long startList = System.currentTimeMillis();
 
-        for (int i = 0; i < EL_COUNT; i++) {
+        for (int i = 1; i <= EL_COUNT; i++) {
             list.add(i);
         }
         final long finishList = System.currentTimeMillis();
@@ -232,7 +232,7 @@ public class Task17Test {
         while (count < EL_COUNT) {
             listIterator.previous();
             listIterator.next();
-            listIterator.add(i++);
+            listIterator.add(++i);
             count++;
         }
 
