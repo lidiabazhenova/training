@@ -130,22 +130,22 @@ public class Task18Test {
     }
 
     public long estimateGetPairsValueInTheMiddle(final Map<String, Integer> map,
-                                                                 final Map<String, Integer> target, final int targetSize) {
+                                                 final Map<String, Integer> target, final int targetSize) {
         final long start = System.currentTimeMillis();
         int count = 0;
-        int startCount = map.size()/2;
+        int startCount = map.size() / 2;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
 
             if (count >= startCount) {
-                if (count >= startCount+targetSize) break;
+                if (count >= startCount + targetSize) break;
                 target.put(entry.getKey(), entry.getValue());
             }
 
             count++;
         }
         final long finish = System.currentTimeMillis();
-        System.out.println("targetMap size = " + target.size());
+        //System.out.println("targetMap size = " + target.size());
         //System.out.println("count = " + count);
 
         return finish - start;
