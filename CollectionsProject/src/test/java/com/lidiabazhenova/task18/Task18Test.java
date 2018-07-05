@@ -1,45 +1,126 @@
 package com.lidiabazhenova.task18;
 
+import org.apache.commons.lang.RandomStringUtils;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.nio.charset.Charset;
 import java.util.*;
 
 public class Task18Test {
 
+
+    private static final int ALL_EL_COUNT = 1000000;
+    private static final int EL_COUNT = 5000;
+    private static final Map<String, Integer> hashMap = new HashMap<>();
+    private static final Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
+    private static final Map<String, Integer> treeMap = new TreeMap<>();
+
+    @BeforeClass
+    public static void createMap() {
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < 1000000; i++) {
+            list.add(generateString());
+        }
+        System.out.print("first keys: ");
+
+        for (int j = 0; j < 10; j++) {
+            System.out.print(list.get(j) + "\t");;
+        }
+        System.out.println();
+
+        System.out.print("HashMap: ");
+        createMap(hashMap, list);
+        System.out.println("*********************************************");
+        System.out.print("LinkedHashMap: ");
+        createMap(linkedHashMap, list);
+        System.out.println("*********************************************");
+        System.out.print("TreeMap: ");
+        createMap(treeMap, list);
+        System.out.println("*********************************************");
+    }
+
     @Test
-    public void task18Test() {
-        ArrayList<Integer> list = new ArrayList(); // Создание коллекции
+    public void task17InTheMidleListTest() {
+//        System.out.println("\tFor " + EL_COUNT + " elements: ");
+//        System.out.println("\tget in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateGetInTheMiddle(hashMap));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.println(estimateGetInTheMiddle(linkedHashMap));
+//        System.out.print("\tTreeMap: ");
+//        System.out.println(estimateGetInTheMiddle(treeMap));
 
-        for (int i = 0; i < 1000000; i++) { // Заполнение коллекции последовательностью чисел от 0 до 1000000
-            list.add(i);
-        }
+//        System.out.println("\tadd in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateAddInTheMiddle(hashMap));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.println(estimateAddInTheMiddle(linkedHashMap));
+//
+//        System.out.println("\tadd Iterator in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateIteratorAddInTheMiddle(hashMap));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.println(estimateIteratorAddInTheMiddle(linkedHashMap));
+//
+//        System.out.println("\tremove in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateRemoveInTheMiddle(hashMap));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.println(estimateRemoveInTheMiddle(linkedHashMap));
+//
+//        System.out.println("\tremove Iterator in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateIteratorRemoveInTheMiddle(hashMap));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.println(estimateIteratorRemoveInTheMiddle(linkedHashMap));
+//
+        System.out.println("HashMap size = " + hashMap.size());
+        System.out.println(printPairsValue(hashMap, 10));
+        System.out.println("*********************************************");
+        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
+        System.out.println(printPairsValue(linkedHashMap, 10));
+        System.out.println("*********************************************");
+        System.out.println("TreeMap size = " + treeMap.size());
+        System.out.println(printPairsValue(treeMap, 10));
+        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
+    }
 
-        Collections.shuffle(list); // организация произвольного порядка
+    public static String generateString() {
+        String generatedString = RandomStringUtils.randomAlphanumeric(10);
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(list.get(i) + " "); // Показываем что порядок произвольный, выводя первые 10 чисел к примеру
-        }
+        return generatedString;
+    }
 
-        Map<Integer, Boolean> map = new HashMap<>();
+    public static Map<String, Integer> createMap(final Map<String, Integer> map, final List<String> list) {
+        final long start = System.currentTimeMillis();
 
         for (int i = 0; i < list.size(); i++) {
-            map.put(list.get(i), true); // Map всегда содержит только уникальные ключи
+            String key = list.get(i);
+            int value = i;
+            map.put(key, value);
         }
 
-        System.out.println(list.size() == map.size()); // Если размеры равны то это значит что в исходной коллекции элементы были уникальны
-        long mapTime = checkTime(map);
-        System.out.println(mapTime);
+        final long finish = System.currentTimeMillis();
+        System.out.print("add 1000000 elements: ");
+        System.out.println(finish - start);
+
+        return map;
     }
 
-    private long checkTime(Map map) {
-        Date startMap = new Date();
-        for (int i = 0; i < map.size() / 3; i++) {
-            //операция .add .insert. remove. get .set с начала середины, и конца списка
-            //k - кол-во операций
-            map.get(i);
+    public Map<String, Integer> printPairsValue(final Map<String, Integer> map, final int max) {
+        final long start = System.currentTimeMillis();
+
+        int count = 0;
+        Map<String, Integer> target = new TreeMap<>();
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+
+            if (count >= max) break;
+            target.put(entry.getKey(), entry.getValue());
+            count++;
         }
-        Date finishMap = new Date();
-        return finishMap.getTime() - startMap.getTime();
+        final long finish = System.currentTimeMillis();
+        System.out.println(finish - start);
+        return target;
     }
-
 }

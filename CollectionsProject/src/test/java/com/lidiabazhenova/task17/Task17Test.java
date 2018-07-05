@@ -1,6 +1,5 @@
 package com.lidiabazhenova.task17;
 
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

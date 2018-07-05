@@ -30,6 +30,5 @@ public class Task19Test {
         Assert.assertTrue(integerSet1.containsAll(intersection));
         Assert.assertTrue(integerSet2.containsAll(intersection));
     }
-
 }
 
