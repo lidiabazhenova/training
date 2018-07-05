@@ -2,7 +2,7 @@ package com.lidiabazhenova.task18;
 
 import org.apache.commons.lang.RandomStringUtils;
 import org.junit.After;
-import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -12,15 +12,16 @@ public class Task18Test {
 
 
     private static final int ALL_EL_COUNT = 1000000;
-    private static final int EL_COUNT = 50000;
+    private static final int EL_COUNT = 500;
 
-    private static final Map<String, Integer> hashMap = new HashMap<>();
+    private static Map<String, Integer> hashMap = new HashMap<>();
     private static final Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     private static final Map<String, Integer> treeMap = new TreeMap<>();
+    private static final ArrayList<String> list = new ArrayList<>();
 
     @BeforeClass
-    public static void fillMap() {
-        ArrayList<String> list = new ArrayList<>();
+    public static void fillInTheValuesInToMap() {
+
         for (int i = 0; i < 1000000; i++) {
             list.add(generateString());
         }
@@ -30,16 +31,14 @@ public class Task18Test {
             System.out.print(list.get(j) + "\t");
         }
         System.out.println();
-
+        System.out.println("put 1000000 elements: ");
         System.out.print("HashMap: ");
-        fillMap(hashMap, list);
-        System.out.println("*********************************************");
-        System.out.print("LinkedHashMap: ");
-        fillMap(linkedHashMap, list);
-        System.out.println("*********************************************");
-        System.out.print("TreeMap: ");
-        fillMap(treeMap, list);
-        System.out.println("*********************************************");
+        fillInTheValuesInToMap(hashMap, list);
+        System.out.print("\tLinkedHashMap: ");
+        fillInTheValuesInToMap(linkedHashMap, list);
+        System.out.print("\tTreeMap: ");
+        fillInTheValuesInToMap(treeMap, list);
+        System.out.println();
     }
 
     @Test
@@ -47,18 +46,30 @@ public class Task18Test {
         System.out.println("\tFor " + EL_COUNT + " elements: ");
         System.out.println("\tget in the middle of the map:");
         System.out.print("HashMap: ");
-        System.out.println(estimateGetPairsValueInTheMiddle(hashMap, new HashMap<>(), EL_COUNT));
+        System.out.print(estimateGetInTheMiddle(hashMap, new HashMap<>(), EL_COUNT));
         System.out.print("\tLinkedHashMap: ");
-        System.out.println(estimateGetPairsValueInTheMiddle(linkedHashMap, new LinkedHashMap<>(), EL_COUNT));
+        System.out.print(estimateGetInTheMiddle(linkedHashMap, new LinkedHashMap<>(), EL_COUNT));
         System.out.print("\tTreeMap: ");
-        System.out.println(estimateGetPairsValueInTheMiddle(treeMap, new TreeMap<>(), EL_COUNT));
-    }
+        System.out.println(estimateGetInTheMiddle(treeMap, new TreeMap<>(), EL_COUNT));
 
-//        System.out.println("\tadd in the middle of the map:");
-//        System.out.print("HashMap: ");
-//        System.out.print(estimateAddInTheMiddle(hashMap));
-//        System.out.print("\tLinkedHashMap: ");
-//        System.out.println(estimateAddInTheMiddle(linkedHashMap));
+        System.out.println("\tset in the middle of the map:");
+        System.out.print("HashMap: ");
+        System.out.print(estimateSetInTheMiddle(hashMap, EL_COUNT));
+        System.out.print("\tLinkedHashMap: ");
+        System.out.print(estimateSetInTheMiddle(linkedHashMap, EL_COUNT));
+        System.out.print("\tTreeMap: ");
+        System.out.println(estimateSetInTheMiddle(treeMap, EL_COUNT));
+
+        System.out.println("\tremove in the middle of the map:");
+        System.out.print("HashMap: ");
+        System.out.print(estimateRemoveInTheMiddle(hashMap, EL_COUNT));
+        System.out.print("\tLinkedHashMap: ");
+        System.out.print(estimateRemoveInTheMiddle(linkedHashMap, EL_COUNT));
+        System.out.print("\tTreeHashMap: ");
+        System.out.println(estimateRemoveInTheMiddle(treeMap, EL_COUNT));
+//        System.out.print("\tTreeMap: ");
+//        System.out.println(estimateRemoveInTheMiddle(treeMap, new TreeMap<>(), EL_COUNT));
+    }
 //
 //        System.out.println("\tadd Iterator in the middle of the map:");
 //        System.out.print("HashMap: ");
@@ -66,11 +77,7 @@ public class Task18Test {
 //        System.out.print("\tLinkedHashMap: ");
 //        System.out.println(estimateIteratorAddInTheMiddle(linkedHashMap));
 //
-//        System.out.println("\tremove in the middle of the map:");
-//        System.out.print("HashMap: ");
-//        System.out.print(estimateRemoveInTheMiddle(hashMap));
-//        System.out.print("\tLinkedHashMap: ");
-//        System.out.println(estimateRemoveInTheMiddle(linkedHashMap));
+
 //
 //        System.out.println("\tremove Iterator in the middle of the map:");
 //        System.out.print("HashMap: ");
@@ -102,7 +109,7 @@ public class Task18Test {
         return generatedString;
     }
 
-    public static Map<String, Integer> fillMap(final Map<String, Integer> map, final List<String> list) {
+    public static Map<String, Integer> fillInTheValuesInToMap(final Map<String, Integer> map, final List<String> list) {
         final long start = System.currentTimeMillis();
 
         for (int i = 0; i < list.size(); i++) {
@@ -110,10 +117,10 @@ public class Task18Test {
             int value = i;
             map.put(key, value);
         }
-
         final long finish = System.currentTimeMillis();
-        System.out.print("add 1000000 elements: ");
-        System.out.println(finish - start);
+
+
+        System.out.print(finish - start);
 
         return map;
     }
@@ -129,8 +136,32 @@ public class Task18Test {
         }
     }
 
-    public long estimateGetPairsValueInTheMiddle(final Map<String, Integer> map,
-                                                 final Map<String, Integer> target, final int targetSize) {
+    public long estimateGetInTheMiddle(final Map<String, Integer> map,
+                                       final Map<String, Integer> target, final int targetSize) {
+        Map.Entry<String, Integer> entry;
+        Iterator<Map.Entry<String, Integer>> it;
+        final long start = System.currentTimeMillis();
+        int count = 0;
+        int startCount = map.size() / 2;
+
+        it = map.entrySet().iterator();
+        while (count < startCount + targetSize) {
+            entry = it.next();
+            count++;
+            if (count > startCount) {
+                target.put(entry.getKey(), entry.getValue());
+            }
+        }
+
+        final long finish = System.currentTimeMillis();
+
+        Assert.assertEquals(targetSize, target.size());
+
+        return finish - start;
+    }
+
+
+    public long estimateSetInTheMiddle(final Map<String, Integer> map, final int targetSize) {
         final long start = System.currentTimeMillis();
         int count = 0;
         int startCount = map.size() / 2;
@@ -138,15 +169,41 @@ public class Task18Test {
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
 
             if (count >= startCount) {
-                if (count >= startCount + targetSize) break;
-                target.put(entry.getKey(), entry.getValue());
-            }
 
+                if (count >= startCount + targetSize) break;
+                entry.setValue(-1);
+            }
             count++;
         }
         final long finish = System.currentTimeMillis();
-        //System.out.println("targetMap size = " + target.size());
-        //System.out.println("count = " + count);
+
+        return finish - start;
+    }
+
+    public long estimateRemoveInTheMiddle(final Map<String, Integer> map, final int targetSize) {
+        final List<String> target = new ArrayList<>();
+        Map.Entry<String, Integer> entry;
+        Iterator<Map.Entry<String, Integer>> it;
+        final long start = System.currentTimeMillis();
+        int count = 0;
+        int startCount = map.size() / 2;
+        final int mapSizeBeforeRemove = map.size();
+
+        it = map.entrySet().iterator();
+        while (count < startCount + targetSize) {
+            entry = it.next();
+            count++;
+            if (count > startCount) {
+                target.add(entry.getKey());
+            }
+        }
+
+        target.forEach(key -> {
+            map.remove(key);
+        });
+        final long finish = System.currentTimeMillis();
+
+        Assert.assertEquals(mapSizeBeforeRemove - targetSize, map.size());
 
         return finish - start;
     }
