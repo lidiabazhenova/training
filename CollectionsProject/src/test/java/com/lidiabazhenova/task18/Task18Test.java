@@ -1,23 +1,25 @@
 package com.lidiabazhenova.task18;
 
 import org.apache.commons.lang.RandomStringUtils;
+import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.nio.charset.Charset;
 import java.util.*;
 
 public class Task18Test {
 
 
     private static final int ALL_EL_COUNT = 1000000;
-    private static final int EL_COUNT = 5000;
+    private static final int EL_COUNT = 50000;
+
     private static final Map<String, Integer> hashMap = new HashMap<>();
     private static final Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
     private static final Map<String, Integer> treeMap = new TreeMap<>();
 
     @BeforeClass
-    public static void createMap() {
+    public static void fillMap() {
         ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 1000000; i++) {
             list.add(generateString());
@@ -25,31 +27,32 @@ public class Task18Test {
         System.out.print("first keys: ");
 
         for (int j = 0; j < 10; j++) {
-            System.out.print(list.get(j) + "\t");;
+            System.out.print(list.get(j) + "\t");
         }
         System.out.println();
 
         System.out.print("HashMap: ");
-        createMap(hashMap, list);
+        fillMap(hashMap, list);
         System.out.println("*********************************************");
         System.out.print("LinkedHashMap: ");
-        createMap(linkedHashMap, list);
+        fillMap(linkedHashMap, list);
         System.out.println("*********************************************");
         System.out.print("TreeMap: ");
-        createMap(treeMap, list);
+        fillMap(treeMap, list);
         System.out.println("*********************************************");
     }
 
     @Test
     public void task17InTheMidleListTest() {
-//        System.out.println("\tFor " + EL_COUNT + " elements: ");
-//        System.out.println("\tget in the middle of the map:");
-//        System.out.print("HashMap: ");
-//        System.out.print(estimateGetInTheMiddle(hashMap));
-//        System.out.print("\tLinkedHashMap: ");
-//        System.out.println(estimateGetInTheMiddle(linkedHashMap));
-//        System.out.print("\tTreeMap: ");
-//        System.out.println(estimateGetInTheMiddle(treeMap));
+        System.out.println("\tFor " + EL_COUNT + " elements: ");
+        System.out.println("\tget in the middle of the map:");
+        System.out.print("HashMap: ");
+        System.out.println(estimateGetPairsValueInTheMiddle(hashMap, new HashMap<>(), EL_COUNT));
+        System.out.print("\tLinkedHashMap: ");
+        System.out.println(estimateGetPairsValueInTheMiddle(linkedHashMap, new LinkedHashMap<>(), EL_COUNT));
+        System.out.print("\tTreeMap: ");
+        System.out.println(estimateGetPairsValueInTheMiddle(treeMap, new TreeMap<>(), EL_COUNT));
+    }
 
 //        System.out.println("\tadd in the middle of the map:");
 //        System.out.print("HashMap: ");
@@ -75,15 +78,22 @@ public class Task18Test {
 //        System.out.print("\tLinkedHashMap: ");
 //        System.out.println(estimateIteratorRemoveInTheMiddle(linkedHashMap));
 //
-        System.out.println("HashMap size = " + hashMap.size());
-        printPairsValue(hashMap, 10);
-        System.out.println("*********************************************");
-        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
-        printPairsValue(linkedHashMap, 10);
-        System.out.println("*********************************************");
-        System.out.println("TreeMap size = " + treeMap.size());
-        printPairsValue(treeMap, 10);
-        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
+
+    @After
+    public void task17AfterTest() {
+//        System.out.println("*********************************************");
+//        System.out.println("HashMap size = " + hashMap.size());
+//        System.out.print("first keys: ");
+//        printPairsValue(hashMap, 10000);
+//        System.out.println("*********************************************");
+//        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
+//        System.out.print("first keys: ");
+//        printPairsValue(linkedHashMap, 10000);
+//        System.out.println("*********************************************");
+//        System.out.println("TreeMap size = " + treeMap.size());
+//        System.out.print("first keys: ");
+//        printPairsValue(treeMap, 10000);
+//        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
     public static String generateString() {
@@ -92,7 +102,7 @@ public class Task18Test {
         return generatedString;
     }
 
-    public static Map<String, Integer> createMap(final Map<String, Integer> map, final List<String> list) {
+    public static Map<String, Integer> fillMap(final Map<String, Integer> map, final List<String> list) {
         final long start = System.currentTimeMillis();
 
         for (int i = 0; i < list.size(); i++) {
@@ -109,18 +119,35 @@ public class Task18Test {
     }
 
     public void printPairsValue(final Map<String, Integer> map, final int max) {
-        final long start = System.currentTimeMillis();
         int count = 0;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
 
             if (count >= max) break;
-            System.out.print(entry.getKey()+ "->" + entry.getValue() + " \t");
+            System.out.print(entry.getKey() + "->" + entry.getValue() + " \t");
             count++;
         }
-        System.out.println();
+    }
 
+    public long estimateGetPairsValueInTheMiddle(final Map<String, Integer> map,
+                                                                 final Map<String, Integer> target, final int targetSize) {
+        final long start = System.currentTimeMillis();
+        int count = 0;
+        int startCount = map.size()/2;
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+
+            if (count >= startCount) {
+                if (count >= startCount+targetSize) break;
+                target.put(entry.getKey(), entry.getValue());
+            }
+
+            count++;
+        }
         final long finish = System.currentTimeMillis();
-        System.out.println(finish - start);
+        System.out.println("targetMap size = " + target.size());
+        //System.out.println("count = " + count);
+
+        return finish - start;
     }
 }
