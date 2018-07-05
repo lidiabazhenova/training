@@ -12,7 +12,7 @@ public class Task18Test {
 
 
     private static final int ALL_EL_COUNT = 1000000;
-    private static final int EL_COUNT = 500;
+    private static final int EL_COUNT = 5;
 
     private static Map<String, Integer> hashMap = new HashMap<>();
     private static final Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
@@ -22,7 +22,7 @@ public class Task18Test {
     @BeforeClass
     public static void fillInTheValuesInToMap() {
 
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < ALL_EL_COUNT; i++) {
             list.add(generateString());
         }
         System.out.print("first keys: ");
@@ -69,21 +69,32 @@ public class Task18Test {
         System.out.println(estimateRemoveInTheMiddle(treeMap, EL_COUNT));
     }
 
-    @After
-    public void task17AfterTest() {
-        System.out.println("*********************************************");
-        System.out.println("HashMap size = " + hashMap.size());
-        System.out.print("first keys: ");
-        printPairsValue(hashMap, 10000);
-        System.out.println("*********************************************");
-        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
-        System.out.print("first keys: ");
-        printPairsValue(linkedHashMap, 10000);
-        System.out.println("*********************************************");
-        System.out.println("TreeMap size = " + treeMap.size());
-        System.out.print("first keys: ");
-        printPairsValue(treeMap, 10000);
-        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
+    @Test
+    public void task17AtTheEndListTest() {
+        System.out.println("\tFor " + EL_COUNT + " elements: ");
+        System.out.println("\tget at the end of the map:");
+        System.out.print("HashMap: ");
+        System.out.println(estimatGetAtTheEnd(hashMap, new HashMap<>(), EL_COUNT));
+        System.out.print("\tLinkedHashMap: ");
+        System.out.println(estimatGetAtTheEnd(linkedHashMap, new LinkedHashMap<>(), EL_COUNT));
+        System.out.print("\tTreeMap: ");
+        System.out.println(estimatGetAtTheEnd(treeMap, new TreeMap<>(), EL_COUNT));
+
+//        System.out.println("\tset in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateSetInTheMiddle(hashMap, EL_COUNT));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.print(estimateSetInTheMiddle(linkedHashMap, EL_COUNT));
+//        System.out.print("\tTreeMap: ");
+//        System.out.println(estimateSetInTheMiddle(treeMap, EL_COUNT));
+//
+//        System.out.println("\tremove in the middle of the map:");
+//        System.out.print("HashMap: ");
+//        System.out.print(estimateRemoveInTheMiddle(hashMap, EL_COUNT));
+//        System.out.print("\tLinkedHashMap: ");
+//        System.out.print(estimateRemoveInTheMiddle(linkedHashMap, EL_COUNT));
+//        System.out.print("\tTreeMap: ");
+//        System.out.println(estimateRemoveInTheMiddle(treeMap, EL_COUNT));
     }
 
     public static String generateString() {
@@ -189,5 +200,46 @@ public class Task18Test {
         Assert.assertEquals(mapSizeBeforeRemove - targetSize, map.size());
 
         return finish - start;
+    }
+
+    public long estimatGetAtTheEnd(final Map<String, Integer> map,
+                                   final Map<String, Integer> target, final int targetSize) {
+        Map.Entry<String, Integer> entry;
+        Iterator<Map.Entry<String, Integer>> it;
+        final long start = System.currentTimeMillis();
+        int count = 0;
+        int startCount = map.size()-targetSize;
+
+        it = map.entrySet().iterator();
+        while (count < map.size()) {
+            entry = it.next();
+            count++;
+            if (count > startCount) {
+                target.put(entry.getKey(), entry.getValue());
+            }
+        }
+
+        final long finish = System.currentTimeMillis();
+
+        Assert.assertEquals(targetSize, target.size());
+
+        return finish - start;
+    }
+
+    @After
+    public void task17AfterTest() {
+        System.out.println("*********************************************");
+        System.out.println("HashMap size = " + hashMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(hashMap, 10000);
+        System.out.println("*********************************************");
+        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(linkedHashMap, 10000);
+        System.out.println("*********************************************");
+        System.out.println("TreeMap size = " + treeMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(treeMap, 10000);
+        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 }
