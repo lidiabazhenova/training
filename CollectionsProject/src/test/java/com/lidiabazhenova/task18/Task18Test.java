@@ -76,13 +76,13 @@ public class Task18Test {
 //        System.out.println(estimateIteratorRemoveInTheMiddle(linkedHashMap));
 //
         System.out.println("HashMap size = " + hashMap.size());
-        System.out.println(printPairsValue(hashMap, 10));
+        printPairsValue(hashMap, 10);
         System.out.println("*********************************************");
         System.out.println("LinkedHashMap size = " + linkedHashMap.size());
-        System.out.println(printPairsValue(linkedHashMap, 10));
+        printPairsValue(linkedHashMap, 10);
         System.out.println("*********************************************");
         System.out.println("TreeMap size = " + treeMap.size());
-        System.out.println(printPairsValue(treeMap, 10));
+        printPairsValue(treeMap, 10);
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
@@ -108,19 +108,19 @@ public class Task18Test {
         return map;
     }
 
-    public Map<String, Integer> printPairsValue(final Map<String, Integer> map, final int max) {
+    public void printPairsValue(final Map<String, Integer> map, final int max) {
         final long start = System.currentTimeMillis();
-
         int count = 0;
-        Map<String, Integer> target = new TreeMap<>();
+
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
 
             if (count >= max) break;
-            target.put(entry.getKey(), entry.getValue());
+            System.out.print(entry.getKey()+ "->" + entry.getValue() + " \t");
             count++;
         }
+        System.out.println();
+
         final long finish = System.currentTimeMillis();
         System.out.println(finish - start);
-        return target;
     }
 }
