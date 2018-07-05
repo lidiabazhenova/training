@@ -65,42 +65,25 @@ public class Task18Test {
         System.out.print(estimateRemoveInTheMiddle(hashMap, EL_COUNT));
         System.out.print("\tLinkedHashMap: ");
         System.out.print(estimateRemoveInTheMiddle(linkedHashMap, EL_COUNT));
-        System.out.print("\tTreeHashMap: ");
+        System.out.print("\tTreeMap: ");
         System.out.println(estimateRemoveInTheMiddle(treeMap, EL_COUNT));
-//        System.out.print("\tTreeMap: ");
-//        System.out.println(estimateRemoveInTheMiddle(treeMap, new TreeMap<>(), EL_COUNT));
     }
-//
-//        System.out.println("\tadd Iterator in the middle of the map:");
-//        System.out.print("HashMap: ");
-//        System.out.print(estimateIteratorAddInTheMiddle(hashMap));
-//        System.out.print("\tLinkedHashMap: ");
-//        System.out.println(estimateIteratorAddInTheMiddle(linkedHashMap));
-//
-
-//
-//        System.out.println("\tremove Iterator in the middle of the map:");
-//        System.out.print("HashMap: ");
-//        System.out.print(estimateIteratorRemoveInTheMiddle(hashMap));
-//        System.out.print("\tLinkedHashMap: ");
-//        System.out.println(estimateIteratorRemoveInTheMiddle(linkedHashMap));
-//
 
     @After
     public void task17AfterTest() {
-//        System.out.println("*********************************************");
-//        System.out.println("HashMap size = " + hashMap.size());
-//        System.out.print("first keys: ");
-//        printPairsValue(hashMap, 10000);
-//        System.out.println("*********************************************");
-//        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
-//        System.out.print("first keys: ");
-//        printPairsValue(linkedHashMap, 10000);
-//        System.out.println("*********************************************");
-//        System.out.println("TreeMap size = " + treeMap.size());
-//        System.out.print("first keys: ");
-//        printPairsValue(treeMap, 10000);
-//        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
+        System.out.println("*********************************************");
+        System.out.println("HashMap size = " + hashMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(hashMap, 10000);
+        System.out.println("*********************************************");
+        System.out.println("LinkedHashMap size = " + linkedHashMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(linkedHashMap, 10000);
+        System.out.println("*********************************************");
+        System.out.println("TreeMap size = " + treeMap.size());
+        System.out.print("first keys: ");
+        printPairsValue(treeMap, 10000);
+        System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
     public static String generateString() {
