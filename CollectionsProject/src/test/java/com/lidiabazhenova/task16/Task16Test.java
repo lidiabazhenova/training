@@ -6,6 +6,9 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Преобразовать лист в строку
+ */
 public class Task16Test {
 
     @Test

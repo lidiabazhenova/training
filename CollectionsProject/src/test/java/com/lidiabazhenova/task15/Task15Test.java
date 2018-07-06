@@ -4,6 +4,9 @@ import org.junit.Test;
 
 import java.util.*;
 
+/**
+ * Убрать дубликаты из List<List<String>>
+ */
 public class Task15Test {
 
     @Test

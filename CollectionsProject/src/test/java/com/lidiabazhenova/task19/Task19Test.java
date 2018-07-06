@@ -6,6 +6,9 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * делать коллекцию из результатов пересечения двух множеств
+ */
 public class Task19Test {
 
     @Test

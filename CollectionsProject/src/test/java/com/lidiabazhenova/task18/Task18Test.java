@@ -5,8 +5,13 @@ import org.junit.*;
 
 import java.util.*;
 
+/**
+ * Сгенерировать миллион данных в map. Найти оптимальные map, чтобы:
+ получать элемент из середины, конца
+ удалять элемент из середны, конца
+ добавлять элемент
+ */
 public class Task18Test {
-
 
     private static final int ALL_EL_COUNT = 1000000;
     private static final int EL_COUNT = 500;
