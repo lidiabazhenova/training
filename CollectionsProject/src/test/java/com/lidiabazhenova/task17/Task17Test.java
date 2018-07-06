@@ -112,7 +112,7 @@ public class Task17Test {
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
     }
 
-    public static List<Integer> createList(final List<Integer> list) {
+    private static List<Integer> createList(final List<Integer> list) {
         final long start = System.currentTimeMillis();
         for (int i = 1; i <= ALL_EL_COUNT; i++) {
             list.add(i);

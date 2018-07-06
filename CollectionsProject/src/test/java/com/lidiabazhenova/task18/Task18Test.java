@@ -100,13 +100,13 @@ public class Task18Test {
         System.out.println(estimateRemoveAtTheEnd(treeMap, EL_COUNT));
     }
 
-    public static String generateString() {
+    private static String generateString() {
         String generatedString = RandomStringUtils.randomAlphanumeric(10);
 
         return generatedString;
     }
 
-    public static Map<String, Integer> fillInTheValuesInToMap(final Map<String, Integer> map, final List<String> list) {
+    private static Map<String, Integer> fillInTheValuesInToMap(final Map<String, Integer> map, final List<String> list) {
         final long start = System.currentTimeMillis();
 
         for (int i = 0; i < list.size(); i++) {
@@ -122,7 +122,7 @@ public class Task18Test {
         return map;
     }
 
-    public static void printPairsValue(final Map<String, Integer> map, final int max) {
+    private static void printPairsValue(final Map<String, Integer> map, final int max) {
         int count = 0;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
@@ -134,7 +134,7 @@ public class Task18Test {
         System.out.println();
     }
 
-    public long estimateGetInTheMiddle(final Map<String, Integer> map,
+    private long estimateGetInTheMiddle(final Map<String, Integer> map,
                                        final Map<String, Integer> target, final int targetSize) {
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
@@ -159,7 +159,7 @@ public class Task18Test {
     }
 
 
-    public long estimateSetInTheMiddle(final Map<String, Integer> map, final int targetSize) {
+    private long estimateSetInTheMiddle(final Map<String, Integer> map, final int targetSize) {
         final long start = System.currentTimeMillis();
         int count = 0;
         int startCount = map.size() / 2;
@@ -178,7 +178,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    public long estimateRemoveInTheMiddle(final Map<String, Integer> map, final int targetSize) {
+    private long estimateRemoveInTheMiddle(final Map<String, Integer> map, final int targetSize) {
         final List<String> target = new ArrayList<>();
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
@@ -206,7 +206,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    public long estimatGetAtTheEnd(final Map<String, Integer> map,
+    private long estimatGetAtTheEnd(final Map<String, Integer> map,
                                    final Map<String, Integer> target, final int targetSize) {
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
@@ -230,7 +230,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    public long estimateSetAtTheEnd(final Map<String, Integer> map, final int targetSize) {
+    private long estimateSetAtTheEnd(final Map<String, Integer> map, final int targetSize) {
         final long start = System.currentTimeMillis();
         int count = 0;
         int startCount = map.size() - targetSize;
@@ -249,7 +249,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    public long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
+    private long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
         final List<String> target = new ArrayList<>();
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
