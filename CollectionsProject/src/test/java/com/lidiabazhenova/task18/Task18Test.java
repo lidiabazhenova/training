@@ -249,7 +249,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    private long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
+    private  long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
         final List<String> target = new ArrayList<>();
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
