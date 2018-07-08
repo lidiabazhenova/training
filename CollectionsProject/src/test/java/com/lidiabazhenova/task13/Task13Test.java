@@ -3,14 +3,17 @@ package com.lidiabazhenova.task13;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Убрать заданное значение из листа в Map<String, List<String>>
  */
 public class Task13Test {
-    private static final String key = "one";
 
     @Test
     public void task13Test() throws IOException {

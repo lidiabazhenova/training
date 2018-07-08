@@ -1,6 +1,5 @@
 package com.lidiabazhenova.task9;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -13,7 +12,6 @@ public class Task9Test {
 
     @Test
     public void task9Test() throws IOException {
-
         List<Map<String, List<String>>> list1 = new ArrayList<>();
         Map<String, List<String>> map1 = new HashMap<>();
         Map<String, List<String>> map2 = new HashMap<>();

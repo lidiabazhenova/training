@@ -4,7 +4,11 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Arrays;
 
 /**
  * Есть две коллекции List<Map<String, List<String>>> с разным содержанием. Сравните их
@@ -13,7 +17,6 @@ public class Task8Test {
 
     @Test
     public void task8Test() throws IOException {
-
         List<Map<String, List<String>>> list1 = new ArrayList<>();
         Map<String, List<String>> map1 = new HashMap<>();
         Map<String, List<String>> map2 = new HashMap<>();
