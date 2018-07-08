@@ -1,7 +1,6 @@
 package com.lidiabazhenova.task22;
 
 import org.junit.Test;
-
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.*;
@@ -27,6 +26,8 @@ public class Task22Test {
         addCoordinates(47, 235, 73, 22, 184, 120, 34, 87);
         putInAbscissa();
         addCoordinates(47, 235, 73, 22, 47, 235, 73, 22);
+        putInAbscissa();
+        addCoordinates(100, 100, -100, -89, 12, 100, 100, -89);
         putInAbscissa();
         printMap(abscissa);
         getMin(abscissa);
@@ -99,12 +100,10 @@ public class Task22Test {
 
             if (D != 0) {
                 X = Dx / D;
-                System.out.println("intersect; abscissa = " + df.format(X));
 
                 return X;
             }
-        } else System.out.println("do not intersect ");
-
+        }
         return null;
     }
 
@@ -118,7 +117,7 @@ public class Task22Test {
                         min = entry;
                     }
                 }
-                System.out.println(df.format(min.getValue()));
+                System.out.println("min abscissa: " + df.format(min.getValue()));
             }
         } else System.out.println("do not intersect in any case");
     }

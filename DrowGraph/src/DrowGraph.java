@@ -6,8 +6,8 @@ import javax.swing.*;
 
 public class DrowGraph extends JPanel {
 
-    static int x1 = 37, y1 = 235, x2 = 63, y2 = 22; // координаты точек 1-го отрезка
-    static int x3 = 184, y3 = 120, x4 = 34, y4 = 87; // координаты точек 2-го отрезка
+    static int x1 = 100, y1 = 100, x2 = -100, y2 = -89; // координаты точек 1-го отрезка
+    static int x3 = 12, y3 = 100, x4 = 100, y4 = -89; // координаты точек 2-го отрезка
     static int X = 0, Y = 0;
     static String X1;
 
