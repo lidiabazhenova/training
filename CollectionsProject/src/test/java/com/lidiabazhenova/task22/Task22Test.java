@@ -99,11 +99,11 @@ public class Task22Test {
 
             if (D != 0) {
                 X = Dx / D;
-                System.out.println("do not intersect; abscissa = " + df.format(X));
+                System.out.println("intersect; abscissa = " + df.format(X));
 
                 return X;
             }
-        } else System.out.println("Отрезки не пересекаются ");
+        } else System.out.println("do not intersect ");
 
         return null;
     }
