@@ -1,11 +1,13 @@
 package com.lidiabazhenova.task14;
 
 import com.lidiabazhenova.Man;
+import org.apache.commons.lang.RandomStringUtils;
+
 import java.util.Map;
 
 public class MyThread implements Runnable {
     private String name;
-    Map<Long, Man> map;
+    private static Map<Long, Man> map;
 
     private Man Ivan = new Man(11110000, "Ivan", 22, "male");
     private Man Alex = new Man(11110001, "Alex", 34, "male");
@@ -21,17 +23,23 @@ public class MyThread implements Runnable {
 
         System.out.println(name + " starting.");
         try {
-            for (int count = 0; count < 10; count++) {
-
+            {
+                fillInTheValuesInToMap();
                 Thread.sleep(400);
-                map.put(Ivan.getId(), Ivan);
-                map.put(Alex.getId(), Alex);
-                map.put(Valeria.getId(), Valeria);
+
             }
         } catch (InterruptedException e) {
             System.out.println(name + " interrupted.");
         }
         System.out.println(name + " terminating.");
+    }
+
+    public static void fillInTheValuesInToMap() {
+
+        for (int i = 0; i < 400000; i++) {
+            long id = Long.parseLong(RandomStringUtils.randomNumeric(12));
+            map.put(id, new Man(id, "name", 12, "male"));
+        }
     }
 }
 

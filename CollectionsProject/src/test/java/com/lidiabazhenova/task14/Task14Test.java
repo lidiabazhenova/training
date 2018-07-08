@@ -1,28 +1,26 @@
 package com.lidiabazhenova.task14;
 
 import com.lidiabazhenova.Man;
+import org.apache.commons.lang.RandomStringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Три потока должны безопасно работать с Map <Long, Man>. Где Man - объект, см. #7
  */
 public class Task14Test {
-
-
+    private static final Map<Long, Man> manMap = Collections.synchronizedMap(new TreeMap<>());
 
     @Test
     public void task14Test() throws Exception {
 
-        Map<Long, Man> manList = Collections.synchronizedMap(new TreeMap<>());
+
         System.out.println("Main thread starting.");
-        Thread mt1 = new Thread(new MyThread("Child #1", manList));
-        Thread mt2 = new Thread(new MyThread("Child #2", manList));
-        Thread mt3 = new Thread(new MyThread("Child #3", manList));
+        Thread mt1 = new Thread(new MyThread("Child #1", manMap));
+        Thread mt2 = new Thread(new MyThread("Child #2", manMap));
+        Thread mt3 = new Thread(new MyThread("Child #3", manMap));
 
         mt1.start();
         mt2.start();
@@ -33,10 +31,8 @@ public class Task14Test {
         mt3.join();
 
         System.out.println("Main thread ending.");
-
-//        Assert.assertEquals("Ivan", newManList.get(0).get("11110000"));
-//        Assert.assertEquals("Alex", newManList.get(1).get("11110001"));
-//        Assert.assertEquals("Valeria", newManList.get(2).get("11110002"));
-
+        System.out.println("size = " + manMap.size());
     }
+
+
 }
