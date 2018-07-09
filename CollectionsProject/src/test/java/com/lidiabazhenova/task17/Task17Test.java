@@ -7,14 +7,15 @@ import java.util.*;
 
 /**
  * Сгенерировать миллион данных в коллекцию. Найти оптимальные коллекции, чтобы:
- получать элемент из середины, конца
- удалять элемент из середны, конца
- добавлять элемент
+ * получать элемент из середины, конца
+ * удалять элемент из середны, конца
+ * добавлять элемент
  */
 public class Task17Test {
 
     private static final int ALL_EL_COUNT = 1000000;
     private static final int EL_COUNT = 5000;
+
     private static final List<Integer> arrayList = new ArrayList();
     private static final List<Integer> linkedList = new LinkedList<>();
 
@@ -65,7 +66,6 @@ public class Task17Test {
         System.out.println(linkedList.get(ALL_EL_COUNT / 2));
         System.out.println(linkedList.get(ALL_EL_COUNT / 2 + 1));
         System.out.println("-//-//-//-//-//-//--//-//-//-//-//-//-//-//-//-");
-
     }
 
     @Test

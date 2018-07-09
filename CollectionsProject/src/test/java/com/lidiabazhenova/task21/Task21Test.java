@@ -25,7 +25,6 @@ public class Task21Test {
         stack2.push("Katja");
         stack2.push("444");
 
-
         System.out.println("Before:\n");
         System.out.println(stack1);
         System.out.println(stack2);
@@ -42,6 +41,7 @@ public class Task21Test {
 
         String stack1Elem = null;
         String stack2Elem = null;
+
         if (!stack1.isEmpty()) {
             stack1Elem = stack1.pop();
         }

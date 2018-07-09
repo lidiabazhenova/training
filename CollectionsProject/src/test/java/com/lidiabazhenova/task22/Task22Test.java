@@ -1,16 +1,21 @@
 package com.lidiabazhenova.task22;
 
 import org.junit.Test;
+
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.ArrayList;
 
 /**
  * На плоскости задано N отрезков. Найти точку пересечения двух отрезков, имеющую минимальную абсциссу.
  * Использовать класс TreeMap
  */
 public class Task22Test {
-    final static Map<Integer, Double> abscissa = new TreeMap<>();
+    private final static Map<Integer, Double> abscissa = new TreeMap<>();
     DecimalFormat df = new DecimalFormat("#.##");
 
     static int x1, y1, x2, y2;

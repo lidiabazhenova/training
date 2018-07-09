@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * делать коллекцию из результатов пересечения двух множеств
+ * сделать коллекцию из результатов пересечения двух множеств
  */
 public class Task19Test {
 
@@ -26,7 +26,6 @@ public class Task19Test {
         System.out.println(integerSet2);
 
         Set<Integer> intersection = new HashSet<>(integerSet1);
-
         intersection.retainAll(integerSet2);
         System.out.println(intersection);
 

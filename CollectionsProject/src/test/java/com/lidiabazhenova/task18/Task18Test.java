@@ -1,15 +1,24 @@
 package com.lidiabazhenova.task18;
 
 import org.apache.commons.lang.RandomStringUtils;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Iterator;
 
 /**
  * Сгенерировать миллион данных в map. Найти оптимальные map, чтобы:
- получать элемент из середины, конца
- удалять элемент из середны, конца
- добавлять элемент
+ * получать элемент из середины, конца
+ * удалять элемент из середны, конца
+ * добавлять элемент
  */
 public class Task18Test {
 
@@ -115,8 +124,6 @@ public class Task18Test {
             map.put(key, value);
         }
         final long finish = System.currentTimeMillis();
-
-
         System.out.print(finish - start);
 
         return map;
@@ -126,7 +133,6 @@ public class Task18Test {
         int count = 0;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-
             if (count >= max) break;
             System.out.print(entry.getKey() + "->" + entry.getValue() + " \t");
             count++;
@@ -135,14 +141,14 @@ public class Task18Test {
     }
 
     private long estimateGetInTheMiddle(final Map<String, Integer> map,
-                                       final Map<String, Integer> target, final int targetSize) {
+                                        final Map<String, Integer> target, final int targetSize) {
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
         final long start = System.currentTimeMillis();
         int count = 0;
         int startCount = map.size() / 2;
-
         it = map.entrySet().iterator();
+
         while (count < startCount + targetSize) {
             entry = it.next();
             count++;
@@ -165,9 +171,7 @@ public class Task18Test {
         int startCount = map.size() / 2;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-
             if (count >= startCount) {
-
                 if (count >= startCount + targetSize) break;
                 entry.setValue(-1);
             }
@@ -186,8 +190,8 @@ public class Task18Test {
         int count = 0;
         int startCount = map.size() / 2;
         final int mapSizeBeforeRemove = map.size();
-
         it = map.entrySet().iterator();
+
         while (count < startCount + targetSize) {
             entry = it.next();
             count++;
@@ -207,14 +211,14 @@ public class Task18Test {
     }
 
     private long estimatGetAtTheEnd(final Map<String, Integer> map,
-                                   final Map<String, Integer> target, final int targetSize) {
+                                    final Map<String, Integer> target, final int targetSize) {
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
         final long start = System.currentTimeMillis();
         int count = 0;
         int startCount = map.size() - targetSize;
-
         it = map.entrySet().iterator();
+
         while (count < map.size()) {
             entry = it.next();
             count++;
@@ -222,7 +226,6 @@ public class Task18Test {
                 target.put(entry.getKey(), entry.getValue());
             }
         }
-
         final long finish = System.currentTimeMillis();
 
         Assert.assertEquals(targetSize, target.size());
@@ -236,9 +239,7 @@ public class Task18Test {
         int startCount = map.size() - targetSize;
 
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-
             if (count >= startCount) {
-
                 if (count >= map.size()) break;
                 entry.setValue(-1);
             }
@@ -249,7 +250,7 @@ public class Task18Test {
         return finish - start;
     }
 
-    private  long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
+    private long estimateRemoveAtTheEnd(final Map<String, Integer> map, final int targetSize) {
         final List<String> target = new ArrayList<>();
         Map.Entry<String, Integer> entry;
         Iterator<Map.Entry<String, Integer>> it;
@@ -257,8 +258,8 @@ public class Task18Test {
         int count = 0;
         int startCount = map.size() - targetSize;
         final int mapSizeBeforeRemove = map.size();
-
         it = map.entrySet().iterator();
+
         while (count < mapSizeBeforeRemove) {
             entry = it.next();
             count++;
@@ -291,6 +292,5 @@ public class Task18Test {
         System.out.println("TreeMap size = " + treeMap.size());
         System.out.println("first keys-values: ");
         printPairsValue(treeMap, 5);
-
     }
 }
