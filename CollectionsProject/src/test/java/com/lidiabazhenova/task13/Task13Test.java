@@ -1,5 +1,6 @@
 package com.lidiabazhenova.task13;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -30,8 +31,8 @@ public class Task13Test {
         map1.put("mykey2", list2);
         list.add(map1);
 
-        map2.put("mykey3", list3);
-        map2.put("mykey4", list4);
+        map2.put("mykey1", list3);
+        map2.put("mykey2", list4);
         list.add(map2);
 
         list.forEach((map) -> {
@@ -46,10 +47,8 @@ public class Task13Test {
             }
         });
 
-        //TODO Assertion
         list.forEach((map) -> {
-            System.out.println(map.values());
-
+            Assert.assertFalse(map.containsKey("one"));
         });
     }
 }

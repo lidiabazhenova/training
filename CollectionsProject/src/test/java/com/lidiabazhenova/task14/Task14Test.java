@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -16,7 +17,7 @@ public class Task14Test {
 
     @Test
     public void task14Test() throws Exception {
-        final Map<Long, Man> manMap = Collections.synchronizedMap(new TreeMap<>());
+        final Map<Long, Man> manMap = Collections.synchronizedMap(new HashMap<>());
         System.out.println("Main thread starting.");
         Thread mt1 = new Thread(new MyThread("Thread #1", manMap));
         Thread mt2 = new Thread(new MyThread("Thread #2", manMap));
