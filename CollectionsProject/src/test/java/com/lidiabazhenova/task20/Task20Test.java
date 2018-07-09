@@ -1,10 +1,8 @@
 package com.lidiabazhenova.task20;
 
-import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.Stack;
 
 /**
  * Создать множество с числами. Суммировать соседние числа попарно, пока не останется одно число
@@ -13,33 +11,24 @@ public class Task20Test {
 
     @Test
     public void task20Test() {
-        List<Integer> list = new LinkedList<>();
-        List<Integer> bufferList = new LinkedList<>();
+        Stack<Integer> stack = new Stack<>();
+        Stack<Integer> newStack = new Stack<>();
 
-        for (int i = 0; i < 20; )
-            list.add(++i);
-
-        list.forEach((element) -> {
-            System.out.print(element);
-            System.out.print(" ");
-        });
-        System.out.println();
-
-        while (list.size() > 1) {
-
-            for (int i = 0; i < list.size() - 1; i++) {
-                int first = list.get(i);
-                int second = list.get(i + 1);
-                list.set(i, first + second);
-                list.remove(i + 1);
-            }
-
-            list.forEach((element) -> {
-                System.out.print(element);
-                System.out.print(" ");
-            });
-            System.out.println();
+        for (int i = 1; i <= 50; i++) {
+            stack.push(i * i);
         }
-        Assert.assertTrue(list.size() == 1);
+
+        while (stack.size() > 1) {
+            while (!stack.empty()) {
+                int newItem = stack.pop();
+                if (!stack.empty()) {
+                    newItem = newItem + stack.pop();
+                }
+                newStack.push(newItem);
+            }
+            stack.addAll(newStack);
+            newStack.clear();
+            System.out.println(stack);
+        }
     }
 }
