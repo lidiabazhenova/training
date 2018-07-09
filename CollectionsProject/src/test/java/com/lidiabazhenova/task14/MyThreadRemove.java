@@ -9,8 +9,6 @@ import java.util.Map;
 
 public class MyThreadRemove implements Runnable {
 
-    public static final int COUNT = 10;
-
     private final String name;
     private static Map<Long, Man> map;
 

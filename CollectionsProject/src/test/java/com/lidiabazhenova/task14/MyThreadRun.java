@@ -7,7 +7,7 @@ import java.util.*;
 
 public class MyThreadRun implements Runnable {
 
-    public static final int COUNT = 10;
+    public static final int COUNT = 100;
 
     private final String name;
     private static Map<Long, Man> map;

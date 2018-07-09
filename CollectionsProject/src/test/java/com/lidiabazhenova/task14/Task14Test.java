@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Collections;
+import java.util.Hashtable;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -15,7 +16,8 @@ public class Task14Test {
 
     @Test
     public void task14Test() throws Exception {
-        final Map<Long, Man> manMap = Collections.synchronizedMap(new TreeMap<>());
+        final Map<Long, Man> manMap = new Hashtable<>();
+
         System.out.println("Main thread starting.");
         Thread threadPut1 = new Thread(new MyThreadRun("Thread #1", manMap));
         Thread threadPut2 = new Thread(new MyThreadRun("Thread #2", manMap));
@@ -42,6 +44,6 @@ public class Task14Test {
         threadRemove3.join();
 
         System.out.println("Main thread ending.");
-        Assert.assertEquals(0 * MyThreadRun.COUNT, manMap.size());
+        Assert.assertEquals(0, manMap.size());
     }
 }
