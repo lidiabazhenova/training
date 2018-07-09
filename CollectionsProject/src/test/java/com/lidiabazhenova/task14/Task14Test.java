@@ -5,7 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -14,25 +13,35 @@ import java.util.TreeMap;
  */
 public class Task14Test {
 
-
     @Test
     public void task14Test() throws Exception {
-        final Map<Long, Man> manMap = Collections.synchronizedMap(new HashMap<>());
+        final Map<Long, Man> manMap = Collections.synchronizedMap(new TreeMap<>());
         System.out.println("Main thread starting.");
-        Thread mt1 = new Thread(new MyThread("Thread #1", manMap));
-        Thread mt2 = new Thread(new MyThread("Thread #2", manMap));
-        Thread mt3 = new Thread(new MyThread("Thread #3", manMap));
+        Thread threadPut1 = new Thread(new MyThreadRun("Thread #1", manMap));
+        Thread threadPut2 = new Thread(new MyThreadRun("Thread #2", manMap));
+        Thread threadPut3 = new Thread(new MyThreadRun("Thread #3", manMap));
 
-        mt1.start();
-        mt2.start();
-        mt3.start();
+        threadPut1.start();
+        threadPut2.start();
+        threadPut3.start();
 
-        mt1.join();
-        mt2.join();
-        mt3.join();
+        threadPut1.join();
+        threadPut2.join();
+        threadPut3.join();
+
+        Thread threadRemove1 = new Thread(new MyThreadRemove("Thread #1", manMap));
+        Thread threadRemove2 = new Thread(new MyThreadRemove("Thread #2", manMap));
+        Thread threadRemove3 = new Thread(new MyThreadRemove("Thread #3", manMap));
+
+        threadRemove1.start();
+        threadRemove2.start();
+        threadRemove3.start();
+
+        threadRemove1.join();
+        threadRemove2.join();
+        threadRemove3.join();
 
         System.out.println("Main thread ending.");
-        Assert.assertEquals(3 * MyThread.COUNT, manMap.size());
+        Assert.assertEquals(0 * MyThreadRun.COUNT, manMap.size());
     }
-
 }
