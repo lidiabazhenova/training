@@ -1,6 +1,6 @@
 # DrowGraph
 DrowGraph/
-DrowGraph.java
+DrowGraph/src/DrowGraph.java
 
 # OS specific files
 .DS_Store # auto-generated OSX files
