@@ -7,8 +7,6 @@ import java.util.*;
 
 public class MyThreadRun implements Runnable {
 
-    public static final int COUNT = 100;
-
     private final String name;
     private static Map<Long, Man> map;
 
@@ -26,7 +24,7 @@ public class MyThreadRun implements Runnable {
 
     public void fillInTheValuesInToMap(final Map<Long, Man> map) {
 
-        for (int i = 0; i < COUNT; i++) {
+        for (int i = 0; i < Task14Test.COUNT_VALUES_TO_ADD; i++) {
             long id = Long.parseLong(RandomStringUtils.randomNumeric(14));
             map.put(id, new Man(id, "name", 12, "male"));
             System.out.println(this.name + " " + " put: " + id);

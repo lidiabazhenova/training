@@ -29,6 +29,6 @@ public class Task15Test {
         list.clear();
         list.addAll(hs);
 
-        System.out.println(hs);
+        System.out.println(list);
     }
 }

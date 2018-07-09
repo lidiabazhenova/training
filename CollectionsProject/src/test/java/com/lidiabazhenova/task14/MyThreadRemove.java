@@ -26,16 +26,19 @@ public class MyThreadRemove implements Runnable {
 
     public void removeTheValuesFromMap(final Map<Long, Man> map) {
         final List<Long> keySet = new ArrayList<>();
+        int count = 0;
 
-        for (Map.Entry<Long, Man> entry : map.entrySet()
-                ) {
+        for (Map.Entry<Long, Man> entry : map.entrySet()) {
+            if (count >= Task14Test.COUNT_VALUES_TO_REMOVE) break;
             keySet.add(entry.getKey());
+            count++;
         }
 
         keySet.forEach((key) -> {
             map.remove(key);
-            System.out.println(this.name + " " + " remove: " + key);
-        });
-    }
+            System.out.println(this.name + " " + " remove: " + key);});
+
+        }
+
 }
 
