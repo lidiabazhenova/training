@@ -6,13 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- * class for page with url="https://catalog.onliner.by/tv"
+ * class for tvPage
  */
 public class TVPage {
     private WebDriver driver;
 
     /**
      * constructor for tvPage
+     *
      * @param driver
      */
     public TVPage(WebDriver driver) {
@@ -34,7 +35,8 @@ public class TVPage {
     private WebElement questionMarkFieldText;
 
     /**
-     * Method for check header of page
+     * Method to check header of page
+     *
      * @return String text of heading
      */
     public String getHeadingText() {
@@ -42,45 +44,50 @@ public class TVPage {
     }
 
     /**
-     * Method for click questionMark opposite the text "Диагональ"
+     * Method to click questionMark opposite the text "Диагональ"
+     *
      * @return current page
      */
-    public TVPage clickQuestionMark(){
+    public TVPage clickQuestionMark() {
         questionMark.click();
 
         return this;
     }
 
     /**
-     * Method for get text: "Диагональ".
+     * Method to get text: "Диагональ".
+     *
      * @return String text
      */
-    public String getQuestionMarkFieldHeader(){
+    public String getQuestionMarkFieldHeader() {
         return questionMarkFieldHeader.getText();
     }
 
     /**
-     * Method for get text-style for text: "Диагональ".
+     * Method to get text-style to text: "Диагональ".
+     *
      * @return String text
      */
-    public String getQuestionMarkFieldHeaderStyle(){
+    public String getQuestionMarkFieldHeaderStyle() {
         return questionMarkFieldHeader.getCssValue("font-weight");
     }
 
     /**
-     * Method for get text: "Размер диагонали экрана в дюймах. Минимальный комфортный размер зависит от расстояния
+     * Method to get text: "Размер диагонали экрана в дюймах. Минимальный комфортный размер зависит от расстояния
      * между экраном и зрителем, поскольку необходимо, чтобы изображение занимало определенный процент поля зрения."
+     *
      * @return String text
      */
-    public String getQuestionMarkFieldText(){
+    public String getQuestionMarkFieldText() {
         return questionMarkFieldText.getText();
     }
 
     /**
-     * Method for get text-style for text: "Диагональ".
+     * Method to get text-style to text: "Диагональ".
+     *
      * @return String text
      */
-    public String getQuestionMarkFieldTextStyle(){
+    public String getQuestionMarkFieldTextStyle() {
         return questionMarkFieldText.getCssValue("font-weight");
     }
 
