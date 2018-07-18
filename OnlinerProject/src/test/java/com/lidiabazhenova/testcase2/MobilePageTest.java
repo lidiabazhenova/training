@@ -11,7 +11,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
     private MobilePage mobilePage;
 
     @Before
-    public void setUp() {
+    public void setMobilePage() {
         driver.get("https://catalog.onliner.by/mobile");
         mobilePage = new MobilePage(driver);
     }

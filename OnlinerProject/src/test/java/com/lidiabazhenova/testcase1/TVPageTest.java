@@ -10,7 +10,7 @@ public class TVPageTest extends AbstractSeleniumTest {
     private TVPage tvPage;
 
     @Before
-    public void setUp() {
+    public void setTvPage() {
         driver.get("https://catalog.onliner.by/tv");
         tvPage = new TVPage(driver);
     }
