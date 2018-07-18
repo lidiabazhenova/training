@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 /**
  * class for mobilePage
  */
@@ -24,11 +22,8 @@ public class IPhone7Page {
         PageFactory.initElements(driver, this);
     }
 
-//    @FindBy(xpath = "//div[@class=\"schema-product__group\"]")
-//    private List<WebElement> allElements;
-
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
-    private WebElement descriptionHeadingAccumulator;
+    private WebElement headingAccumulator;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Тип аккумулятора')]]/td[1]")
     private WebElement typeAccumulator;
@@ -54,39 +49,85 @@ public class IPhone7Page {
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время ожидания')]]/td[2]")
     private WebElement descriptionWaitTimeAccumulator;
 
-    public WebElement getDescriptionHeadingAccumulator() {
-        return descriptionHeadingAccumulator;
+    /**
+     * Method to get field accumulators.
+     *
+     * @return current element
+     */
+    public WebElement getFieldAccumulators() {
+        return headingAccumulator;
     }
 
-    public WebElement getTypeAccumulator() {
+    /**
+     * Method to get field "type of accumulator".
+     *
+     * @return current element
+     */
+    public WebElement getTypeAccumulator()
+    {
         return typeAccumulator;
     }
 
-    public WebElement getDescriptionTypeAccumulator() {
+    /**
+     * Method to get description of accumulator type.
+     *
+     * @return current element
+     */
+    public WebElement getDescriptionType() {
         return descriptionTypeAccumulator;
     }
 
-    public WebElement getCapacityAccumulator() {
+    /**
+     * Method to get field "accumulator capacity".
+     *
+     * @return current element
+     */
+    public WebElement getCapacity() {
         return capacityAccumulator;
     }
 
-    public WebElement getDescriptionCapacityAccumulator() {
+    /**
+     * Method to get value of accumulator capacity.
+     *
+     * @return current element
+     */
+    public WebElement getValueCapacity() {
         return descriptionCapacityAccumulator;
     }
 
+    /**
+     * Method to get field "accumulator talk time".
+     *
+     * @return current element
+     */
     public WebElement getTalkTimeAccumulator() {
         return talkTimeAccumulator;
     }
 
-    public WebElement getDescriptionTalkTimeAccumulator() {
+    /**
+     * Method to get value of accumulator talk time.
+     *
+     * @return current element
+     */
+    public WebElement getValueTalkTimeAccumulator() {
         return descriptionTalkTimeAccumulator;
     }
 
-    public WebElement getWaitTimeAccumulator() {
+    /**
+     * Method to get field "accumulator wait time".
+     *
+     * @return current element
+     */
+    public WebElement getWaitTime() {
         return waitTimeAccumulator;
     }
 
-    public WebElement getDescriptionWaitTimeAccumulator() {
+    /**
+     * Method to get value of accumulator wait time.
+     *
+     * @return current element
+     */
+    public WebElement getDescriptionWaitTime() {
         return descriptionWaitTimeAccumulator;
     }
 }
