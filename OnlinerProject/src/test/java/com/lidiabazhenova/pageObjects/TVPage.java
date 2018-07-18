@@ -3,26 +3,15 @@ package com.lidiabazhenova.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 /**
  * class for tvPage
  */
-public class TVPage {
+public class TVPage extends AbstractPage {
     private WebDriver driver;
 
-    /**
-     * constructor for tvPage
-     *
-     * @param driver
-     */
-    public TVPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
-
-    @FindBy(xpath = "//h1[@class='schema-header__title']")
-    private WebElement heading;
+    @FindBy(xpath = TITLE_X_PATH)
+    private WebElement titlePage;
 
     @FindBy(xpath = "//div[./span[contains(text()," +
             "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")
@@ -35,12 +24,21 @@ public class TVPage {
     private WebElement questionMarkFieldText;
 
     /**
+     * constructor for tvPage
+     *
+     * @param driver
+     */
+    public TVPage(WebDriver driver) {
+        super(driver);
+    }
+
+    /**
      * Method to check header of page
      *
-     * @return String text of heading
+     * @return String text of titlePage
      */
-    public String getHeadingText() {
-        return heading.getText();
+    public String getTitle() {
+        return titlePage.getText();
     }
 
     /**

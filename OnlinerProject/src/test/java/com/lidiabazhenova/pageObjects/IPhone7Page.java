@@ -6,21 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 /**
- * class for mobilePage
+ * class for iphonePage
  */
-public class IPhone7Page {
+public class IPhone7Page extends AbstractPage {
 
     private WebDriver driver;
 
-    /**
-     * constructor for mobilePage
-     *
-     * @param driver
-     */
-    public IPhone7Page(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
-    }
+    @FindBy(xpath = TITLE_X_PATH)
+    private WebElement titlePage;
 
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
     private WebElement headingAccumulator;
@@ -50,6 +43,24 @@ public class IPhone7Page {
     private WebElement descriptionWaitTimeAccumulator;
 
     /**
+     * constructor for iphone7Page
+     *
+     * @param driver
+     */
+    public IPhone7Page(WebDriver driver) {
+        super(driver);
+    }
+
+    /**
+     * Method to get header of page
+     *
+     * @return String text of title
+     */
+    public String getTitlePage() {
+        return titlePage.getText();
+    }
+
+    /**
      * Method to get field accumulators.
      *
      * @return current element
@@ -63,8 +74,7 @@ public class IPhone7Page {
      *
      * @return current element
      */
-    public WebElement getTypeAccumulator()
-    {
+    public WebElement getTypeAccumulator() {
         return typeAccumulator;
     }
 

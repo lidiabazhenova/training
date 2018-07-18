@@ -18,7 +18,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
 
     @Test
     public void mobilePageOpenTest() {
-        Assert.assertEquals("Мобильные телефоны", mobilePage.getHeadingText());
+        Assert.assertEquals("Мобильные телефоны", mobilePage.getTitle());
     }
 
     @Test

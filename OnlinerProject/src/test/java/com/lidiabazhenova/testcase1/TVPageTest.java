@@ -17,7 +17,7 @@ public class TVPageTest extends AbstractSeleniumTest {
 
     @Test
     public void tvPageOpenTest() {
-        Assert.assertEquals("Телевизоры", tvPage.getHeadingText());
+        Assert.assertEquals("Телевизоры", tvPage.getTitle());
     }
 
     @Test

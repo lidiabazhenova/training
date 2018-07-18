@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 public class IPhone7PageTest extends AbstractSeleniumTest {
 
     private static final String URL = "https://catalog.onliner.by/mobile/apple/iphone732";
-    public static final String SCRIPT = "arguments[0].scrollIntoView(true);";
+    private static final String SCRIPT = "arguments[0].scrollIntoView(true);";
 
     private static IPhone7Page iPhone7Page;
 
@@ -22,16 +22,15 @@ public class IPhone7PageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void iPhone7PageOpen() {
-        String currentUrlURL = driver.getCurrentUrl();
-        Assert.assertEquals(currentUrlURL, URL);
+    public void iphonePageOpenTest() {
+        Assert.assertEquals("Мобильные телефоны", iPhone7Page.getTitlePage());
     }
 
     @Test
     public void iPhone7AccumulatorScroll() {
         JavascriptExecutor je = (JavascriptExecutor) driver;
         WebElement element = iPhone7Page.getFieldAccumulators();
-        je.executeScript(SCRIPT,element);
+        je.executeScript(SCRIPT, element);
 
         Assert.assertEquals("Аккумулятор и время работы", element.getText());
 

@@ -3,15 +3,13 @@ package com.lidiabazhenova.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-import java.text.DecimalFormat;
 import java.util.List;
 
 /**
  * class for mobilePage
  */
-public class MobilePage {
+public class MobilePage extends AbstractPage {
     private WebDriver driver;
 
     /**
@@ -20,12 +18,11 @@ public class MobilePage {
      * @param driver
      */
     public MobilePage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
-    @FindBy(xpath = "//h1[@class='schema-header__title']")
-    private WebElement heading;
+    @FindBy(xpath = TITLE_X_PATH)
+    private WebElement title;
 
     @FindBy(xpath = "//div[@class=\"schema-product__group\"]")
     private List<WebElement> allElements;
@@ -45,10 +42,10 @@ public class MobilePage {
     /**
      * Method to get header of page
      *
-     * @return String text of heading
+     * @return String text of title
      */
-    public String getHeadingText() {
-        return heading.getText();
+    public String getTitle() {
+        return title.getText();
     }
 
     /**
