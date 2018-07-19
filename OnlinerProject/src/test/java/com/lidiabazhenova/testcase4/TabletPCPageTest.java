@@ -8,9 +8,10 @@ import org.junit.Test;
 
 public class TabletPCPageTest extends AbstractSeleniumTest {
 
-    private static TabletPCPage tabletPCPage;
     private static final String URL = "https://catalog.onliner.by/tabletpc";
-    private static final String name = "Планшет";
+    private static final String NAME = "Планшет";
+
+    private static TabletPCPage tabletPCPage;
 
     @BeforeClass
     public static void setTabletPCPage() throws Exception {
@@ -20,6 +21,6 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
 
     @Test
     public void tabletPCPageOpen() {
-        Assert.assertEquals(String.format(TITLE, name), driver.getTitle());
+        Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
     }
 }

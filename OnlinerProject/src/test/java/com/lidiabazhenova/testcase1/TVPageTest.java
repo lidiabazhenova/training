@@ -7,7 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TVPageTest extends AbstractSeleniumTest {
-    private static final String name = "Телевизор";
+    
+    private static final String NAME = "Телевизор";
 
     private TVPage tvPage;
 
@@ -19,7 +20,7 @@ public class TVPageTest extends AbstractSeleniumTest {
 
     @Test
     public void tvPageOpenTest() {
-        Assert.assertEquals(String.format(TITLE, name), driver.getTitle());
+        Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
     }
 
     @Test

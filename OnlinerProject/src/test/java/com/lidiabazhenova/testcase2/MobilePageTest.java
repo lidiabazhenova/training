@@ -8,8 +8,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class MobilePageTest extends AbstractSeleniumTest {
+
+    private static final String NAME = "Мобильный телефон";
+
     private MobilePage mobilePage;
-    private static final String name = "Мобильный телефон";
 
     @Before
     public void setMobilePage() {
@@ -20,7 +22,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
 
     @Test
     public void mobilePageOpenTest() {
-        Assert.assertEquals(String.format(TITLE, name), driver.getTitle());
+        Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
     }
 
     @Test
