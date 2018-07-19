@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class AbstractSeleniumTest {
 
     private final static String GECKO_BASE_PATH = "C:\\projects\\Selenium\\drivers\\geckodriver.exe";
-    static final String TITLE_X_PATH = "//h1[@class='schema-header__title']";
+    protected static final String TITLE = "%s купить в Минске";
 
 
     protected static WebDriver driver;

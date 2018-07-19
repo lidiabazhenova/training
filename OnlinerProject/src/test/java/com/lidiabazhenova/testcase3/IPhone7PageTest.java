@@ -12,6 +12,7 @@ public class IPhone7PageTest extends AbstractSeleniumTest {
 
     private static final String URL = "https://catalog.onliner.by/mobile/apple/iphone732";
     private static final String SCRIPT = "arguments[0].scrollIntoView(true);";
+    private static final String TITLE = "Купить Apple iPhone 7 в Минске";
 
     private static IPhone7Page iPhone7Page;
 
@@ -23,7 +24,7 @@ public class IPhone7PageTest extends AbstractSeleniumTest {
 
     @Test
     public void iphonePageOpenTest() {
-        Assert.assertEquals("Мобильные телефоны", iPhone7Page.getTitlePage());
+        Assert.assertEquals(TITLE, driver.getTitle());
     }
 
     @Test

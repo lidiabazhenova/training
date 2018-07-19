@@ -9,7 +9,8 @@ import org.junit.Test;
 public class TabletPCPageTest extends AbstractSeleniumTest {
 
     private static TabletPCPage tabletPCPage;
-    private static final String URL = "https://catalog.onliner.by/tabletpc1";
+    private static final String URL = "https://catalog.onliner.by/tabletpc";
+    private static final String name = "Планшет";
 
     @BeforeClass
     public static void setTabletPCPage() throws Exception {
@@ -19,6 +20,6 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
 
     @Test
     public void tabletPCPageOpen() {
-        Assert.assertEquals(URL, driver.getCurrentUrl());
+        Assert.assertEquals(String.format(TITLE, name), driver.getTitle());
     }
 }

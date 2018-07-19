@@ -9,16 +9,18 @@ import org.junit.Test;
 
 public class MobilePageTest extends AbstractSeleniumTest {
     private MobilePage mobilePage;
+    private static final String name = "Мобильный телефон";
 
     @Before
     public void setMobilePage() {
         driver.get("https://catalog.onliner.by/mobile");
         mobilePage = new MobilePage(driver);
+
     }
 
     @Test
     public void mobilePageOpenTest() {
-        Assert.assertEquals("Мобильные телефоны", mobilePage.getTitle());
+        Assert.assertEquals(String.format(TITLE, name), driver.getTitle());
     }
 
     @Test

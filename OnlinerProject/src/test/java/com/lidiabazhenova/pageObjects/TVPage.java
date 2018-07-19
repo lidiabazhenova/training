@@ -10,9 +10,6 @@ import org.openqa.selenium.support.FindBy;
 public class TVPage extends AbstractPage {
     private WebDriver driver;
 
-    @FindBy(xpath = TITLE_X_PATH)
-    private WebElement titlePage;
-
     @FindBy(xpath = "//div[./span[contains(text()," +
             "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")
     private WebElement questionMark;
@@ -30,15 +27,6 @@ public class TVPage extends AbstractPage {
      */
     public TVPage(WebDriver driver) {
         super(driver);
-    }
-
-    /**
-     * Method to check header of page
-     *
-     * @return String text of titlePage
-     */
-    public String getTitle() {
-        return titlePage.getText();
     }
 
     /**

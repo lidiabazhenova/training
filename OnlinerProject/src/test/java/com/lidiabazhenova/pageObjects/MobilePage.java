@@ -21,9 +21,6 @@ public class MobilePage extends AbstractPage {
         super(driver);
     }
 
-    @FindBy(xpath = TITLE_X_PATH)
-    private WebElement title;
-
     @FindBy(xpath = "//div[@class=\"schema-product__group\"]")
     private List<WebElement> allElements;
 
@@ -38,15 +35,6 @@ public class MobilePage extends AbstractPage {
 
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__price']//span")
     private WebElement priceElement;
-
-    /**
-     * Method to get header of page
-     *
-     * @return String text of title
-     */
-    public String getTitle() {
-        return title.getText();
-    }
 
     /**
      * Method to get count of phones on this page

@@ -3,7 +3,6 @@ package com.lidiabazhenova.pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 /**
  * class for iphonePage
@@ -11,9 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 public class IPhone7Page extends AbstractPage {
 
     private WebDriver driver;
-
-    @FindBy(xpath = TITLE_X_PATH)
-    private WebElement titlePage;
 
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
     private WebElement headingAccumulator;
@@ -49,15 +45,6 @@ public class IPhone7Page extends AbstractPage {
      */
     public IPhone7Page(WebDriver driver) {
         super(driver);
-    }
-
-    /**
-     * Method to get header of page
-     *
-     * @return String text of title
-     */
-    public String getTitlePage() {
-        return titlePage.getText();
     }
 
     /**
