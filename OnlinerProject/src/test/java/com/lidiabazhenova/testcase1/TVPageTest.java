@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TVPageTest extends AbstractSeleniumTest {
-    
+
     private static final String NAME = "Телевизор";
 
     private TVPage tvPage;

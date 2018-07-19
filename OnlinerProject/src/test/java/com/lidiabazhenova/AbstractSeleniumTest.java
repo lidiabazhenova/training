@@ -1,8 +1,5 @@
 package com.lidiabazhenova;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -24,9 +21,9 @@ public abstract class AbstractSeleniumTest {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
 
-    @AfterClass
-    public static void quitDriver() {
-        driver.quit();
-    }
+//    @AfterClass
+//    public static void quitDriver() {
+//        driver.quit();
+//    }
 
 }
