@@ -12,31 +12,31 @@ public class IPhone7Page extends AbstractPage {
     private WebDriver driver;
 
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
-    private WebElement headingAccumulator;
+    private WebElement headingButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Тип аккумулятора')]]/td[1]")
-    private WebElement typeAccumulator;
+    private WebElement typeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Тип аккумулятора')]]/td[2]")
-    private WebElement descriptionTypeAccumulator;
+    private WebElement descriptionTypeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Ёмкость аккумулятора')]]/td[1]")
-    private WebElement capacityAccumulator;
+    private WebElement capacityButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Ёмкость аккумулятора')]]/td[2]")
-    private WebElement descriptionCapacityAccumulator;
+    private WebElement descriptionCapacityButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время разговора')]]/td[1]")
-    private WebElement talkTimeAccumulator;
+    private WebElement talkTimeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время разговора')]]/td[2]")
-    private WebElement descriptionTalkTimeAccumulator;
+    private WebElement descriptionTalkTimeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время ожидания')]]/td[1]")
-    private WebElement waitTimeAccumulator;
+    private WebElement waitTimeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время ожидания')]]/td[2]")
-    private WebElement descriptionWaitTimeAccumulator;
+    private WebElement descriptionWaitTimeButtery;
 
     /**
      * constructor for iphone7Page
@@ -48,83 +48,83 @@ public class IPhone7Page extends AbstractPage {
     }
 
     /**
-     * Method to get field accumulators.
+     * Method to get field butterys.
      *
      * @return current element
      */
-    public WebElement getFieldAccumulators() {
-        return headingAccumulator;
+    public WebElement getFieldButterys() {
+        return headingButtery;
     }
 
     /**
-     * Method to get field "type of accumulator".
+     * Method to get field "type of buttery".
      *
      * @return current element
      */
-    public WebElement getTypeAccumulator() {
-        return typeAccumulator;
+    public WebElement getTypeButtery() {
+        return typeButtery;
     }
 
     /**
-     * Method to get description of accumulator type.
+     * Method to get description of buttery type.
      *
      * @return current element
      */
     public WebElement getDescriptionType() {
-        return descriptionTypeAccumulator;
+        return descriptionTypeButtery;
     }
 
     /**
-     * Method to get field "accumulator capacity".
+     * Method to get field "buttery capacity".
      *
      * @return current element
      */
     public WebElement getCapacity() {
-        return capacityAccumulator;
+        return capacityButtery;
     }
 
     /**
-     * Method to get value of accumulator capacity.
+     * Method to get value of buttery capacity.
      *
      * @return current element
      */
     public WebElement getValueCapacity() {
-        return descriptionCapacityAccumulator;
+        return descriptionCapacityButtery;
     }
 
     /**
-     * Method to get field "accumulator talk time".
+     * Method to get field "buttery talk time".
      *
      * @return current element
      */
-    public WebElement getTalkTimeAccumulator() {
-        return talkTimeAccumulator;
+    public WebElement getTalkTimeButtery() {
+        return talkTimeButtery;
     }
 
     /**
-     * Method to get value of accumulator talk time.
+     * Method to get value of buttery talk time.
      *
      * @return current element
      */
-    public WebElement getValueTalkTimeAccumulator() {
-        return descriptionTalkTimeAccumulator;
+    public WebElement getValueTalkTimeButtery() {
+        return descriptionTalkTimeButtery;
     }
 
     /**
-     * Method to get field "accumulator wait time".
+     * Method to get field "buttery wait time".
      *
      * @return current element
      */
     public WebElement getWaitTime() {
-        return waitTimeAccumulator;
+        return waitTimeButtery;
     }
 
     /**
-     * Method to get value of accumulator wait time.
+     * Method to get value of buttery wait time.
      *
      * @return current element
      */
     public WebElement getDescriptionWaitTime() {
-        return descriptionWaitTimeAccumulator;
+        return descriptionWaitTimeButtery;
     }
 }

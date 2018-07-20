@@ -21,7 +21,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void mobilePageOpenTest() {
+    public void pageOpenTest() {
         Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
     }
 
@@ -32,12 +32,12 @@ public class MobilePageTest extends AbstractSeleniumTest {
 
 
     @Test
-    public void mobilePageAllElementsPresentPhoneHeading() {
+    public void allElementsPresentPhoneHeadingTest() {
         Assert.assertEquals(30, mobilePage.getHeadingsAllElements().size());
     }
 
     @Test
-    public void mobilePageAllElementsNotBlankHeading() {
+    public void allElementsNotBlankHeadingTest() {
 
         mobilePage.getHeadingsAllElements().forEach((headingField) -> {
 
@@ -46,12 +46,12 @@ public class MobilePageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void mobilePageAllElementsPresentPhoneDescription() {
+    public void allElementsPresentPhoneDescriptionTest() {
         Assert.assertEquals(30, mobilePage.getDescriptionAllElements().size());
     }
 
     @Test
-    public void mobilePageAllElementsNotBlankDescription() {
+    public void allElementsNotBlankDescriptionTest() {
 
         mobilePage.getHeadingsAllElements().forEach((descriptionField) -> {
 
@@ -60,12 +60,12 @@ public class MobilePageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void mobilePageAllElementsPresentPhonePrice() {
+    public void allElementsPresentPhonePriceTest() {
         Assert.assertEquals(30, mobilePage.getPriceAllElements().size());
     }
 
     @Test
-    public void mobilePageAllElementsNotBlankPrice() {
+    public void allElementsNotBlankPriceTest() {
 
         mobilePage.getHeadingsAllElements().forEach((priceField) -> {
 
@@ -74,7 +74,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void mobilePageAllElementsFormatPrice() {
+    public void allElementsFormatPriceTest() {
 
         mobilePage.getPriceAllElements().forEach((priceField) -> {
             String price = StringUtils.removeEnd(priceField.getText(), " р.");

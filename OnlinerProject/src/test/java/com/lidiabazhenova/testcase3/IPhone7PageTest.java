@@ -23,14 +23,14 @@ public class IPhone7PageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void iphonePageOpenTest() {
+    public void pageOpenTest() {
         Assert.assertEquals(TITLE, driver.getTitle());
     }
 
     @Test
-    public void iPhone7AccumulatorScroll() {
+    public void iPhone7ButteryScrollTest() {
         JavascriptExecutor je = (JavascriptExecutor) driver;
-        WebElement element = iPhone7Page.getFieldAccumulators();
+        WebElement element = iPhone7Page.getFieldButterys();
         je.executeScript(SCRIPT, element);
 
         Assert.assertEquals("Аккумулятор и время работы", element.getText());
@@ -38,42 +38,42 @@ public class IPhone7PageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void iPhone7AccumulatorType() {
-        Assert.assertEquals("Тип аккумулятора", iPhone7Page.getTypeAccumulator().getText());
+    public void butteryTypeTest() {
+        Assert.assertEquals("Тип аккумулятора", iPhone7Page.getTypeButtery().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorTypeDescription() {
+    public void butteryTypeDescriptionTest() {
         Assert.assertEquals("Li-ion", iPhone7Page.getDescriptionType().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorCapacity() {
+    public void butteryCapacityTest() {
         Assert.assertEquals("Ёмкость аккумулятора", iPhone7Page.getCapacity().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorCapacityDescription() {
+    public void butteryCapacityDescription() {
         Assert.assertEquals("1 960 мА·ч", iPhone7Page.getValueCapacity().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorTalkTime() {
-        Assert.assertEquals("Время разговора", iPhone7Page.getTalkTimeAccumulator().getText());
+    public void butteryTalkTimeTest() {
+        Assert.assertEquals("Время разговора", iPhone7Page.getTalkTimeButtery().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorTalkTimeDescription() {
-        Assert.assertEquals("14 часов", iPhone7Page.getValueTalkTimeAccumulator().getText());
+    public void butteryTalkTimeDescriptionTest() {
+        Assert.assertEquals("14 часов", iPhone7Page.getValueTalkTimeButtery().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorWaitTime() {
+    public void butteryWaitTimeTest() {
         Assert.assertEquals("Время ожидания", iPhone7Page.getWaitTime().getText());
     }
 
     @Test
-    public void iPhone7AccumulatorWaitTimeDescription() {
+    public void butteryWaitTimeDescriptionTest() {
         Assert.assertEquals("1 неделя, 3 суток", iPhone7Page.getDescriptionWaitTime().getText());
     }
 }

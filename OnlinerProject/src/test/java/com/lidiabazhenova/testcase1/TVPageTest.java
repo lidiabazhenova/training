@@ -19,25 +19,25 @@ public class TVPageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void tvPageOpenTest() {
+    public void pageOpenTest() {
         Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
     }
 
     @Test
-    public void tvPageQuestionMarkFieldHeaderTest() {
+    public void questionMarkFieldHeaderTest() {
         tvPage.clickQuestionMark();
         Assert.assertEquals("Диагональ", tvPage.getQuestionMarkFieldHeader());
     }
 
     @Test
-    public void tvPageQuestionMarkFieldHeaderStyleTest() {
+    public void questionMarkFieldHeaderStyleTest() {
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("700", tvPage.getQuestionMarkFieldHeaderStyle());
     }
 
     @Test
-    public void tvPageQuestionMarkFieldTextTest() {
+    public void questionMarkFieldTextTest() {
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("Размер диагонали экрана в дюймах. Минимальный комфортный размер зависит " +
@@ -46,7 +46,7 @@ public class TVPageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void tvPageQuestionMarkFieldTextStyleTest() {
+    public void questionMarkFieldTextStyleTest() {
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("400", tvPage.getQuestionMarkFieldTextStyle());
