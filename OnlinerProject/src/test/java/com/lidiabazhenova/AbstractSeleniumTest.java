@@ -14,7 +14,7 @@ public abstract class AbstractSeleniumTest {
 
     private final static String GECKO_BASE_PATH = "C:\\projects\\Selenium\\drivers\\geckodriver.exe";
     private final static String ADD_ON_BASE_PATH =
-            "C:\\projects\\trainingNew\\training\\OnlinerProject\\src\\test\\resources\\firefox\\firebug-1.9.2.xpi";
+            "C:\\projects\\trainingNew\\training\\OnlinerProject\\src\\test\\resources\\firefox\\firebug.xpi";
     private final static String GECKO_BASE_NAME = "webdriver.gecko.driver";
     protected static final String TITLE = "%s купить в Минске";
 
@@ -26,10 +26,9 @@ public abstract class AbstractSeleniumTest {
         System.setProperty(GECKO_BASE_NAME, GECKO_BASE_PATH);
 
         profile = new FirefoxProfile();
-        profile.setAcceptUntrustedCertificates(false);
-        profile.setAssumeUntrustedCertificateIssuer(true);
-        File addonpath = new File(ADD_ON_BASE_PATH);
-        profile.addExtension(addonpath);
+
+        File file = new File(ADD_ON_BASE_PATH);
+        profile.addExtension(file);
         DesiredCapabilities dc = DesiredCapabilities.firefox();
         dc.setCapability(FirefoxDriver.PROFILE, profile);
         driver = new FirefoxDriver(dc);
