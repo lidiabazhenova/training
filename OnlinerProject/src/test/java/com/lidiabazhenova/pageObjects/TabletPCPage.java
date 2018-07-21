@@ -4,23 +4,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * class for tablePCPage
  */
 public class TabletPCPage extends AbstractPage {
 
-    protected static final String GET_PRODUCER_X_PATH
+    private static final String GET_PRODUCER_X_PATH
             = "//div[@class='schema-filter-popover__inner']//span[contains(text(), '%s')]" +
             "/preceding-sibling::span/input";
 
-    protected static final String IS_SELECTED_PRODUCER_X_PATH
+    private static final String IS_SELECTED_PRODUCER_X_PATH
             = "//div[div[span[contains(text(), 'Производитель')]]]//span[contains(text(), '%s')]" +
             "/preceding-sibling::span/input";
 
     @FindBy(xpath = "//div[div[span[contains(text(), 'Производитель')]]]//div[starts-with(text(), 'Все')]")
     private WebElement producerCheckBox;
 
-    private WebElement producer;
+    @FindBy(xpath = "//span[@data-bind=\"html: product.extended_name || product.full_name\"]")
+    private List<WebElement> resultTablePC;
 
     /**
      * constructor for tabletPCPage
@@ -52,5 +56,9 @@ public class TabletPCPage extends AbstractPage {
 
     public String checkProducer(String producerName) {
         return String.format(IS_SELECTED_PRODUCER_X_PATH, producerName);
+    }
+
+    public List<WebElement> getResultTablePC() {
+        return resultTablePC;
     }
 }

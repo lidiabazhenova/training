@@ -8,9 +8,12 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TabletPCPageTest extends AbstractSeleniumTest {
@@ -19,7 +22,7 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
     private static final String NAME = "Планшет";
 
     private static final ArrayList<String> producers = new ArrayList<>(Arrays.asList(
-            "Ritmix", "Philips", "Prestigio", "Xiaomi", "Sony", "TELEFUNKEN", "Tesla", "TeXet", "Toshiba", "Евросеть"));
+            "Xiaomi", "Ritmix", "Philips", "Prestigio", "Sony", "TELEFUNKEN", "Tesla", "TeXet", "Toshiba", "Евросеть"));
 
     private static TabletPCPage tabletPCPage;
 
@@ -40,10 +43,61 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
 
         producers.forEach((producerName) -> {
             if (!driver.findElement(By.xpath(tabletPCPage.getProducer(producerName))).isSelected()) {
-
                 driver.findElement(By.xpath(tabletPCPage.getProducer(producerName))).click();
+
                 Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
             }
         });
+    }
+
+    @Test
+    public void thirdSelectAllProducersTest() {
+        final List<String> listTablePC = new ArrayList<>();
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+
+        tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
+            String name = tabletPC.getText();
+            listTablePC.add(name);
+        });
+
+        do {
+            driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).click();
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".schema-products_processing")));
+
+            tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
+                String name = tabletPC.getText();
+                listTablePC.add(name);
+            });
+        }
+        while (driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).getText().startsWith("Следующие"));
+
+        driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".schema-products_processing")));
+
+        tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
+            String name = tabletPC.getText();
+            listTablePC.add(name);
+        });
+
+        Assert.assertTrue(compareTwoList(producers, listTablePC));
+        System.out.println(listTablePC.size());
+    }
+
+
+    public boolean compareTwoList(List<String> listProducers, List<String> listTablePC) {
+
+        for (String title : listTablePC) {
+            boolean found = false;
+            for (String producerName : listProducers) {
+                if (title.startsWith(producerName)) {
+                    found = true;
+                    break;
+                }
+            }
+            if (!found) {
+                return false;
+            }
+        }
+        return true;
     }
 }
