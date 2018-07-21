@@ -13,8 +13,10 @@ import java.util.concurrent.TimeUnit;
 public abstract class AbstractSeleniumTest {
 
     private final static String GECKO_BASE_PATH = "C:\\projects\\Selenium\\drivers\\geckodriver.exe";
-    private final static String ADD_ON_BASE_PATH =
+    private final static String FIREBUG_BASE_PATH =
             "C:\\projects\\trainingNew\\training\\OnlinerProject\\src\\test\\resources\\firefox\\firebug.xpi";
+    private final static String FIREBPATH_BASE_PATH =
+            "C:\\projects\\trainingNew\\training\\OnlinerProject\\src\\test\\resources\\firefox\\firepath.xpi";
     private final static String GECKO_BASE_NAME = "webdriver.gecko.driver";
     protected static final String TITLE = "%s купить в Минске";
 
@@ -27,8 +29,10 @@ public abstract class AbstractSeleniumTest {
 
         profile = new FirefoxProfile();
 
-        File file = new File(ADD_ON_BASE_PATH);
-        profile.addExtension(file);
+        File firebugFile = new File(FIREBUG_BASE_PATH);
+        File firepathFile = new File(FIREBPATH_BASE_PATH);
+        profile.addExtension(firebugFile);
+        profile.addExtension(firepathFile);
         DesiredCapabilities dc = DesiredCapabilities.firefox();
         dc.setCapability(FirefoxDriver.PROFILE, profile);
         driver = new FirefoxDriver(dc);
@@ -36,9 +40,9 @@ public abstract class AbstractSeleniumTest {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
     }
 
-    @AfterClass
-    public static void quitDriver() {
-        driver.quit();
-    }
+//    @AfterClass
+//    public static void quitDriver() {
+//        driver.quit();
+//    }
 
 }
