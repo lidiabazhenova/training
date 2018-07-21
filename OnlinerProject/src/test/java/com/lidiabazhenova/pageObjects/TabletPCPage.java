@@ -1,5 +1,6 @@
 package com.lidiabazhenova.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,6 +26,9 @@ public class TabletPCPage extends AbstractPage {
 
     @FindBy(xpath = "//span[@data-bind=\"html: product.extended_name || product.full_name\"]")
     private List<WebElement> resultTablePC;
+
+    @FindBy(xpath = "//*[@id='schema-pagination']/a/span")
+    private WebElement pagination;
 
     /**
      * constructor for tabletPCPage
@@ -60,5 +64,10 @@ public class TabletPCPage extends AbstractPage {
 
     public List<WebElement> getResultTablePC() {
         return resultTablePC;
+    }
+
+    public WebElement getPagination() {
+
+        return pagination;
     }
 }

@@ -4,9 +4,7 @@ import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.pageObjects.TabletPCPage;
 import org.junit.Assert;
 import org.junit.BeforeClass;
-import org.junit.FixMethodOrder;
 import org.junit.Test;
-import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,14 +13,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TabletPCPageTest extends AbstractSeleniumTest {
 
     private static final String URL = "https://catalog.onliner.by/tabletpc";
     private static final String NAME = "Планшет";
+    private static final String START_NAME = "Следующие";
+    By productsLoadingIndicator = By.cssSelector(".schema-products_processing");
 
     private static final ArrayList<String> producers = new ArrayList<>(Arrays.asList(
             "Xiaomi", "Ritmix", "Philips", "Prestigio", "Sony", "TELEFUNKEN", "Tesla", "TeXet", "Toshiba", "Евросеть"));
+
+    private static List<String> listTablePC;
+    private static WebDriverWait wait;
 
     private static TabletPCPage tabletPCPage;
 
@@ -30,15 +32,14 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
     public static void setTabletPCPage() throws Exception {
         driver.get(URL);
         tabletPCPage = new TabletPCPage(driver);
+        listTablePC = new ArrayList<>();
+        wait = new WebDriverWait(driver, 15);
     }
 
     @Test
-    public void firstProducersTest() {
+    public void tabletPCPageTest() {
+
         Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
-    }
-
-    @Test
-    public void secondSelectAllProducersTest() {
         tabletPCPage.getAllProducerList().click();
 
         producers.forEach((producerName) -> {
@@ -48,43 +49,32 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
                 Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
             }
         });
-    }
 
-    @Test
-    public void thirdSelectAllProducersTest() {
-        final List<String> listTablePC = new ArrayList<>();
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-
-        tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
-            String name = tabletPC.getText();
-            listTablePC.add(name);
-        });
+        addProducersToList();
 
         do {
-            driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).click();
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".schema-products_processing")));
-
-            tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
-                String name = tabletPC.getText();
-                listTablePC.add(name);
-            });
+            clickNextPageAndWait();
+            addProducersToList();
         }
-        while (driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).getText().startsWith("Следующие"));
+        while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
 
-        driver.findElement(By.xpath("//*[@id='schema-pagination']/a/span")).click();
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".schema-products_processing")));
-
-        tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
-            String name = tabletPC.getText();
-            listTablePC.add(name);
-        });
+        clickNextPageAndWait();
+        addProducersToList();
 
         Assert.assertTrue(compareTwoList(producers, listTablePC));
         System.out.println(listTablePC.size());
     }
 
+    private List<String> addProducersToList() {
+        tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
+            listTablePC.add(tabletPC.getText());
+        });
 
-    public boolean compareTwoList(List<String> listProducers, List<String> listTablePC) {
+        return listTablePC;
+    }
+
+
+    private boolean compareTwoList(List<String> listProducers, List<String> listTablePC) {
 
         for (String title : listTablePC) {
             boolean found = false;
@@ -99,5 +89,10 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
             }
         }
         return true;
+    }
+
+    private void clickNextPageAndWait() {
+        tabletPCPage.getPagination().click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(productsLoadingIndicator));
     }
 }
