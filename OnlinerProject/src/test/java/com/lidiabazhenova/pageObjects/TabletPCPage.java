@@ -49,7 +49,7 @@ public class TabletPCPage extends AbstractPage {
     }
 
     /**
-     * Method to get xpath for producer
+     * Method to get xpath for producer in popover
      *
      * @param producerName
      * @return x-path for producer
@@ -58,16 +58,29 @@ public class TabletPCPage extends AbstractPage {
         return String.format(GET_PRODUCER_X_PATH, producerName);
     }
 
+    /**
+     * Method to get xpath for producer in span "Производитель"
+     *
+     * @param producerName
+     * @return x-path for producer
+     */
     public String checkProducer(String producerName) {
         return String.format(IS_SELECTED_PRODUCER_X_PATH, producerName);
     }
 
+    /**
+     * Method to get results for search
+     * @return list results of search
+     */
     public List<WebElement> getResultTablePC() {
         return resultTablePC;
     }
 
+    /**
+     * Method to get element "pagination"
+     * @return element "pagination"
+     */
     public WebElement getPagination() {
-
         return pagination;
     }
 }
