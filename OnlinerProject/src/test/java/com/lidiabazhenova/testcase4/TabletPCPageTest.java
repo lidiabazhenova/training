@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TabletPCPageTest extends AbstractSeleniumTest {
+public class TabletPCPageTest extends AbstractSeleniumTest{
 
     private static final String URL = "https://catalog.onliner.by/tabletpc";
     private static final String NAME = "Планшет";

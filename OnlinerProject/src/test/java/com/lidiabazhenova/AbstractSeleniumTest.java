@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 public abstract class AbstractSeleniumTest {
 
     private final static String GECKO_BASE_PATH = "C:\\projects\\drivers\\geckodriver.exe";
-
     private final static String GECKO_BASE_NAME = "webdriver.gecko.driver";
     protected static final String TITLE = "%s купить в Минске";
 

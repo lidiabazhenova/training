@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class MobilePageTest extends AbstractSeleniumTest {
+public class MobilePageTest extends AbstractSeleniumTest{
 
     private static final String NAME = "Мобильный телефон";
 

@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class IPhone7PageTest extends AbstractSeleniumTest {
+public class IPhone7PageTest extends AbstractSeleniumTest{
 
     private static final String URL = "https://catalog.onliner.by/mobile/apple/iphone732";
     private static final String SCRIPT = "arguments[0].scrollIntoView(true);";

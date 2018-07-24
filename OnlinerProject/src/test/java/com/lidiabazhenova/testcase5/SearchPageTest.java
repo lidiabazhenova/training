@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageTest extends AbstractSeleniumTest {
+public class SearchPageTest extends AbstractSeleniumTest{
 
     private static final String TITLE = "Каталог Onliner.by";
     private static final String NAME = "HTC";
