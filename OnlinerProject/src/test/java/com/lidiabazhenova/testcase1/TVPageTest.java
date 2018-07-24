@@ -1,11 +1,13 @@
 package com.lidiabazhenova.testcase1;
 
 import com.lidiabazhenova.AbstractSeleniumTest;
+import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.TVPage;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -13,25 +15,24 @@ public class TVPageTest extends AbstractSeleniumTest{
 
     private static final String NAME = "Телевизор";
 
+    private WebDriver driver;
     private TVPage tvPage;
 
     @Before
-    public void setTvPage() {
+    public void setTvPage() throws Exception {
+        driver = WebDriverFactory.getInstance();
         driver.get("https://catalog.onliner.by/tv");
         tvPage = new TVPage(driver);
     }
 
     @Test
-    public void tvPageTest() {
-
-        Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
+    public void tvPageTest() throws Exception {
+        assertPageTitle(NAME);
 
         tvPage.clickQuestionMark();
-
         Assert.assertEquals("Диагональ", tvPage.getQuestionMarkFieldHeader());
 
         tvPage.clickQuestionMark();
-
         Assert.assertEquals("700", tvPage.getQuestionMarkFieldHeaderStyle());
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -44,7 +45,6 @@ public class TVPageTest extends AbstractSeleniumTest{
                 "определенный процент поля зрения.", tvPage.getQuestionMarkFieldText());
 
         tvPage.clickQuestionMark();
-
         Assert.assertEquals("400", tvPage.getQuestionMarkFieldTextStyle());
     }
 }

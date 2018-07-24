@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class SearchPage extends AbstractPage {
 
-    @FindBy(css = ".i-checkbox__real")
+    @FindBy(css = ".product__compare")
     private List<WebElement> checkboxes;
 
     @FindBy(css = ".product__price span")

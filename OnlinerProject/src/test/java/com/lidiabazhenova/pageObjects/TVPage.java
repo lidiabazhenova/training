@@ -1,5 +1,6 @@
 package com.lidiabazhenova.pageObjects;
 
+import com.lidiabazhenova.util.WebElementUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,7 +35,7 @@ public class TVPage extends AbstractPage {
      * @return current page
      */
     public TVPage clickQuestionMark() {
-        questionMark.click();
+        WebElementUtils.scrollToElementAndClick(driver, questionMark);
 
         return this;
     }
