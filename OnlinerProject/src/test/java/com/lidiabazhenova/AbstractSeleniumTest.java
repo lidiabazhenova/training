@@ -28,5 +28,4 @@ public abstract class AbstractSeleniumTest {
     public static void quitDriver() {
         driver.quit();
     }
-
 }
