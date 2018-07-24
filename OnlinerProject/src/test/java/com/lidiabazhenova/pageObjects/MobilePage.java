@@ -11,15 +11,6 @@ import java.util.List;
  */
 public class MobilePage extends AbstractPage {
 
-    /**
-     * constructor for mobilePage
-     *
-     * @param driver
-     */
-    public MobilePage(WebDriver driver) {
-        super(driver);
-    }
-
     @FindBy(xpath = "//div[@class=\"schema-product__group\"]")
     private List<WebElement> allElements;
 
@@ -34,6 +25,15 @@ public class MobilePage extends AbstractPage {
 
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__price']//span")
     private WebElement priceElement;
+
+    /**
+     * constructor for mobilePage
+     *
+     * @param driver
+     */
+    public MobilePage(WebDriver driver) {
+        super(driver);
+    }
 
     /**
      * Method to get count of phones on this page

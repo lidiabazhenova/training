@@ -18,15 +18,25 @@ public class MainPage extends AbstractPage {
     private WebElement inputSearch;
 
     @FindBy(css = ".product-summary__caption")
-    private List<WebElement> productsToCompareCaption;
+    private List<WebElement> itemsToCompareCaption;
 
     @FindBy(css = ".product-summary__price")
-    private List<WebElement> productsToComparePrice;
+    private List<WebElement> itemsToComparePrice;
 
+    /**
+     * constructor for mainPage
+     *
+     * @param driver
+     */
     public MainPage(WebDriver driver) {
         super(driver);
     }
 
+    /**
+     * Method to get search page
+     *
+     * @return searchPage
+     */
     public SearchPage getSearchPage() {
         inputSearch.sendKeys("HTC");
 
@@ -38,11 +48,21 @@ public class MainPage extends AbstractPage {
         return new SearchPage(driver);
     }
 
+    /**
+     * Method to get captions of products to compare
+     *
+     * @return list of captions
+     */
     public List<WebElement> getItemsToCompareCaption() {
-        return productsToCompareCaption;
+        return itemsToCompareCaption;
     }
 
+    /**
+     * Method to get prices of products to compare
+     *
+     * @return list of prices
+     */
     public List<WebElement> getItemsToComparePrice() {
-        return productsToComparePrice;
+        return itemsToComparePrice;
     }
 }
