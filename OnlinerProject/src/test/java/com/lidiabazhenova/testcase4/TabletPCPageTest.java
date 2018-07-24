@@ -3,7 +3,7 @@ package com.lidiabazhenova.testcase4;
 import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.pageObjects.TabletPCPage;
 import org.junit.Assert;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,12 +23,12 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
     private static final ArrayList<String> producers = new ArrayList<>(Arrays.asList(
             "Xiaomi", "Ritmix", "Philips", "Prestigio", "Sony", "TELEFUNKEN", "Tesla", "TeXet", "Toshiba", "Евросеть"));
 
-    private static List<String> listTablePC;
-    private static WebDriverWait wait;
-    private static TabletPCPage tabletPCPage;
+    private List<String> listTablePC;
+    private WebDriverWait wait;
+    private TabletPCPage tabletPCPage;
 
-    @BeforeClass
-    public static void setTabletPCPage() throws Exception {
+    @Before
+    public void setTabletPCPage() throws Exception {
         driver.get(URL);
         tabletPCPage = new TabletPCPage(driver);
         listTablePC = new ArrayList<>();
@@ -60,7 +60,6 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
         addProducersToList();
 
         Assert.assertTrue(compareTwoList(producers, listTablePC));
-        System.out.println(listTablePC.size());
     }
 
     private List<String> addProducersToList() {

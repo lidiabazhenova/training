@@ -17,64 +17,35 @@ public class MobilePageTest extends AbstractSeleniumTest {
     public void setMobilePage() {
         driver.get("https://catalog.onliner.by/mobile");
         mobilePage = new MobilePage(driver);
-
     }
 
     @Test
-    public void pageOpenTest() {
+    public void mobilePageTest() {
+
         Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
-    }
 
-    @Test
-    public void mobilePageCountAllElementsTest() {
         Assert.assertEquals(mobilePage.getPhoneCount(), 30);
-    }
 
-
-    @Test
-    public void allElementsPresentPhoneHeadingTest() {
         Assert.assertEquals(30, mobilePage.getHeadingsAllElements().size());
-    }
-
-    @Test
-    public void allElementsNotBlankHeadingTest() {
 
         mobilePage.getHeadingsAllElements().forEach((headingField) -> {
 
             Assert.assertTrue(StringUtils.isNotBlank(headingField.getText()));
         });
-    }
 
-    @Test
-    public void allElementsPresentPhoneDescriptionTest() {
         Assert.assertEquals(30, mobilePage.getDescriptionAllElements().size());
-    }
-
-    @Test
-    public void allElementsNotBlankDescriptionTest() {
 
         mobilePage.getHeadingsAllElements().forEach((descriptionField) -> {
 
             Assert.assertTrue(StringUtils.isNotBlank(descriptionField.getText()));
         });
-    }
 
-    @Test
-    public void allElementsPresentPhonePriceTest() {
         Assert.assertEquals(30, mobilePage.getPriceAllElements().size());
-    }
-
-    @Test
-    public void allElementsNotBlankPriceTest() {
 
         mobilePage.getHeadingsAllElements().forEach((priceField) -> {
 
             Assert.assertTrue(StringUtils.isNotBlank(priceField.getText()));
         });
-    }
-
-    @Test
-    public void allElementsFormatPriceTest() {
 
         mobilePage.getPriceAllElements().forEach((priceField) -> {
             String price = StringUtils.removeEnd(priceField.getText(), " р.");

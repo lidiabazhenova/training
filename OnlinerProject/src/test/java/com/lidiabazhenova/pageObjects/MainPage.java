@@ -38,11 +38,11 @@ public class MainPage extends AbstractPage {
         return new SearchPage(driver);
     }
 
-    public List<WebElement> getProductsToCompareCaption() {
+    public List<WebElement> getItemsToCompareCaption() {
         return productsToCompareCaption;
     }
 
-    public List<WebElement> getProductsToComparePrice() {
+    public List<WebElement> getItemsToComparePrice() {
         return productsToComparePrice;
     }
 }

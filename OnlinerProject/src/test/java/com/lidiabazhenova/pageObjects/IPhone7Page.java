@@ -50,7 +50,7 @@ public class IPhone7Page extends AbstractPage {
      *
      * @return current element
      */
-    public WebElement getFieldButterys() {
+    public WebElement getFieldButteries() {
         return headingButtery;
     }
 

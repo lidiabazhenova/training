@@ -29,8 +29,6 @@ public class SearchPageTest extends AbstractSeleniumTest {
     @Test
     public void searchPageTest() {
         final List<WebElement> checkboxesHTS;
-        final List<WebElement> productsToCompareCaption;
-        final List<WebElement> productsToComparePrice;
 
         Assert.assertEquals(TITLE, driver.getTitle());
 
@@ -46,13 +44,12 @@ public class SearchPageTest extends AbstractSeleniumTest {
         checkboxesHTS.get(1).click();
         searchPage.getToCompareButton().click();
 
-        productsToCompareCaption = searchPage.getComparePage().getProductsToCompareCaption();
-        productsToComparePrice = searchPage.getComparePage().getProductsToComparePrice();
+        Assert.assertEquals(firstProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(0).getText());
+        Assert.assertEquals(secondProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(1).getText());
 
-        Assert.assertEquals(firstProductTitle, productsToCompareCaption.get(0).getText());
-        Assert.assertEquals(secondProductTitle, productsToCompareCaption.get(1).getText());
-
-        Assert.assertTrue(productsToComparePrice.get(0).getText().startsWith(firstProductPrice));
-        Assert.assertTrue(productsToComparePrice.get(1).getText().startsWith(secondProductPrice));
+        Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(0).getText()
+                .startsWith(firstProductPrice));
+        Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(1).getText()
+                .startsWith(secondProductPrice));
     }
 }

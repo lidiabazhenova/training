@@ -22,25 +22,18 @@ public class TVPageTest extends AbstractSeleniumTest {
     }
 
     @Test
-    public void pageOpenTest() {
+    public void tvPageTest() {
+
         Assert.assertEquals(String.format(TITLE, NAME), driver.getTitle());
-    }
 
-    @Test
-    public void questionMarkFieldHeaderTest() {
         tvPage.clickQuestionMark();
-        Assert.assertEquals("Диагональ", tvPage.getQuestionMarkFieldHeader());
-    }
 
-    @Test
-    public void questionMarkFieldHeaderStyleTest() {
+        Assert.assertEquals("Диагональ", tvPage.getQuestionMarkFieldHeader());
+
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("700", tvPage.getQuestionMarkFieldHeaderStyle());
-    }
 
-    @Test
-    public void questionMarkFieldTextTest() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[./span[contains(text()," +
                 "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")));
@@ -49,13 +42,9 @@ public class TVPageTest extends AbstractSeleniumTest {
         Assert.assertEquals("Размер диагонали экрана в дюймах. Минимальный комфортный размер зависит " +
                 "от расстояния между экраном и зрителем, поскольку необходимо, чтобы изображение занимало " +
                 "определенный процент поля зрения.", tvPage.getQuestionMarkFieldText());
-    }
 
-    @Test
-    public void questionMarkFieldTextStyleTest() {
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("400", tvPage.getQuestionMarkFieldTextStyle());
     }
-
 }
