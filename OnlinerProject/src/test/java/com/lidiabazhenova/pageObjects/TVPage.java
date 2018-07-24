@@ -8,7 +8,6 @@ import org.openqa.selenium.support.FindBy;
  * class for tvPage
  */
 public class TVPage extends AbstractPage {
-    private WebDriver driver;
 
     @FindBy(xpath = "//div[./span[contains(text()," +
             "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")

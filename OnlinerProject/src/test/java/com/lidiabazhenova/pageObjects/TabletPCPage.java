@@ -1,11 +1,9 @@
 package com.lidiabazhenova.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -70,6 +68,7 @@ public class TabletPCPage extends AbstractPage {
 
     /**
      * Method to get results for search
+     *
      * @return list results of search
      */
     public List<WebElement> getResultTablePC() {
@@ -78,6 +77,7 @@ public class TabletPCPage extends AbstractPage {
 
     /**
      * Method to get element "pagination"
+     *
      * @return element "pagination"
      */
     public WebElement getPagination() {

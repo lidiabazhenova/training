@@ -5,6 +5,9 @@ import com.lidiabazhenova.pageObjects.TVPage;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TVPageTest extends AbstractSeleniumTest {
 
@@ -38,6 +41,9 @@ public class TVPageTest extends AbstractSeleniumTest {
 
     @Test
     public void questionMarkFieldTextTest() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[./span[contains(text()," +
+                "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")));
         tvPage.clickQuestionMark();
 
         Assert.assertEquals("Размер диагонали экрана в дюймах. Минимальный комфортный размер зависит " +

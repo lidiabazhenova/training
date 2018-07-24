@@ -10,7 +10,6 @@ import java.util.List;
  * class for mobilePage
  */
 public class MobilePage extends AbstractPage {
-    private WebDriver driver;
 
     /**
      * constructor for mobilePage

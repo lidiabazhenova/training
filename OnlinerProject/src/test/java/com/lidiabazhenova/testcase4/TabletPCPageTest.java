@@ -25,7 +25,6 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
 
     private static List<String> listTablePC;
     private static WebDriverWait wait;
-
     private static TabletPCPage tabletPCPage;
 
     @BeforeClass
@@ -49,15 +48,14 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
                 Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
             }
         });
-
         addProducersToList();
 
         do {
             clickNextPageAndWait();
             addProducersToList();
         }
-        while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
 
+        while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
         clickNextPageAndWait();
         addProducersToList();
 
@@ -69,10 +67,8 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
         tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
             listTablePC.add(tabletPC.getText());
         });
-
         return listTablePC;
     }
-
 
     private boolean compareTwoList(List<String> listProducers, List<String> listTablePC) {
 

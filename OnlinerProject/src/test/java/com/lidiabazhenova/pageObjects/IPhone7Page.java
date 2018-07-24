@@ -9,8 +9,6 @@ import org.openqa.selenium.support.FindBy;
  */
 public class IPhone7Page extends AbstractPage {
 
-    private WebDriver driver;
-
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
     private WebElement headingButtery;
 
