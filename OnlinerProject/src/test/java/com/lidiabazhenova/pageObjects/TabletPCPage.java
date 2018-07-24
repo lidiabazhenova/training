@@ -22,7 +22,7 @@ public class TabletPCPage extends AbstractPage {
     @FindBy(xpath = "//div[div[span[contains(text(), 'Производитель')]]]//div[starts-with(text(), 'Все')]")
     private WebElement producerCheckBox;
 
-    @FindBy(xpath = "//span[@data-bind=\"html: product.extended_name || product.full_name\"]")
+    @FindBy(xpath = "//div[@class='schema-product__info']//preceding-sibling::div[@class='schema-product__title']//span")
     private List<WebElement> resultTablePC;
 
     @FindBy(xpath = "//*[@id='schema-pagination']/a/span")

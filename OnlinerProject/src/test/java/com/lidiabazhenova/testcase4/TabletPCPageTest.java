@@ -48,13 +48,13 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
                 Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
             }
         });
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(productsLoadingIndicator));
         addProducersToList();
 
         do {
             clickNextPageAndWait();
             addProducersToList();
         }
-
         while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
         clickNextPageAndWait();
         addProducersToList();
