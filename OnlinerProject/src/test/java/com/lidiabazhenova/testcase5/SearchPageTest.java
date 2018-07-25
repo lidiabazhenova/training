@@ -22,7 +22,6 @@ public class SearchPageTest extends AbstractSeleniumTest{
     private MainPage mainPage;
     private SearchPage searchPage;
 
-
     @Before
     public void setSearchPage() throws Exception {
         driver = WebDriverFactory.getInstance();

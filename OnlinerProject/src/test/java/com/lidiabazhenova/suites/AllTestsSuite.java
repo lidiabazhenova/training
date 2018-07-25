@@ -24,7 +24,8 @@ public class AllTestsSuite {
 
     @AfterClass
     public static void doYourOneTimeTeardown() throws Exception {
-        WebDriverFactory.getInstance().quit();
+        if (WebDriverFactory.getInstance() != null) {
+            WebDriverFactory.getInstance().quit();
+        }
     }
-
 }

@@ -1,20 +1,18 @@
 package com.lidiabazhenova.factory;
 
 import com.lidiabazhenova.AbstractSeleniumTest;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public final class WebDriverFactory {
-
-    private final static String GECKO_BASE_PATH = "C:\\projects\\drivers\\geckodriver.exe";
-    private final static String GECKO_BASE_NAME = "webdriver.gecko.driver";
-    private final static String CHROME_BASE_PATH = "C:\\projects\\drivers\\chromedriver.exe";
-    private final static String CHROME_BASE_NAME = "webdriver.chrome.driver";
 
     private static boolean isInitialized;
     private static WebDriver driver;
@@ -30,15 +28,15 @@ public final class WebDriverFactory {
 
         if (browserName.equals("chrome")) {
             System.out.println(browserName);
-            System.setProperty(CHROME_BASE_NAME, CHROME_BASE_PATH);
             ChromeOptions options = new ChromeOptions();
             options.addArguments("disable-infobars");
             options.addArguments("start-maximized");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(options);
 
         } else if (browserName.equals("firefox")) {
             System.out.println(browserName);
-            System.setProperty(GECKO_BASE_NAME, GECKO_BASE_PATH);
+            WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
 
