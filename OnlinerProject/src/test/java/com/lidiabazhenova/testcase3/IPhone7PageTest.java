@@ -3,7 +3,7 @@ package com.lidiabazhenova.testcase3;
 import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.IPhone7Page;
-import com.lidiabazhenova.util.WebElementUtils;
+import com.lidiabazhenova.util.WebElementExtender;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,7 +30,7 @@ public class IPhone7PageTest extends AbstractSeleniumTest{
         Assert.assertEquals(TITLE, driver.getTitle());
 
         WebElement fieldButteries = iPhone7Page.getFieldButteries();
-        WebElementUtils.scrollToElement(driver, fieldButteries);
+        WebElementExtender.scrollToElement(driver, fieldButteries);
 
         Assert.assertEquals("Аккумулятор и время работы", fieldButteries.getText());
         Assert.assertEquals("Тип аккумулятора", iPhone7Page.getTypeButtery().getText());

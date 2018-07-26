@@ -6,6 +6,7 @@ import com.lidiabazhenova.testcase2.MobilePageTest;
 import com.lidiabazhenova.testcase3.IPhone7PageTest;
 import com.lidiabazhenova.testcase4.TabletPCPageTest;
 import com.lidiabazhenova.testcase5.SearchPageTest;
+import com.lidiabazhenova.util.Log;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
@@ -17,8 +18,10 @@ import org.junit.runners.Suite;
         SearchPageTest.class})
 public class AllTestsSuite {
 
+
     @BeforeClass
     public static void doYourOneTimeSetup() throws Exception {
+        Log.startLog("AllTestsSuite");
         WebDriverFactory.getInstance();
     }
 
@@ -27,5 +30,6 @@ public class AllTestsSuite {
         if (WebDriverFactory.getInstance() != null) {
             WebDriverFactory.getInstance().quit();
         }
+        Log.endLog("AllTestsSuite");
     }
 }

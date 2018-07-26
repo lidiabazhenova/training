@@ -4,7 +4,7 @@ import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.MainPage;
 import com.lidiabazhenova.pageObjects.SearchPage;
-import com.lidiabazhenova.util.WebElementUtils;
+import com.lidiabazhenova.util.WebElementExtender;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Before;
@@ -43,9 +43,9 @@ public class SearchPageTest extends AbstractSeleniumTest{
         final String firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
         final String secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
 
-        WebElementUtils.scrollToElementAndClick(driver, checkboxesHTS.get(0));
-        WebElementUtils.scrollToElementAndClick(driver, checkboxesHTS.get(1));
-        WebElementUtils.scrollToElementAndClick(driver, searchPage.getToCompareButton());
+        WebElementExtender.scrollToElementAndClick(driver, checkboxesHTS.get(0));
+        WebElementExtender.scrollToElementAndClick(driver, checkboxesHTS.get(1));
+        WebElementExtender.scrollToElementAndClick(driver, searchPage.getToCompareButton());
 
         Assert.assertEquals(firstProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(0).getText());
         Assert.assertEquals(secondProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(1).getText());

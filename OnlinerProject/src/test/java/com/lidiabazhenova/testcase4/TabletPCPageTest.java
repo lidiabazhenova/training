@@ -3,7 +3,7 @@ package com.lidiabazhenova.testcase4;
 import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.TabletPCPage;
-import com.lidiabazhenova.util.WebElementUtils;
+import com.lidiabazhenova.util.WebElementExtender;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -46,12 +46,12 @@ public class TabletPCPageTest extends AbstractSeleniumTest{
     public void tabletPCPageTest() throws Exception {
         assertPageTitle(NAME);
 
-        WebElementUtils.scrollToElementAndClick(driver, tabletPCPage.getAllProducerList());
+        WebElementExtender.scrollToElementAndClick(driver, tabletPCPage.getAllProducerList());
 
         producers.forEach((producerName) -> {
             WebElement producerElement = driver.findElement(By.xpath(tabletPCPage.getProducer(producerName)));
             if (!producerElement.isSelected()) {
-                WebElementUtils.scrollToElementAndClick(driver, producerElement);
+                WebElementExtender.scrollToElementAndClick(driver, producerElement);
 
                 Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
             }
@@ -96,7 +96,7 @@ public class TabletPCPageTest extends AbstractSeleniumTest{
     }
 
     private void clickNextPageAndWait() {
-        WebElementUtils.scrollToElementAndClick(driver, tabletPCPage.getPagination());
+        WebElementExtender.scrollToElementAndClick(driver, tabletPCPage.getPagination());
         wait.until(ExpectedConditions.invisibilityOfElementLocated(productsLoadingIndicator));
     }
 }

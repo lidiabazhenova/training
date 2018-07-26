@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TVPageTest extends AbstractSeleniumTest{
+public class TVPageTest extends AbstractSeleniumTest {
 
     private static final String NAME = "Телевизор";
 

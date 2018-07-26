@@ -5,12 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 
-public final class WebElementUtils {
+public final class WebElementExtender {
 
     private static final String SCRIPT_SCROLL = "arguments[0].scrollIntoView(true);";
     private static final String SCRIPT_CLICK = "arguments[0].click()";
 
-    private WebElementUtils() {
+    private WebElementExtender() {
     }
 
     public static void scrollToElement(final WebDriver driver, final WebElement element) {
