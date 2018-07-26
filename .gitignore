@@ -28,7 +28,7 @@ obj/
 target/
 out/
 tmp/
-
+logs/
 
 
 ### Default GitHub options for Java ###
