@@ -20,13 +20,13 @@ public class AllTestsSuite {
 
 
     @BeforeClass
-    public static void doYourOneTimeSetup() throws Exception {
+    public static void setUp() throws Exception {
         Log.startLog("AllTestsSuite");
         WebDriverFactory.getInstance();
     }
 
     @AfterClass
-    public static void doYourOneTimeTeardown() throws Exception {
+    public static void tearDown() throws Exception {
         if (WebDriverFactory.getInstance() != null) {
             WebDriverFactory.getInstance().quit();
         }

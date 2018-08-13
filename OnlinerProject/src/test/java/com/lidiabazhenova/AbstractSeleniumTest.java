@@ -2,10 +2,7 @@ package com.lidiabazhenova;
 
 import com.lidiabazhenova.factory.WebDriverFactory;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class AbstractSeleniumTest {
 
