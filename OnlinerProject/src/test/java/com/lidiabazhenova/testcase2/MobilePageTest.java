@@ -41,7 +41,8 @@ public class MobilePageTest extends AbstractSeleniumTest {
             Assert.assertTrue(StringUtils.isNotBlank(descriptionField.getText()));
         });
 
-        Assert.assertEquals(30, CollectionUtils.size(mobilePage.getPriceAllElements()));
+        Assert.assertEquals(30, CollectionUtils.size(mobilePage.getPriceAllElements())
+                + CollectionUtils.size(mobilePage.getProductStatus()));
 
         mobilePage.getHeadingsAllElements().forEach((priceField) -> {
             Assert.assertTrue(StringUtils.isNotBlank(priceField.getText()));

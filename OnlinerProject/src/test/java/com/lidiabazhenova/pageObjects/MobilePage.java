@@ -27,6 +27,9 @@ public class MobilePage extends AbstractPage {
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__price']//span")
     private WebElement priceElement;
 
+    @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__status']")
+    private List<WebElement> productStatus;
+
     /**
      * constructor for mobilePage
      *
@@ -70,6 +73,15 @@ public class MobilePage extends AbstractPage {
      */
     public List<WebElement> getPriceAllElements() {
         return priceAllElements;
+    }
+
+    /**
+     * Method to get list of  status for phones without price
+     *
+     * @return list of status
+     */
+    public List<WebElement> getProductStatus() {
+        return productStatus;
     }
 
 }

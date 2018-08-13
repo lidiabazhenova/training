@@ -81,7 +81,7 @@ public class SearchPage extends AbstractPage {
     public MainPage getComparePage() {
         driver.switchTo().defaultContent();
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-iframe-visible")));
 
         return new MainPage(driver);
