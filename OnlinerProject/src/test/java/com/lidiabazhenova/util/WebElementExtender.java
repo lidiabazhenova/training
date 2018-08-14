@@ -1,9 +1,8 @@
 package com.lidiabazhenova.util;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public final class WebElementExtender {
 
@@ -18,12 +17,22 @@ public final class WebElementExtender {
         je.executeScript(SCRIPT_SCROLL, element);
     }
 
-    public static void scrollToElementAndClick(final WebDriver driver, final WebElement element) {
+    public static void click(final WebDriver driver, final WebElement element) {
         try {
             element.click();
         } catch(final WebDriverException ex) {
             JavascriptExecutor je = (JavascriptExecutor) driver;
             je.executeScript(SCRIPT_CLICK, element);
         }
+    }
+
+    public static void waitForInvisibilityOfElement(final WebDriver driver, final By elementSelector) {
+        final WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(elementSelector));
+    }
+
+    public static void waitForVisibilityOfElement(final WebDriver driver, final By elementSelector) {
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(elementSelector));
     }
 }

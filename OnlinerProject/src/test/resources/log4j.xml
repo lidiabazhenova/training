@@ -3,12 +3,12 @@
 
 <log4j:configuration>
 
-    <appender name="RollingAppender" class="org.apache.log4j.DailyRollingFileAppender">
+    <appender name="FileAppender" class="org.apache.log4j.FileAppender">
         <param name="File" value="logs/app.log"/>
-        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <param name="append" value="false" />
         <param name="threshold" value="DEBUG"/>
         <layout class="org.apache.log4j.PatternLayout">
-            <param name="ConversionPattern" value="[%p] %d %c %M - %m%n"/>
+            <param name="ConversionPattern" value="%d{ISO8601} %-5p [%c{1}] - %m%n" />
         </layout>
     </appender>
 
@@ -24,7 +24,7 @@
 
     <root>
         <priority value="DEBUG"/>
-        <appender-ref ref="RollingAppender"/>
+        <appender-ref ref="FileAppender"/>
         <appender-ref ref="Console"/>
     </root>
 

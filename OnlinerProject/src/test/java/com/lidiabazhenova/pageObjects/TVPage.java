@@ -35,7 +35,7 @@ public class TVPage extends AbstractPage {
      * @return current page
      */
     public TVPage clickQuestionMark() {
-        WebElementExtender.scrollToElementAndClick(driver, questionMark);
+        WebElementExtender.click(driver, questionMark);
 
         return this;
     }

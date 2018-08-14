@@ -17,7 +17,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class TabletPCPageTest extends AbstractSeleniumTest{
+public class TabletPCPageTest extends AbstractSeleniumTest {
+
+    private static final String PRODUCTS_LOADING_INDICATOR_SELECTOR = ".schema-products_processing";
 
     private static final String URL = "https://catalog.onliner.by/tabletpc";
     private static final String NAME = "Планшет";
@@ -25,12 +27,7 @@ public class TabletPCPageTest extends AbstractSeleniumTest{
     private static final ArrayList<String> producers = new ArrayList<>(Arrays.asList(
             "Xiaomi", "Ritmix", "Philips", "Prestigio", "Sony", "TELEFUNKEN", "Tesla", "TeXet", "Toshiba", "Евросеть"));
 
-    By productsLoadingIndicator = By.cssSelector(".schema-products_processing");
-
     private WebDriver driver;
-    private WebDriverWait wait;
-
-    private List<String> listTablePC;
     private TabletPCPage tabletPCPage;
 
     @Before
@@ -38,49 +35,47 @@ public class TabletPCPageTest extends AbstractSeleniumTest{
         driver = WebDriverFactory.getInstance();
         driver.get(URL);
         tabletPCPage = new TabletPCPage(driver);
-        listTablePC = new ArrayList<>();
-        wait = new WebDriverWait(driver, 15);
     }
 
     @Test
     public void tabletPCPageTest() throws Exception {
         assertPageTitle(NAME);
 
-        WebElementExtender.scrollToElementAndClick(driver, tabletPCPage.getAllProducerList());
+        WebElementExtender.click(driver, tabletPCPage.getAllProducerListCheckbox());
 
         producers.forEach((producerName) -> {
-            WebElement producerElement = driver.findElement(By.xpath(tabletPCPage.getProducer(producerName)));
+            WebElement producerElement = tabletPCPage.getProducerCheckbox(producerName);
             if (!producerElement.isSelected()) {
-                WebElementExtender.scrollToElementAndClick(driver, producerElement);
-
-                Assert.assertTrue(driver.findElement(By.xpath(tabletPCPage.checkProducer(producerName))).isSelected());
+                WebElementExtender.click(driver, producerElement);
             }
         });
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(productsLoadingIndicator));
-        addProducersToList();
 
+        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
+
+        final List<String> listTablePC = new ArrayList<>();
+        listTablePC.addAll(addProducersToList());
         do {
             clickNextPageAndWait();
-            addProducersToList();
-        }
-        while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
-
+            listTablePC.addAll(addProducersToList());
+        } while (tabletPCPage.getPagination().getText().startsWith(START_NAME));
         clickNextPageAndWait();
-        addProducersToList();
+        listTablePC.addAll(addProducersToList());
 
         Assert.assertTrue(compareTwoList(producers, listTablePC));
     }
 
     private List<String> addProducersToList() {
+        final List<String> listTablePC = new ArrayList<>();
         tabletPCPage.getResultTablePC().forEach((tabletPC) -> {
             listTablePC.add(tabletPC.getText());
         });
+
         return listTablePC;
     }
 
     private boolean compareTwoList(List<String> listProducers, List<String> listTablePC) {
-
         for (String title : listTablePC) {
+
             boolean found = false;
             for (String producerName : listProducers) {
                 if (title.startsWith(producerName)) {
@@ -88,15 +83,17 @@ public class TabletPCPageTest extends AbstractSeleniumTest{
                     break;
                 }
             }
+
             if (!found) {
                 return false;
             }
         }
+
         return true;
     }
 
     private void clickNextPageAndWait() {
-        WebElementExtender.scrollToElementAndClick(driver, tabletPCPage.getPagination());
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(productsLoadingIndicator));
+        WebElementExtender.click(driver, tabletPCPage.getPagination());
+        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
     }
 }

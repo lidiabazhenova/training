@@ -2,6 +2,7 @@ package com.lidiabazhenova.testcase5;
 
 import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
+import com.lidiabazhenova.pageObjects.ComparePage;
 import com.lidiabazhenova.pageObjects.MainPage;
 import com.lidiabazhenova.pageObjects.SearchPage;
 import com.lidiabazhenova.util.WebElementExtender;
@@ -20,7 +21,6 @@ public class SearchPageTest extends AbstractSeleniumTest{
 
     private WebDriver driver;
     private MainPage mainPage;
-    private SearchPage searchPage;
 
     @Before
     public void setSearchPage() throws Exception {
@@ -31,21 +31,19 @@ public class SearchPageTest extends AbstractSeleniumTest{
 
     @Test
     public void searchPageTest() {
-        final List<WebElement> checkboxesHTS;
-
         Assert.assertEquals(TITLE, driver.getTitle());
 
-        searchPage = mainPage.getSearchPage();
-        checkboxesHTS = searchPage.getCheckboxes();
+        final SearchPage searchPage = mainPage.search("HTC");
+        final List<WebElement> checkboxesHTS = searchPage.getCheckboxes();
 
         final String firstProductTitle = searchPage.getTitles().get(0).getText();
         final String secondProductTitle = searchPage.getTitles().get(1).getText();
         final String firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
         final String secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
 
-        WebElementExtender.scrollToElementAndClick(driver, checkboxesHTS.get(0));
-        WebElementExtender.scrollToElementAndClick(driver, checkboxesHTS.get(1));
-        WebElementExtender.scrollToElementAndClick(driver, searchPage.getToCompareButton());
+        WebElementExtender.click(driver, checkboxesHTS.get(0));
+        WebElementExtender.click(driver, checkboxesHTS.get(1));
+        WebElementExtender.click(driver, searchPage.getToCompareButton());
 
         Assert.assertEquals(firstProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(0).getText());
         Assert.assertEquals(secondProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(1).getText());

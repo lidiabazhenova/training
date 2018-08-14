@@ -1,5 +1,6 @@
 package com.lidiabazhenova.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,12 +16,8 @@ public class TabletPCPage extends AbstractPage {
             = "//div[@class='schema-filter-popover__inner']//span[contains(text(), '%s')]" +
             "/preceding-sibling::span/input";
 
-    private static final String IS_SELECTED_PRODUCER_X_PATH
-            = "//div[div[span[contains(text(), 'Производитель')]]]//span[contains(text(), '%s')]" +
-            "/preceding-sibling::span/input";
-
     @FindBy(xpath = "//div[div[span[contains(text(), 'Производитель')]]]//div[starts-with(text(), 'Все')]")
-    private WebElement producerCheckBox;
+    private WebElement allProducerListCheckBox;
 
     @FindBy(xpath = "//div[@class='schema-product__info']//preceding-sibling::div[@class='schema-product__title']//span")
     private List<WebElement> resultTablePC;
@@ -42,28 +39,18 @@ public class TabletPCPage extends AbstractPage {
      *
      * @return current element
      */
-    public WebElement getAllProducerList() {
-        return producerCheckBox;
+    public WebElement getAllProducerListCheckbox() {
+        return allProducerListCheckBox;
     }
 
     /**
-     * Method to get xpath for producer in popover
+     * Method to get web element for producer in popover
      *
      * @param producerName
-     * @return x-path for producer
+     * @return web element
      */
-    public String getProducer(String producerName) {
-        return String.format(GET_PRODUCER_X_PATH, producerName);
-    }
-
-    /**
-     * Method to get xpath for producer in span "Производитель"
-     *
-     * @param producerName
-     * @return x-path for producer
-     */
-    public String checkProducer(String producerName) {
-        return String.format(IS_SELECTED_PRODUCER_X_PATH, producerName);
+    public WebElement getProducerCheckbox(String producerName) {
+        return driver.findElement(By.xpath(String.format(GET_PRODUCER_X_PATH, producerName)));
     }
 
     /**

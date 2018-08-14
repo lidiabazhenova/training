@@ -1,0 +1,1 @@
+mvn -Dselenium.browser=chrome clean test

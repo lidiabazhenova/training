@@ -1,5 +1,6 @@
 package com.lidiabazhenova.pageObjects;
 
+import com.lidiabazhenova.util.WebElementExtender;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -68,8 +69,6 @@ public class SearchPage extends AbstractPage {
      * @return compare button
      */
     public WebElement getToCompareButton() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".compare-button_visible")));
         return toCompareButton;
     }
 
@@ -78,12 +77,9 @@ public class SearchPage extends AbstractPage {
      *
      * @return mainPage
      */
-    public MainPage getComparePage() {
+    public ComparePage getComparePage() {
         driver.switchTo().defaultContent();
 
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".modal-iframe-visible")));
-
-        return new MainPage(driver);
+        return new ComparePage(driver);
     }
 }
