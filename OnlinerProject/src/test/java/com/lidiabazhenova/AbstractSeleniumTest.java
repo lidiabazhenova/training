@@ -4,6 +4,7 @@ import com.lidiabazhenova.factory.WebDriverFactory;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
+
 public abstract class AbstractSeleniumTest {
 
     protected static final String TITLE_FORMAT = "%s купить в Минске";

@@ -8,6 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * class for creating Webdriver
+ */
 public final class WebDriverFactory {
 
     private static final String SELENIUM_BROWSER_PARAM = "selenium.browser";
@@ -17,6 +20,11 @@ public final class WebDriverFactory {
     private static boolean isInitialized;
     private static WebDriver driver;
 
+    /**
+     * Method to get Webdriver for different browsers
+     * @return driver
+     * @throws Exception
+     */
     public static WebDriver getInstance() throws Exception {
         if (isInitialized) {
             return driver;
@@ -39,6 +47,10 @@ public final class WebDriverFactory {
         return driver;
     }
 
+    /**
+     * @return
+     * Method to create Webdriver for Chrome
+     */
     private static WebDriver createChromeDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
@@ -47,6 +59,11 @@ public final class WebDriverFactory {
         return new ChromeDriver(options);
     }
 
+
+    /**
+     * Method to create Webdriver for Firefox
+     * @return
+     */
     private static WebDriver createFirefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
