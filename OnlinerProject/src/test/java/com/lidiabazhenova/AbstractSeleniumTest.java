@@ -1,7 +1,9 @@
 package com.lidiabazhenova;
 
 import com.lidiabazhenova.factory.WebDriverFactory;
-import org.junit.*;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 

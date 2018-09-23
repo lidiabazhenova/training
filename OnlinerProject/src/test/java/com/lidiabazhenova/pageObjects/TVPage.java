@@ -1,6 +1,7 @@
 package com.lidiabazhenova.pageObjects;
 
 import com.lidiabazhenova.util.WebElementExtender;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +14,10 @@ public class TVPage extends AbstractPage {
     @FindBy(xpath = "//div[./span[contains(text()," +
             "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")
     private WebElement questionMark;
+
+    @FindBy(xpath = "//div[./span[contains(text(),'Диагональ')]]/preceding-sibling::div/" +
+            "div[@class='schema-filter-help__trigger']")
+    private WebElement dialogPopup;
 
     @FindBy(xpath = "//div[contains(text(),'Диагональ')]")
     private WebElement questionMarkFieldHeader;
@@ -36,6 +41,7 @@ public class TVPage extends AbstractPage {
      */
     public TVPage clickQuestionMark() {
         WebElementExtender.click(driver, questionMark);
+        WebElementExtender.waitForVisibilityOfElement(driver, dialogPopup);
 
         return this;
     }
@@ -50,12 +56,12 @@ public class TVPage extends AbstractPage {
     }
 
     /**
-     * Method to get text-style to text: "Диагональ".
+     * Method to get font-weight to text: "Диагональ".
      *
-     * @return String text
+     * @return int font-weight
      */
-    public String getQuestionMarkFieldHeaderStyle() {
-        return questionMarkFieldHeader.getCssValue("font-weight");
+    public int getQuestionMarkFieldHeaderFontWeight() {
+        return NumberUtils.toInt(questionMarkFieldHeader.getCssValue("font-weight"));
     }
 
     /**
@@ -69,12 +75,12 @@ public class TVPage extends AbstractPage {
     }
 
     /**
-     * Method to get text-style to text: "Диагональ".
+     * Method to get font-weight to text: "Диагональ".
      *
-     * @return String text
+     * @return int font-weight
      */
-    public String getQuestionMarkFieldTextStyle() {
-        return questionMarkFieldText.getCssValue("font-weight");
+    public int getQuestionMarkFieldTextFontWeight() {
+        return NumberUtils.toInt(questionMarkFieldText.getCssValue("font-weight"));
     }
 
 }

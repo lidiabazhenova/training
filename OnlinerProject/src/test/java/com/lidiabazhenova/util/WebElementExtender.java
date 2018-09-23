@@ -31,8 +31,18 @@ public final class WebElementExtender {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(elementSelector));
     }
 
+    public static void waitForInvisibilityOfElement(final WebDriver driver, final WebElement element) {
+        final WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
+
     public static void waitForVisibilityOfElement(final WebDriver driver, final By elementSelector) {
         final  WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(elementSelector));
+    }
+
+    public static void waitForVisibilityOfElement(final WebDriver driver, final WebElement element) {
+        final  WebDriverWait wait = new WebDriverWait(driver, 5);
+        wait.until(ExpectedConditions.visibilityOf(element));
     }
 }
