@@ -10,16 +10,12 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class TabletPCPageTest extends AbstractSeleniumTest {
-
-    private static final String PRODUCTS_LOADING_INDICATOR_SELECTOR = ".schema-products_processing";
 
     private static final String URL = "https://catalog.onliner.by/tabletpc";
     private static final String NAME = "Планшет";
@@ -32,7 +28,7 @@ public class TabletPCPageTest extends AbstractSeleniumTest {
 
     @Before
     public void setTabletPCPage() throws Exception {
-        driver = WebDriverFactory.getInstance();
+        driver = getDriver();
         driver.get(URL);
         tabletPCPage = new TabletPCPage(driver);
     }

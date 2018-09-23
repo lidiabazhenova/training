@@ -20,7 +20,7 @@ public class IPhone7PageTest extends AbstractSeleniumTest{
 
     @Before
     public void setIPhone7Page() throws Exception {
-        driver = WebDriverFactory.getInstance();
+        driver = getDriver();
         driver.get(URL);
         iPhone7Page = new IPhone7Page(driver);
     }

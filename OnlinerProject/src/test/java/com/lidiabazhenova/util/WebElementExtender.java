@@ -32,7 +32,7 @@ public final class WebElementExtender {
     }
 
     public static void waitForVisibilityOfElement(final WebDriver driver, final By elementSelector) {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        final  WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(elementSelector));
     }
 }

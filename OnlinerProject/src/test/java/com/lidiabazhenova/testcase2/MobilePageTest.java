@@ -19,7 +19,7 @@ public class MobilePageTest extends AbstractSeleniumTest {
 
     @Before
     public void setMobilePage() throws Exception {
-        driver = WebDriverFactory.getInstance();
+        driver = getDriver();
         driver.get("https://catalog.onliner.by/mobile");
         mobilePage = new MobilePage(driver);
     }

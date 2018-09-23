@@ -2,7 +2,6 @@ package com.lidiabazhenova.testcase5;
 
 import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
-import com.lidiabazhenova.pageObjects.ComparePage;
 import com.lidiabazhenova.pageObjects.MainPage;
 import com.lidiabazhenova.pageObjects.SearchPage;
 import com.lidiabazhenova.util.WebElementExtender;
@@ -10,13 +9,13 @@ import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageTest extends AbstractSeleniumTest{
-
+public class SearchPageTest extends AbstractSeleniumTest {
     private static final String TITLE = "Каталог Onliner.by";
 
     private WebDriver driver;
@@ -24,7 +23,7 @@ public class SearchPageTest extends AbstractSeleniumTest{
 
     @Before
     public void setSearchPage() throws Exception {
-        driver = WebDriverFactory.getInstance();
+        driver = getDriver();
         driver.get("https://catalog.onliner.by");
         mainPage = new MainPage(driver);
     }
@@ -35,6 +34,7 @@ public class SearchPageTest extends AbstractSeleniumTest{
 
         final SearchPage searchPage = mainPage.search("HTC");
         final List<WebElement> checkboxesHTS = searchPage.getCheckboxes();
+        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
 
         final String firstProductTitle = searchPage.getTitles().get(0).getText();
         final String secondProductTitle = searchPage.getTitles().get(1).getText();

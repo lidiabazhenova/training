@@ -17,21 +17,15 @@ public final class WebDriverFactory {
     private static final String SELENIUM_BROWSER_CHROME = "chrome";
     private static final String SELENIUM_BROWSER_FIREFOX = "firefox";
 
-    private static boolean isInitialized;
-    private static WebDriver driver;
-
     /**
      * Method to get Webdriver for different browsers
      * @return driver
      * @throws Exception
      */
     public static WebDriver getInstance() throws Exception {
-        if (isInitialized) {
-            return driver;
-        }
-
         final String seleniumBrowser = System.getProperty(SELENIUM_BROWSER_PARAM);
 
+        WebDriver driver;
         if (SELENIUM_BROWSER_CHROME.equals(seleniumBrowser)) {
             driver = createChromeDriver();
         } else if (SELENIUM_BROWSER_FIREFOX.equals(seleniumBrowser)) {
@@ -41,8 +35,6 @@ public final class WebDriverFactory {
         }
 
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
-        isInitialized = true;
 
         return driver;
     }

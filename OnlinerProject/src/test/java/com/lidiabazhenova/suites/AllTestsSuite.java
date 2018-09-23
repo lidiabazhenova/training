@@ -1,6 +1,5 @@
 package com.lidiabazhenova.suites;
 
-import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.testcase1.TVPageTest;
 import com.lidiabazhenova.testcase2.MobilePageTest;
 import com.lidiabazhenova.testcase3.IPhone7PageTest;
@@ -18,18 +17,13 @@ import org.junit.runners.Suite;
         SearchPageTest.class})
 public class AllTestsSuite {
 
-
     @BeforeClass
     public static void setUp() throws Exception {
         Log.startLog("AllTestsSuite");
-        WebDriverFactory.getInstance();
     }
 
     @AfterClass
     public static void tearDown() throws Exception {
-        if (WebDriverFactory.getInstance() != null) {
-            WebDriverFactory.getInstance().quit();
-        }
         Log.endLog("AllTestsSuite");
     }
 }
