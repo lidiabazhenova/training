@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 /**
  * class for tvPage
  */
-public class TVPage extends AbstractPage {
+public class TvPage extends AbstractPage {
 
     @FindBy(xpath = "//div[./span[contains(text()," +
             "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")
@@ -30,7 +30,7 @@ public class TVPage extends AbstractPage {
      *
      * @param driver
      */
-    public TVPage(WebDriver driver) {
+    public TvPage(WebDriver driver) {
         super(driver);
     }
 
@@ -39,7 +39,7 @@ public class TVPage extends AbstractPage {
      *
      * @return current page
      */
-    public TVPage clickQuestionMark() {
+    public TvPage clickQuestionMark() {
         WebElementExtender.click(driver, questionMark);
         WebElementExtender.waitForVisibilityOfElement(driver, dialogPopup);
 

@@ -1,7 +1,7 @@
 package com.lidiabazhenova.testcase1;
 
 import com.lidiabazhenova.factory.WebDriverFactory;
-import com.lidiabazhenova.pageObjects.TVPage;
+import com.lidiabazhenova.pageObjects.TvPage;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 public class TvCategoryStepDefs {
 
-    private TVPage tvPage;
+    private TvPage tvPage;
     private WebDriver driver;
 
     @Before
@@ -24,10 +24,10 @@ public class TvCategoryStepDefs {
     @Given("Open https:\\/\\/catalog.onliner.by\\/tv")
     public void openTvCategoryPage() throws Exception {
         driver.get("https://catalog.onliner.by/tv");
-        tvPage = new TVPage(driver);
+        tvPage = new TvPage(driver);
     }
 
-    @When("User clicks on question mark near 'Диагональ'")
+    @When("User clicks on question mark near \"Диагональ\"")
     public void clickOnDiagonalQuestionMark() {
         tvPage.clickQuestionMark();
     }

@@ -13,19 +13,19 @@ import java.util.List;
 public class MobilePage extends AbstractPage {
 
     @FindBy(xpath = "//div[@class=\"schema-product__group\"]")
-    private List<WebElement> allElements;
+    private List<WebElement> allPhones;
 
     @FindBy(xpath = "//span[@data-bind='html: product.extended_name || product.full_name']")
-    private List<WebElement> headingsAllElements;
+    private List<WebElement> headingsAllPhones;
 
     @FindBy(xpath = "//span[@data-bind='html: product.description']")
-    private List<WebElement> descriptionAllElements;
+    private List<WebElement> descriptionAllPhones;
 
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__price']//span")
-    private List<WebElement> priceAllElements;
+    private List<WebElement> priceAllPhones;
 
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__price']//span")
-    private WebElement priceElement;
+    private WebElement pricePhone;
 
     @FindBy(xpath = "//div[@class='schema-product__price-group']/div[1]/div[@class='schema-product__status']")
     private List<WebElement> productStatus;
@@ -40,12 +40,12 @@ public class MobilePage extends AbstractPage {
     }
 
     /**
-     * Method to get count of phones on this page
+     * Method to all phones on this page
      *
      * @return int count of phones
      */
-    public int getPhoneCount() {
-        return CollectionUtils.size(allElements);
+    public List<WebElement> getAllPhones() {
+        return allPhones;
     }
 
     /**
@@ -53,8 +53,8 @@ public class MobilePage extends AbstractPage {
      *
      * @return list of phone headings
      */
-    public List<WebElement> getHeadingsAllElements() {
-        return headingsAllElements;
+    public List<WebElement> getHeadingsAllPhones() {
+        return headingsAllPhones;
     }
 
     /**
@@ -62,8 +62,8 @@ public class MobilePage extends AbstractPage {
      *
      * @return list of phone descriptions
      */
-    public List<WebElement> getDescriptionAllElements() {
-        return descriptionAllElements;
+    public List<WebElement> getDescriptionsAllPhones() {
+        return descriptionAllPhones;
     }
 
     /**
@@ -71,8 +71,8 @@ public class MobilePage extends AbstractPage {
      *
      * @return list of phone prices
      */
-    public List<WebElement> getPriceAllElements() {
-        return priceAllElements;
+    public List<WebElement> getPricesAllPhones() {
+        return priceAllPhones;
     }
 
     /**
