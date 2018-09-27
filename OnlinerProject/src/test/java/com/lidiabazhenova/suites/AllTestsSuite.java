@@ -1,7 +1,7 @@
 package com.lidiabazhenova.suites;
 
 import com.lidiabazhenova.testcase1.TvCategoryStepDefs;
-import com.lidiabazhenova.testcase3.IPhone7DetailedPageStepDefs;
+import com.lidiabazhenova.testcase3.DetailedPageStepDefs;
 import com.lidiabazhenova.testcase4.TabletPCCategoryStepDefs;
 import com.lidiabazhenova.testcase5.SearchPageStepsDefs;
 import com.lidiabazhenova.util.Log;
@@ -12,7 +12,7 @@ import org.junit.runners.Suite;
 
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({TvCategoryStepDefs.class, IPhone7DetailedPageStepDefs.class, TabletPCCategoryStepDefs.class,
+@Suite.SuiteClasses({TvCategoryStepDefs.class, DetailedPageStepDefs.class, TabletPCCategoryStepDefs.class,
         SearchPageStepsDefs.class})
 public class AllTestsSuite {
 

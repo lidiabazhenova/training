@@ -34,7 +34,7 @@ public class TvCategoryStepDefs {
 
     @Then("Diagonal popup opens")
     public void diagonalPopupOpens() {
-        //
+        tvPage.getDialogPopup().isDisplayed();
     }
 
     @And("Popup header equals to \"([^\"]*)\"")

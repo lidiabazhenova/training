@@ -44,7 +44,7 @@ public class TabletPCCategoryStepDefs {
 
     @Then("Popup opens")
     public void producersPopupOpens() {
-        //
+        Assert.assertTrue(tabletPCPage.getAllProducersPopup().isDisplayed());
     }
 
     @When("Click on producers: {string} in popup")

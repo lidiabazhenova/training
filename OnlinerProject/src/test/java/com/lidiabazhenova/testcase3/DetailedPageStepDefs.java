@@ -11,7 +11,7 @@ import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
-public class IPhone7DetailedPageStepDefs {
+public class DetailedPageStepDefs {
 
     private WebDriver driver;
     private IPhone7Page iPhone7Page;
@@ -32,12 +32,7 @@ public class IPhone7DetailedPageStepDefs {
         WebElementExtender.scrollToElement(driver, iPhone7Page.getFieldButteries());
     }
 
-    @Then("Battery field is displayed")
-    public void batteryFieldIsDisplayed() {
-        //
-    }
-
-    @And("Buttery type equals to \"([^\"]*)\"")
+    @Then("Buttery type equals to \"([^\"]*)\"")
     public void checkTypeButtery(final String text) {
         Assert.assertEquals(text, iPhone7Page.getTypeButtery());
     }

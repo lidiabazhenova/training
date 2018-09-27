@@ -61,7 +61,15 @@ public class TabletPCPage extends AbstractPage {
     }
 
     /**
-     * Method to get producer in popover by producerName
+     * Method to get producers popup
+     * @return producers popup element
+     */
+    public WebElement getAllProducersPopup() {
+        return allProducersPopup;
+    }
+
+    /**
+     * Method to get producer in popup by producerName
      *
      * @param producerName
      * @return producer

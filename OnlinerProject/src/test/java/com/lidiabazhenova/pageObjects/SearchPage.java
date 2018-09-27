@@ -1,12 +1,8 @@
 package com.lidiabazhenova.pageObjects;
 
-import com.lidiabazhenova.util.WebElementExtender;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
@@ -27,6 +23,9 @@ public class SearchPage extends AbstractPage {
     @FindBy(css = ".compare-button")
     private WebElement toCompareButton;
 
+    @FindBy(id = "search-page")
+    private WebElement searchForm;
+
     /**
      * constructor for searchPage
      *
@@ -34,6 +33,14 @@ public class SearchPage extends AbstractPage {
      */
     public SearchPage(WebDriver driver) {
         super(driver);
+    }
+
+    /**
+     * Method to get searchForm
+     * @return searchForm
+     */
+    public WebElement getSearchForm() {
+        return searchForm;
     }
 
     /**

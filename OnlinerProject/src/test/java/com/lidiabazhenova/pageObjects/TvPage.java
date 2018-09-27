@@ -12,11 +12,14 @@ import org.openqa.selenium.support.FindBy;
 public class TvPage extends AbstractPage {
 
     @FindBy(xpath = "//div[./span[contains(text()," +
-            "'Диагональ')]]/preceding-sibling::div/div[@class=\"schema-filter-help__trigger\"]")
+            "'Диагональ')]]/preceding-sibling::div/div[@class='schema-filter-help__trigger']")
     private WebElement questionMark;
 
     @FindBy(xpath = "//div[./span[contains(text(),'Диагональ')]]/preceding-sibling::div/" +
             "div[@class='schema-filter-help__trigger']")
+    private WebElement dialogPopupFilterTrigger;
+
+    @FindBy(xpath = "//div[@class='schema-filter-help__inner'][div[contains(text(),'Диагональ')]]")
     private WebElement dialogPopup;
 
     @FindBy(xpath = "//div[contains(text(),'Диагональ')]")
@@ -41,9 +44,18 @@ public class TvPage extends AbstractPage {
      */
     public TvPage clickQuestionMark() {
         WebElementExtender.click(driver, questionMark);
-        WebElementExtender.waitForVisibilityOfElement(driver, dialogPopup);
+        WebElementExtender.waitForVisibilityOfElement(driver, dialogPopupFilterTrigger);
 
         return this;
+    }
+
+    /**
+     * Method to get dialog popup.
+     *
+     * @return dialog popup element
+     */
+    public WebElement getDialogPopup() {
+        return dialogPopup;
     }
 
     /**

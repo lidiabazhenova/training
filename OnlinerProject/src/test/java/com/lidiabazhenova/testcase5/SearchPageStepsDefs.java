@@ -47,7 +47,7 @@ public class SearchPageStepsDefs{
 
     @Then("Search page opens")
     public void producersPopupOpens() {
-        //
+        searchPage.getSearchForm().isDisplayed();
     }
 
     @When("User click on any two phones and go to compare results")
