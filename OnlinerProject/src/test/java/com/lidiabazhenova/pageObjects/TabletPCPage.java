@@ -71,7 +71,7 @@ public class TabletPCPage extends AbstractPage {
     }
 
     /**
-     * Method to get results for search
+     * Method to get results of search
      *
      * @return list of tabletPC extended names
      */

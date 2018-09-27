@@ -42,12 +42,12 @@ public class TabletPCCategoryStepDefs {
         tabletPCPage.clickAllProducersFilter();
     }
 
-    @Then("AllProducerspopup opens")
+    @Then("Popup opens")
     public void producersPopupOpens() {
         //
     }
 
-    @When("Click on producers: {string} in AllProducerspopup")
+    @When("Click on producers: {string} in popup")
     public void clickAllProducers(final String producersString) {
         splitProducersFromString(producersString).forEach((producerName) -> {
             WebElement producerElement = tabletPCPage.getProducerInCheckbox(producerName);
