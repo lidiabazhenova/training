@@ -1,25 +1,26 @@
 package com.lidiabazhenova.testcase5;
 
-import com.lidiabazhenova.AbstractSeleniumTest;
 import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.MainPage;
 import com.lidiabazhenova.pageObjects.SearchPage;
 import com.lidiabazhenova.util.WebElementExtender;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageStepsDefs extends AbstractSeleniumTest {
+public class SearchPageStepsDefs{
+    private static final String PRODUCTS_LOADING_INDICATOR_SELECTOR = ".schema-products_processing";
+
     private WebDriver driver;
     private MainPage mainPage;
     private SearchPage searchPage;
@@ -53,24 +54,39 @@ public class SearchPageStepsDefs extends AbstractSeleniumTest {
     public void clickOnAnyTwoPhones() {
         final List<WebElement> checkboxesHTS = searchPage.getCheckboxes();
         WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
-        firstProductTitle = searchPage.getTitles().get(0).getText();
-        secondProductTitle = searchPage.getTitles().get(1).getText();
-        firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
-        secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
-
+        getPhonesInfo();
         WebElementExtender.click(driver, checkboxesHTS.get(0));
         WebElementExtender.click(driver, checkboxesHTS.get(1));
         WebElementExtender.click(driver, searchPage.getToCompareButton());
     }
 
-    @Then("Check description and prices of this phones are displayed on compare results")
-    public void checkResults() {
+    @Then("Check the description of first phone are displayed on compare results")
+    public void checkDisplayedFirstPhoneDesctiption() {
         Assert.assertEquals(firstProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(0).getText());
+    }
+
+    @And("Check the description of second phone are displayed on compare results")
+    public void checkDisplayedSecondPhoneDesctiption() {
         Assert.assertEquals(secondProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(1).getText());
+    }
+
+    @And("Check the price of first phone are displayed on compare results")
+    public void checkDisplayedFirstPhonePrice() {
         Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(0).getText()
                 .startsWith(firstProductPrice));
+    }
+
+    @And("Check the price of second phone are displayed on compare results")
+    public void checkDisplayedSecondPhonePrice() {
         Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(1).getText()
                 .startsWith(secondProductPrice));
+    }
+
+    private void getPhonesInfo(){
+        firstProductTitle = searchPage.getTitles().get(0).getText();
+        secondProductTitle = searchPage.getTitles().get(1).getText();
+        firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
+        secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
     }
 
     @After
