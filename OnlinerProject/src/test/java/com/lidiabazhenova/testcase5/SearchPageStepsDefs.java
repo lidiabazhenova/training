@@ -5,9 +5,13 @@ import com.lidiabazhenova.factory.WebDriverFactory;
 import com.lidiabazhenova.pageObjects.MainPage;
 import com.lidiabazhenova.pageObjects.SearchPage;
 import com.lidiabazhenova.util.WebElementExtender;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,42 +19,64 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SearchPageTest extends AbstractSeleniumTest {
-    private static final String TITLE = "Каталог Onliner.by";
-
+public class SearchPageStepsDefs extends AbstractSeleniumTest {
     private WebDriver driver;
     private MainPage mainPage;
+    private SearchPage searchPage;
+    private String firstProductTitle;
+    private String secondProductTitle;
+    private String firstProductPrice;
+    private String secondProductPrice;
 
     @Before
-    public void setSearchPage() throws Exception {
-        driver = getDriver();
+    public void initWebDriver() throws Exception {
+        driver = WebDriverFactory.getInstance();
+    }
+
+    @Given("Open https:\\/\\/catalog.onliner.by")
+    public void openCatalogueOnliner() throws Exception {
         driver.get("https://catalog.onliner.by");
         mainPage = new MainPage(driver);
     }
 
-    @Test
-    public void searchPageTest() {
-        Assert.assertEquals(TITLE, driver.getTitle());
+    @When("User search {string}")
+    public void clickOnAllProducersCheckbox(final String searchText) {
+        searchPage = mainPage.search(searchText);
+    }
 
-        final SearchPage searchPage = mainPage.search("HTC");
+    @Then("Search page opens")
+    public void producersPopupOpens() {
+        //
+    }
+
+    @When("User click on any two phones and go to compare results")
+    public void clickOnAnyTwoPhones() {
         final List<WebElement> checkboxesHTS = searchPage.getCheckboxes();
         WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
-
-        final String firstProductTitle = searchPage.getTitles().get(0).getText();
-        final String secondProductTitle = searchPage.getTitles().get(1).getText();
-        final String firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
-        final String secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
+        firstProductTitle = searchPage.getTitles().get(0).getText();
+        secondProductTitle = searchPage.getTitles().get(1).getText();
+        firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
+        secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
 
         WebElementExtender.click(driver, checkboxesHTS.get(0));
         WebElementExtender.click(driver, checkboxesHTS.get(1));
         WebElementExtender.click(driver, searchPage.getToCompareButton());
+    }
 
+    @Then("Check description and prices of this phones are displayed on compare results")
+    public void checkResults() {
         Assert.assertEquals(firstProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(0).getText());
         Assert.assertEquals(secondProductTitle, searchPage.getComparePage().getItemsToCompareCaption().get(1).getText());
-
         Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(0).getText()
                 .startsWith(firstProductPrice));
         Assert.assertTrue(searchPage.getComparePage().getItemsToComparePrice().get(1).getText()
                 .startsWith(secondProductPrice));
+    }
+
+    @After
+    public void quitWebDriver() {
+        if (null != driver) {
+            driver.quit();
+        }
     }
 }
