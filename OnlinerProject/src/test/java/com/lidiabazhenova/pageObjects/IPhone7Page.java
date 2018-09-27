@@ -1,5 +1,6 @@
 package com.lidiabazhenova.pageObjects;
 
+import com.lidiabazhenova.util.WebElementExtender;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,31 +11,19 @@ import org.openqa.selenium.support.FindBy;
 public class IPhone7Page extends AbstractPage {
 
     @FindBy(xpath = "//div[contains(text(),'Аккумулятор и время работы')]")
-    private WebElement headingButtery;
-
-    @FindBy(xpath = "//tr[td//text()[contains(., 'Тип аккумулятора')]]/td[1]")
-    private WebElement typeButtery;
+    private WebElement fieldButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Тип аккумулятора')]]/td[2]")
-    private WebElement descriptionTypeButtery;
-
-    @FindBy(xpath = "//tr[td//text()[contains(., 'Ёмкость аккумулятора')]]/td[1]")
-    private WebElement capacityButtery;
+    private WebElement typeButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Ёмкость аккумулятора')]]/td[2]")
-    private WebElement descriptionCapacityButtery;
-
-    @FindBy(xpath = "//tr[td//text()[contains(., 'Время разговора')]]/td[1]")
-    private WebElement talkTimeButtery;
+    private WebElement capacityButtery;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время разговора')]]/td[2]")
-    private WebElement descriptionTalkTimeButtery;
-
-    @FindBy(xpath = "//tr[td//text()[contains(., 'Время ожидания')]]/td[1]")
-    private WebElement waitTimeButtery;
+    private WebElement talkingTime;
 
     @FindBy(xpath = "//tr[td//text()[contains(., 'Время ожидания')]]/td[2]")
-    private WebElement descriptionWaitTimeButtery;
+    private WebElement waitTimeButtery;
 
     /**
      * constructor for iphone7Page
@@ -46,83 +35,47 @@ public class IPhone7Page extends AbstractPage {
     }
 
     /**
-     * Method to get field butterys.
+     * Method to get field butteries.
      *
      * @return current element
      */
     public WebElement getFieldButteries() {
-        return headingButtery;
+        return fieldButtery;
     }
 
     /**
-     * Method to get field "type of buttery".
+     * Method to get buttery type.
      *
-     * @return current element
+     * @return description of buttery type
      */
-    public WebElement getTypeButtery() {
-        return typeButtery;
+    public String getTypeButtery() {
+        return typeButtery.getText();
     }
 
     /**
-     * Method to get description of buttery type.
+     * Method to get buttery capacity.
      *
-     * @return current element
+     * @return value of buttery capacity
      */
-    public WebElement getDescriptionType() {
-        return descriptionTypeButtery;
+    public String getCapacity() {
+        return capacityButtery.getText();
     }
 
     /**
-     * Method to get field "buttery capacity".
+     * Method to get buttery talking time.
      *
-     * @return current element
+     * @return value of buttery talking time
      */
-    public WebElement getCapacity() {
-        return capacityButtery;
+    public String getTalkingTime() {
+        return talkingTime.getText();
     }
 
     /**
-     * Method to get value of buttery capacity.
+     * Method to get buttery wait time.
      *
-     * @return current element
+     * @return value of buttery wait time.
      */
-    public WebElement getValueCapacity() {
-        return descriptionCapacityButtery;
-    }
-
-    /**
-     * Method to get field "buttery talk time".
-     *
-     * @return current element
-     */
-    public WebElement getTalkTimeButtery() {
-        return talkTimeButtery;
-    }
-
-    /**
-     * Method to get value of buttery talk time.
-     *
-     * @return current element
-     */
-    public WebElement getValueTalkTimeButtery() {
-        return descriptionTalkTimeButtery;
-    }
-
-    /**
-     * Method to get field "buttery wait time".
-     *
-     * @return current element
-     */
-    public WebElement getWaitTime() {
-        return waitTimeButtery;
-    }
-
-    /**
-     * Method to get value of buttery wait time.
-     *
-     * @return current element
-     */
-    public WebElement getDescriptionWaitTime() {
-        return descriptionWaitTimeButtery;
+    public String getWaitTime() {
+        return waitTimeButtery.getText();
     }
 }

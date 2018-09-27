@@ -1,10 +1,12 @@
 package com.lidiabazhenova.pageObjects;
 
+import com.lidiabazhenova.util.WebElementExtender;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,10 +19,13 @@ public class TabletPCPage extends AbstractPage {
             "/preceding-sibling::span/input";
 
     @FindBy(xpath = "//div[div[span[contains(text(), 'Производитель')]]]//div[starts-with(text(), 'Все')]")
-    private WebElement allProducerListCheckBox;
+    private WebElement allProducersFilter;
+
+    @FindBy(xpath = "//div[@class='schema-filter-popover schema-filter-popover_visible']")
+    private WebElement allProducersPopup;
 
     @FindBy(xpath = "//div[@class='schema-product__info']//preceding-sibling::div[@class='schema-product__title']//span")
-    private List<WebElement> resultTablePC;
+    private List<WebElement> resultTabletPCNameList;
 
     @FindBy(xpath = "//*[@id='schema-pagination']/a/span")
     private WebElement pagination;
@@ -35,31 +40,47 @@ public class TabletPCPage extends AbstractPage {
     }
 
     /**
-     * Method to get all producers list
+     * Method to get element "Все 62 варианта"
      *
-     * @return current element
+     * @return web element
      */
-    public WebElement getAllProducerListCheckbox() {
-        return allProducerListCheckBox;
+    public WebElement getAllProducersFilter() {
+        return allProducersFilter;
     }
 
     /**
-     * Method to get web element for producer in popover
+     * Method to click on "Все 62 варианта" in filter "Производитель"
+     *
+     * @return current page
+     */
+    public TabletPCPage clickAllProducersFilter() {
+        WebElementExtender.click(driver, allProducersFilter);
+        WebElementExtender.waitForVisibilityOfElement(driver, allProducersPopup);
+
+        return this;
+    }
+
+    /**
+     * Method to get producer in popover by producerName
      *
      * @param producerName
-     * @return web element
+     * @return producer
      */
-    public WebElement getProducerCheckbox(String producerName) {
+    public WebElement getProducerInCheckbox(String producerName) {
         return driver.findElement(By.xpath(String.format(GET_PRODUCER_X_PATH, producerName)));
     }
 
     /**
      * Method to get results for search
      *
-     * @return list results of search
+     * @return list of tabletPC extended names
      */
-    public List<WebElement> getResultTablePC() {
-        return resultTablePC;
+    public List<String> getTabletPCNameList() {
+        final List<String> listTabletPCNames = new ArrayList<>();
+        resultTabletPCNameList.forEach((tabletPC) -> {
+            listTabletPCNames.add(tabletPC.getText());
+        });
+        return listTabletPCNames;
     }
 
     /**
