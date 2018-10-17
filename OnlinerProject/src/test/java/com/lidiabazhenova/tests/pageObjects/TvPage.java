@@ -1,6 +1,6 @@
-package com.lidiabazhenova.pageObjects;
+package com.lidiabazhenova.tests.pageObjects;
 
-import com.lidiabazhenova.util.WebElementExtender;
+import com.lidiabazhenova.framework.util.WebElementExtender;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

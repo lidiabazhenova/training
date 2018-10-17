@@ -1,19 +1,19 @@
-package com.lidiabazhenova.testcase5;
+package com.lidiabazhenova.tests.testcase5;
 
-import com.lidiabazhenova.factory.WebDriverFactory;
-import com.lidiabazhenova.pageObjects.MainPage;
-import com.lidiabazhenova.pageObjects.SearchPage;
-import com.lidiabazhenova.util.WebElementExtender;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import com.lidiabazhenova.framework.factory.WebDriverFactory;
+import com.lidiabazhenova.tests.pageObjects.MainPage;
+import com.lidiabazhenova.tests.pageObjects.SearchPage;
+import com.lidiabazhenova.framework.util.WebElementExtender;
+import cucumber.api.CucumberOptions;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.junit.Cucumber;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
@@ -21,7 +21,6 @@ import java.util.List;
 public class SearchPageStepsDefs{
     private static final String PRODUCTS_LOADING_INDICATOR_SELECTOR = ".schema-products_processing";
 
-    private WebDriver driver;
     private MainPage mainPage;
     private SearchPage searchPage;
     private String firstProductTitle;
@@ -29,15 +28,10 @@ public class SearchPageStepsDefs{
     private String firstProductPrice;
     private String secondProductPrice;
 
-    @Before
-    public void initWebDriver() throws Exception {
-        driver = WebDriverFactory.getInstance();
-    }
-
     @Given("Open https:\\/\\/catalog.onliner.by")
     public void openCatalogueOnliner() throws Exception {
-        driver.get("https://catalog.onliner.by");
-        mainPage = new MainPage(driver);
+        WebDriverFactory.getInstance().get("https://catalog.onliner.by");
+        mainPage = new MainPage(WebDriverFactory.getInstance());
     }
 
     @When("User search {string}")
@@ -51,13 +45,13 @@ public class SearchPageStepsDefs{
     }
 
     @When("User click on any two phones and go to compare results")
-    public void clickOnAnyTwoPhones() {
+    public void clickOnAnyTwoPhones() throws Exception {
         final List<WebElement> checkboxesHTS = searchPage.getCheckboxes();
-        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
+        WebElementExtender.waitForInvisibilityOfElement(WebDriverFactory.getInstance(), By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
         getPhonesInfo();
-        WebElementExtender.click(driver, checkboxesHTS.get(0));
-        WebElementExtender.click(driver, checkboxesHTS.get(1));
-        WebElementExtender.click(driver, searchPage.getToCompareButton());
+        WebElementExtender.click(WebDriverFactory.getInstance(), checkboxesHTS.get(0));
+        WebElementExtender.click(WebDriverFactory.getInstance(), checkboxesHTS.get(1));
+        WebElementExtender.click(WebDriverFactory.getInstance(), searchPage.getToCompareButton());
     }
 
     @Then("Check the description of first phone are displayed on compare results")
@@ -87,12 +81,5 @@ public class SearchPageStepsDefs{
         secondProductTitle = searchPage.getTitles().get(1).getText();
         firstProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(0).getText(), " р.");
         secondProductPrice = StringUtils.removeEnd(searchPage.getPrices().get(1).getText(), " р.");
-    }
-
-    @After
-    public void quitWebDriver() {
-        if (null != driver) {
-            driver.quit();
-        }
     }
 }

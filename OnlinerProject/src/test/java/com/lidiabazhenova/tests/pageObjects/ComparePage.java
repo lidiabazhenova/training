@@ -1,4 +1,4 @@
-package com.lidiabazhenova.pageObjects;
+package com.lidiabazhenova.tests.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

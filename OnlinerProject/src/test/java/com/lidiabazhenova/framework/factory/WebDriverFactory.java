@@ -1,4 +1,4 @@
-package com.lidiabazhenova.factory;
+package com.lidiabazhenova.framework.factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -17,15 +17,20 @@ public final class WebDriverFactory {
     private static final String SELENIUM_BROWSER_CHROME = "chrome";
     private static final String SELENIUM_BROWSER_FIREFOX = "firefox";
 
+    private static WebDriver driver;
+
     /**
      * Method to get Webdriver for different browsers
      * @return driver
      * @throws Exception
      */
     public static WebDriver getInstance() throws Exception {
+        if (null != driver) {
+            return driver;
+        }
+
         final String seleniumBrowser = System.getProperty(SELENIUM_BROWSER_PARAM);
 
-        WebDriver driver;
         if (SELENIUM_BROWSER_CHROME.equals(seleniumBrowser)) {
             driver = createChromeDriver();
         } else if (SELENIUM_BROWSER_FIREFOX.equals(seleniumBrowser)) {
@@ -37,6 +42,13 @@ public final class WebDriverFactory {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
         return driver;
+    }
+
+    public static void quit() {
+        if (null != driver) {
+            driver.quit();
+            driver = null;
+        }
     }
 
     /**

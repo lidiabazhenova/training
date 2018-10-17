@@ -1,4 +1,4 @@
-package com.lidiabazhenova.util;
+package com.lidiabazhenova.framework.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

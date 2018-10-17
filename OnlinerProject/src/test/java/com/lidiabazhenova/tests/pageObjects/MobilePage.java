@@ -1,6 +1,5 @@
-package com.lidiabazhenova.pageObjects;
+package com.lidiabazhenova.tests.pageObjects;
 
-import org.apache.commons.collections4.CollectionUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

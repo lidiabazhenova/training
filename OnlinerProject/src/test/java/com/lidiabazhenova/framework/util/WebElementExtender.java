@@ -1,4 +1,4 @@
-package com.lidiabazhenova.util;
+package com.lidiabazhenova.framework.util;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;

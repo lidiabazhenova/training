@@ -1,30 +1,21 @@
-package com.lidiabazhenova.testcase2;
+package com.lidiabazhenova.tests.testcase2;
 
-import com.lidiabazhenova.factory.WebDriverFactory;
-import com.lidiabazhenova.pageObjects.MobilePage;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import com.lidiabazhenova.framework.factory.WebDriverFactory;
+import com.lidiabazhenova.tests.pageObjects.MobilePage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
 
 public class MobileCategoryStepDefs {
 
     private MobilePage mobilePage;
-    private WebDriver driver;
-
-    @Before
-    public void initWebDriver() throws Exception {
-        driver = WebDriverFactory.getInstance();
-    }
 
     @Given("Open https:\\/\\/catalog.onliner.by\\/mobile")
     public void openMobileCategoryPage() throws Exception {
-        driver.get("https://catalog.onliner.by/mobile");
-        mobilePage = new MobilePage(driver);
+        WebDriverFactory.getInstance().get("https://catalog.onliner.by/mobile");
+        mobilePage = new MobilePage(WebDriverFactory.getInstance());
     }
 
     @Then("Mobiles count on page is equals to {int}")
@@ -68,13 +59,6 @@ public class MobileCategoryStepDefs {
             String price = StringUtils.removeEnd(priceField.getText(), " р.");
             Assert.assertTrue(price.matches(regex));
         });
-    }
-
-    @After
-    public void quitWebDriver() {
-        if (null != driver) {
-            driver.quit();
-        }
     }
 }
 

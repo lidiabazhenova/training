@@ -1,17 +1,14 @@
-package com.lidiabazhenova.testcase4;
+package com.lidiabazhenova.tests.testcase4;
 
-import com.lidiabazhenova.factory.WebDriverFactory;
-import com.lidiabazhenova.pageObjects.TabletPCPage;
-import com.lidiabazhenova.util.WebElementExtender;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import com.lidiabazhenova.framework.factory.WebDriverFactory;
+import com.lidiabazhenova.tests.pageObjects.TabletPCPage;
+import com.lidiabazhenova.framework.util.WebElementExtender;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -23,18 +20,12 @@ public class TabletPCCategoryStepDefs {
     private static final String PRODUCTS_LOADING_INDICATOR_SELECTOR = ".schema-products_processing";
     private static final String START_NAME = "Следующие";
 
-    private WebDriver driver;
     private TabletPCPage tabletPCPage;
-
-    @Before
-    public void initWebDriver() throws Exception {
-        driver = WebDriverFactory.getInstance();
-    }
 
     @Given("Open https:\\/\\/catalog.onliner.by\\/tabletpc")
     public void openTablePCCategoryPage() throws Exception {
-        driver.get("https://catalog.onliner.by/tabletpc");
-        tabletPCPage = new TabletPCPage(driver);
+        WebDriverFactory.getInstance().get("https://catalog.onliner.by/tabletpc");
+        tabletPCPage = new TabletPCPage(WebDriverFactory.getInstance());
     }
 
     @When("User clicks on \"Все 62 варианта\" in filter \"Производитель\"")
@@ -48,23 +39,23 @@ public class TabletPCCategoryStepDefs {
     }
 
     @When("Click on producers: {string} in popup")
-    public void clickAllProducers(final String producersString) {
-        splitProducersFromString(producersString).forEach((producerName) -> {
+    public void clickAllProducers(final String producersString) throws Exception {
+        for (String producerName: splitProducersFromString(producersString)) {
             WebElement producerElement = tabletPCPage.getProducerInCheckbox(producerName);
             if (!producerElement.isSelected()) {
-                WebElementExtender.click(driver, producerElement);
+                WebElementExtender.click(WebDriverFactory.getInstance(), producerElement);
             }
-        });
-        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
+        };
+        WebElementExtender.waitForInvisibilityOfElement(WebDriverFactory.getInstance(), By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
     }
 
     @Then("Check all producers {string} are clicked in filter \"Производитель\"")
-    public void checkAllProducersClickedInFilter(final String producerNames) {
+    public void checkAllProducersClickedInFilter(final String producerNames) throws Exception {
         Assert.assertTrue(compareTwoList(splitProducersFromString(producerNames), getProducersAreClicked(producerNames)));
     }
 
     @And("Check all producers {string} are clicked in search results")
-    public void checkAllProducersClickedInSearchResults(final String producerNames) {
+    public void checkAllProducersClickedInSearchResults(final String producerNames) throws Exception {
         Assert.assertTrue(compareTwoList(splitProducersFromString(producerNames), getSearchResults()));
     }
 
@@ -74,7 +65,7 @@ public class TabletPCCategoryStepDefs {
         return producersList;
     }
 
-    private List<String> getProducersAreClicked(final String producerNames) {
+    private List<String> getProducersAreClicked(final String producerNames) throws Exception {
         final List<String> listProducersAreClicked = new ArrayList<>();
         clickFilterAndWait();
         splitProducersFromString(producerNames).forEach((producerName) -> {
@@ -86,7 +77,7 @@ public class TabletPCCategoryStepDefs {
         return listProducersAreClicked;
     }
 
-    private List<String> getSearchResults() {
+    private List<String> getSearchResults() throws Exception {
         final List<String> listTabletPC = new ArrayList<>();
         listTabletPC.addAll(tabletPCPage.getTabletPCNameList());
 
@@ -120,20 +111,13 @@ public class TabletPCCategoryStepDefs {
         return true;
     }
 
-    private void clickNextPageAndWait() {
-        WebElementExtender.click(driver, tabletPCPage.getPagination());
-        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
+    private void clickNextPageAndWait() throws Exception {
+        WebElementExtender.click(WebDriverFactory.getInstance(), tabletPCPage.getPagination());
+        WebElementExtender.waitForInvisibilityOfElement(WebDriverFactory.getInstance(), By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
     }
 
-    private void clickFilterAndWait() {
-        WebElementExtender.click(driver, tabletPCPage.getAllProducersFilter());
-        WebElementExtender.waitForInvisibilityOfElement(driver, By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
-    }
-
-    @After
-    public void quitWebDriver() {
-        if (null != driver) {
-            driver.quit();
-        }
+    private void clickFilterAndWait() throws Exception {
+        WebElementExtender.click(WebDriverFactory.getInstance(), tabletPCPage.getAllProducersFilter());
+        WebElementExtender.waitForInvisibilityOfElement(WebDriverFactory.getInstance(), By.cssSelector(PRODUCTS_LOADING_INDICATOR_SELECTOR));
     }
 }
