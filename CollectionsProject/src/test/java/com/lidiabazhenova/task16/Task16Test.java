@@ -12,9 +12,20 @@ import java.util.List;
 public class Task16Test {
 
     @Test
-    public void task16Test() {
-        List<String> list = new LinkedList<>(Arrays.asList("one", "two", "three"));
-        String csv = String.join(",", list);
+    public void task16Test(){
+        List<String> list = new LinkedList<>(Arrays.asList("Мама", " мыла", " раму."));
+        String csv = String.join(" ", list);
         System.out.println(csv);
+
+        String str1 = "Мама мыла раму.";
+        System.out.println(str1.matches("^[Ммаылру .]+"));
+
+        String[] strpart = str1.split(" ");
+        for (String part : strpart) {
+            System.out.println(part + " ");
+        }
+
+        StringBuilder string = new StringBuilder();
+
     }
 }

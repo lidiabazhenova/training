@@ -2,6 +2,7 @@ package com.lidiabazhenova.common;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ public class CSVReaderUtil {
     public static final String LAST_NAME = "last name";
     public static final String AGE = "age";
     public static final String SEX = "sex";
+
 
     /**
      * Method for accessing values by the names assigned to each column
@@ -47,29 +49,39 @@ public class CSVReaderUtil {
     private static List<Map<String, String>> loadAll(CSVParser csvParser) {
         List<Map<String, String>> people = new ArrayList<>();
         csvParser.forEach((csvRecord) -> {
-                    Map<String, String> person = new HashMap<>();
-                    person.put(FIRST_NAME, csvRecord.get(FIRST_NAME));
-                    person.put(LAST_NAME, csvRecord.get(LAST_NAME));
-                    person.put(AGE, csvRecord.get(AGE));
-                    person.put(SEX, csvRecord.get(SEX));
-                    people.add(person);
+                    people.add(loadFullPerson(csvRecord));
                 }
         );
 
         return people;
     }
 
+    private static Map<String, String> loadFullPerson(CSVRecord csvRecord) {
+        Map<String, String> person = new HashMap<>();
+        person.put(FIRST_NAME, csvRecord.get(FIRST_NAME));
+        person.put(LAST_NAME, csvRecord.get(LAST_NAME));
+        person.put(AGE, csvRecord.get(AGE));
+        person.put(SEX, csvRecord.get(SEX));
+
+        return person;
+    }
+
     private static List<Map<String, String>> loadCustomPersons(CSVParser csvParser, List<String> keys) {
         List<Map<String, String>> people = new ArrayList<>();
         csvParser.forEach((csvRecord) -> {
-            Map<String, String> person = new HashMap<>();
-            keys.forEach((key) -> {
-                person.put(key, csvRecord.get(key));
-            });
-            people.add(person);
+            people.add(loadPartPerson(csvRecord, keys));
         });
 
         return people;
+    }
+
+    private static Map<String, String> loadPartPerson(CSVRecord csvRecord, List<String> keys) {
+        Map<String, String> person = new HashMap<>();
+        keys.forEach((key) -> {
+            person.put(key, csvRecord.get(key));
+        });
+
+        return person;
     }
 
 }

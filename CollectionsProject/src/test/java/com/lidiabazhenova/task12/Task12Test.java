@@ -38,6 +38,11 @@ public class Task12Test {
 
         Collections.sort(list, Comparator.comparing(Object::toString));
 
+
+        Collections.sort(list,
+                Comparator.comparing(Object::toString));
+
+
         System.out.println(list);
     }
 }
